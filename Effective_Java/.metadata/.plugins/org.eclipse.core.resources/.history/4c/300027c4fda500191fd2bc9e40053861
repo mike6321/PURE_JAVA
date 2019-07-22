@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class OracleMoveToSyntax implements moveToSyntax{
+
+	@Override
+	public String MoveToSyntax(ArrayList<ArrayList<String>> list) {
+		// TODO 실구현 해서 String 리턴
+		
+		return null;
+	}
+
+}

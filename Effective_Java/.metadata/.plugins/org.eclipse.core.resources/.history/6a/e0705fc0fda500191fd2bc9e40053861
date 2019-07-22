@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class OracleMoveToSyntax implements moveToSyntax{
+
+	@Override
+	public String MoveToSyntax(ArrayList<ArrayList<String>> list) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

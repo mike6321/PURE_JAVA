@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Chapter01.Foo"/>
+<fullyQualifiedTypeName name="Chapter01.BarFoo"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.lang.Enum"/>
+<fullyQualifiedTypeName name="Chapter01.Foo.Color"/>
+<fullyQualifiedTypeName name="java.util.EnumSet"/>
+<fullyQualifiedTypeName name="moveDao"/>
+<fullyQualifiedTypeName name="OracleMoveToSyntax"/>
+<fullyQualifiedTypeName name="moveFactory"/>
+<fullyQualifiedTypeName name="moveToSyntax"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

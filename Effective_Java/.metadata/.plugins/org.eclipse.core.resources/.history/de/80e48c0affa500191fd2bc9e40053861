@@ -1,0 +1,8 @@
+
+public class moveFactory {
+	
+	
+	public moveDao movedao() {
+		moveToSyntax movetosyntax = new OracleMoveToSyntax();
+	}
+}

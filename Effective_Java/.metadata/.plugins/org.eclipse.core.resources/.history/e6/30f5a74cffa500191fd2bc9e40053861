@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<ArrayList<String>> test_list = null;
+		// TODO Auto-generated method stub
+		//String s = new OracleMoveToSyntax().MoveToSyntax(test_list);
+		
+	}
+
+}

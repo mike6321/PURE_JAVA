@@ -1,0 +1,12 @@
+
+public class moveDao {
+	public moveToSyntax movetosyntax;
+	
+	//private moveToSyntax movetosyntax;
+	
+	public moveDao(moveToSyntax movetosyntax) {
+		this.movetosyntax = movetosyntax;
+	}
+	
+	
+}
