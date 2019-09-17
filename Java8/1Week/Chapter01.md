@@ -49,23 +49,25 @@ File[] hiddenFiles = new File(".").listFiles(new FileFilter(){
 
 *내부 소스
 
-![KakaoTalk_20190915_200758769_04](https://user-images.githubusercontent.com/33277588/64920760-02c67d00-d7f6-11e9-93a1-203b73324858.jpg)
+<img src = "https://user-images.githubusercontent.com/33277588/64920760-02c67d00-d7f6-11e9-93a1-203b73324858.jpg" width = "70%">
 
 
 
-![KakaoTalk_20190915_200758769_05](https://user-images.githubusercontent.com/33277588/64920761-02c67d00-d7f6-11e9-9f74-c48a9abe7b3a.jpg)
+
+
+<img src="https://user-images.githubusercontent.com/33277588/64920761-02c67d00-d7f6-11e9-9f74-c48a9abe7b3a.jpg" width="70%">
 
 ->listFiles가 해당 인터페이스를 파라미터로 받기 때문에 구현이 강제되어 진다.
 
 
 
-![KakaoTalk_20190915_200758769_06](https://user-images.githubusercontent.com/33277588/64920762-035f1380-d7f6-11e9-8a4d-a824cae21834.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64920762-035f1380-d7f6-11e9-8a4d-a824cae21834.jpg" width="70%">
 
 -> 여기서 파라미터에 주목! 받는 파라미터의 타입이 인터페이스이다.
 
 
 
-![KakaoTalk_20190915_200758769_03](https://user-images.githubusercontent.com/33277588/64920764-035f1380-d7f6-11e9-847b-5726cc062b31.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64920764-035f1380-d7f6-11e9-847b-5726cc062b31.jpg" width="50%">
 
 -> 해당 메서드의 결과를  File Class 내부에 있는 ishidden()으로 return
 
@@ -87,13 +89,15 @@ File[] hiddenFiles = new File(".").listFiles(File::isHidden);
 
 **자바8 이전 예시코드**
 
-![KakaoTalk_20190915_200758769_09](https://user-images.githubusercontent.com/33277588/64920858-2211da00-d7f7-11e9-9afd-c4b991fdd5e3.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64920858-2211da00-d7f7-11e9-9afd-c4b991fdd5e3.jpg" width="60%">
+
+
 
 
 
 **자바8 예시코드**
 
-![KakaoTalk_20190915_200758769_10](https://user-images.githubusercontent.com/33277588/64920877-4bcb0100-d7f7-11e9-94c8-0d0aa9027472.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64920877-4bcb0100-d7f7-11e9-94c8-0d0aa9027472.jpg" width="60%">
 
 
 
@@ -101,9 +105,11 @@ File[] hiddenFiles = new File(".").listFiles(File::isHidden);
 
 
 
+
+
 (람다식은 위의 문제점을 개선 해줄 수 있음. - 아래코드 참조)
 
-![KakaoTalk_20190915_200758769_11](https://user-images.githubusercontent.com/33277588/64920891-7fa62680-d7f7-11e9-86e1-f497ef9c49c8.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64920891-7fa62680-d7f7-11e9-86e1-f497ef9c49c8.jpg" width="70%">
 
 * 익명의 클래스로 정의
 
@@ -119,7 +125,7 @@ but! 람다식의 코드가 길어 진다면 이전의 방법으로 "::" 를 써
 
 
 
-![KakaoTalk_20190915_203131917](https://user-images.githubusercontent.com/33277588/64920940-11159880-d7f8-11e9-80d2-7eb45b82b5fe.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64920940-11159880-d7f8-11e9-80d2-7eb45b82b5fe.jpg" width="70%">
 
 * 스레드1이 쓰는 도중 스레드 2가 읽어버리면 예상하지 못한 값이 발생하게 된다.
 
@@ -158,9 +164,9 @@ why?
 
 **컬렉션 -> 스트림(병렬처리) -> 다시 컬렉션변환**
 
-![KakaoTalk_20190915_200758769_16](https://user-images.githubusercontent.com/33277588/64921030-f42d9500-d7f8-11e9-8d73-c427bf679efc.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64921030-f42d9500-d7f8-11e9-8d73-c427bf679efc.jpg" width="60%">
 
-![KakaoTalk_20190915_204032476](https://user-images.githubusercontent.com/33277588/64921052-20e1ac80-d7f9-11e9-8c9f-07faced0b0d1.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64921052-20e1ac80-d7f9-11e9-8c9f-07faced0b0d1.jpg" width="70%">
 
 
 

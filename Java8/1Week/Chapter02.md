@@ -9,7 +9,7 @@
 
 1. **특정 색깔의 사과 필터링**
 
-![KakaoTalk_20190915_200758769_19](https://user-images.githubusercontent.com/33277588/64921251-f04f4200-d7fb-11e9-9987-1efb3789daf0.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64921251-f04f4200-d7fb-11e9-9987-1efb3789daf0.jpg" width="70%">
 
 * 이 코드의 문제점 : 녹색 사과만 필터링 가능
 
@@ -17,7 +17,7 @@
 
 2. **파라미터로 색깔을 받아서 필터링**
 
-![KakaoTalk_20190915_210357462](https://user-images.githubusercontent.com/33277588/64921289-65227c00-d7fc-11e9-80ed-da9f35d9b5d2.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64921289-65227c00-d7fc-11e9-80ed-da9f35d9b5d2.jpg" width="70%">
 
 * 이 코드의 문제점 : 중복된 코드 발생!
 
@@ -25,9 +25,9 @@
 
 3. **boolean 값을 이용한 필터링**
 
-![KakaoTalk_20190915_210535906](https://user-images.githubusercontent.com/33277588/64921310-bdf21480-d7fc-11e9-98d6-db85dcf7a298.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64921310-bdf21480-d7fc-11e9-98d6-db85dcf7a298.jpg" width="70%">
 
-![KakaoTalk_20190915_200758769_23](https://user-images.githubusercontent.com/33277588/64921313-d2361180-d7fc-11e9-97ef-d375b72af39b.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64921313-d2361180-d7fc-11e9-97ef-d375b72af39b.jpg" width="70%">
 
 * 이 코드의 문제점 : 만약 무게, 색깔 말고 다른 요구사항이 생긴다면 ... true false 로 구별하기 힘들어진다.
 
@@ -39,10 +39,13 @@
 
 캡슐화하는 알고리즘 패밀리를 정의하고 다음 런타임에 알고리즘을 선택
 
+<img src="https://user-images.githubusercontent.com/33277588/64921364-6607dd80-d7fd-11e9-938b-59dc0339aae4.jpg" width="70%">
 
-![KakaoTalk_20190915_211031359](https://user-images.githubusercontent.com/33277588/64921364-6607dd80-d7fd-11e9-938b-59dc0339aae4.jpg)
 
-![KakaoTalk_20190915_211057171](https://user-images.githubusercontent.com/33277588/64921363-6607dd80-d7fd-11e9-8eab-f1a19ab97eb9.jpg)
+
+
+
+<img src="https://user-images.githubusercontent.com/33277588/64921363-6607dd80-d7fd-11e9-8eab-f1a19ab97eb9.jpg" width="70%">
 
 **개선사항 :**
 
@@ -52,7 +55,7 @@
 
 
 
-![KakaoTalk_20190915_200758769_27](https://user-images.githubusercontent.com/33277588/64921384-98193f80-d7fd-11e9-9b7e-00cc74139185.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64921384-98193f80-d7fd-11e9-9b7e-00cc74139185.jpg" width="50%">
 
 
 
@@ -72,7 +75,7 @@
 
 * 현재 코드를 **1)익명클래스 2) 람다식** 으로 바꾸어가는 과정
 
-![KakaoTalk_20190915_211659092](https://user-images.githubusercontent.com/33277588/64921442-32798300-d7fe-11e9-86a0-6a19c11b2642.jpg)
+<img src="https://user-images.githubusercontent.com/33277588/64921442-32798300-d7fe-11e9-86a0-6a19c11b2642.jpg" width="70%">
 
 
 
