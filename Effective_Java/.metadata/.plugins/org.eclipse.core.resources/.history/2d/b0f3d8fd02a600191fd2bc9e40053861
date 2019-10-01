@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class moveFactory {
+	
+	
+
+	public moveDao movedao() {
+		ArrayList<ArrayList<String>> list
+		//다형성 적용
+		moveToSyntax movetosyntax = new OracleMoveToSyntax();
+
+		//string 리턴
+		//movetosyntax.MoveToSyntax(ArrayList);
+		movetosyntax.MoveToSyntax();
+		
+		moveDao movedao = new moveDao(movetosyntax);
+		
+		return movedao;
+	}
+}

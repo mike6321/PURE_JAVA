@@ -1,0 +1,6 @@
+
+public class moveFactory {
+	public move move() {
+		
+	}
+}

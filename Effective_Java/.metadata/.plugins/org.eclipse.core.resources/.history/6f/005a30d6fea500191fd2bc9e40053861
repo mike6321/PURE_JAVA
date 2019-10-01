@@ -1,0 +1,9 @@
+
+public class moveFactory {
+	
+	private moveToSyntax movetosyntax;
+	
+	public moveDao moveDao(moveToSyntax movetosyntax) {
+		this.movetosyntax = moveToSyntax;
+	}
+}

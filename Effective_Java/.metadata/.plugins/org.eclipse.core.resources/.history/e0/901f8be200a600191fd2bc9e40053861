@@ -1,0 +1,15 @@
+
+public class moveFactory {
+	
+	
+	public moveDao movedao() {
+		//다형성 적용
+		moveToSyntax movetosyntax = new OracleMoveToSyntax();
+
+		//string 리턴
+	
+		moveDao movedao = new moveDao(movetosyntax);
+		
+		return movedao;
+	}
+}

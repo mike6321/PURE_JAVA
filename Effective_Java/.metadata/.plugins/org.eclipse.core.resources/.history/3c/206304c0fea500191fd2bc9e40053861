@@ -1,0 +1,8 @@
+
+public class moveFactory {
+	
+	private moveToSyntax movetosyntax;
+	public moveDao moveDao() {
+		
+	}
+}

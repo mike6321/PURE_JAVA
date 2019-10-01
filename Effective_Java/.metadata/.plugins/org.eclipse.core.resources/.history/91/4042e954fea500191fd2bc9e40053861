@@ -1,0 +1,8 @@
+
+public class move {
+	private moveToSyntax movetosyntax;
+	
+	public move(moveToSyntax movetosyntax) {
+		this.movetosyntax = movetosyntax;
+	}
+}
