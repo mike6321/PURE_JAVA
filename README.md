@@ -6,7 +6,38 @@ Q1) 디폴트메서드는 하위 클래스에서 구현없이 인터페이스에
 
 이때 "여러클래스가 해당 메서드를 받아서 처리한다면 중복의 문제는 어떻게 해결가능한가?"
 
-Q2) 다중상속(p298) 에서 현재 arraylist가 어떠한 다중상속을 구현하고 있는지 arraylist의 내부 코드 까서  설명해주면 좋겠다.
+Q2) 다중상속(p298) 을 설명하는데 책에서는  "디폴트 메서드를 사용하지 않아도 다중상속을 활용할 수있다고" 나와있다.
+
+~~~java
+package java8.me;
+
+public class Main extends SuperMan implements Interface1,Interface2{
+
+    public static void main(String[] args) {
+        Main main = new Main();
+        main.SuperClass();
+        main.A();
+        main.B();
+    }
+
+    @Override
+    public void A() {
+        System.out.println("A클래스 구현");
+    }
+
+    @Override
+    public void B() {
+        System.out.println("B클래스 구현");
+
+    }
+}
+~~~
+
+코드를 구현 하였는데 디폴트메서드를 사용하지 않아도 다중상속을 할 수 있다는 말은 디폴트메서드는 다중상속을 지원한다는 말과 동일 하지 않은가?
+
+내가 작성한 코드를 토대로 디폴트 메서드가 어떠한 방식으로 다중상속을 지원하는지 코드를 통해서 설명부탁한다.
+
+
 
 ------
 
