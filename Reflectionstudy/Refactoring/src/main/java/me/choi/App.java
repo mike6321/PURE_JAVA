@@ -15,10 +15,10 @@ public class App
         //Arrays.stream(bookClass.getDeclaredFields()).forEach(System.out::println);
         //Arrays.stream(bookClass.getFields()).forEach(System.out::println);
 
-//        Book book = new Book();
-//        Class<? extends Book> aClass = book.getClass();
-//
-//        Class.forName("me.choi.Book");
+        Book book = new Book();
+        Class<? extends Book> aClass = book.getClass();
+
+        Class.forName("me.choi.Book");
         Book book = new Book();
 
 //        Arrays.stream(bookClass.getDeclaredFields()).forEach(f -> {
