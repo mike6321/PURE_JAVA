@@ -4,10 +4,12 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class StudyTest {
 
     @Test
-    void create_() {
+    @DisplayName("주누의 개인공부 시간")
+    void create_new_study() {
         Study study = new Study();
         assertNotNull(study);
         System.out.println("create");
@@ -16,6 +18,11 @@ class StudyTest {
     @Disabled
     void create2() {
         System.out.println("create2");
+    }
+
+    @Test
+    public void tesing_intelij() {
+        System.out.println("test!");
     }
 
     @BeforeAll
