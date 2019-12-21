@@ -8,6 +8,8 @@ public class DemoSpringDiApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoSpringDiApplication.class, args);
+
+        Thread.currentThread();
     }
 
 }
