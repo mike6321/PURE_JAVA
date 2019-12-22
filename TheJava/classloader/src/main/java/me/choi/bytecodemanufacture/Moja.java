@@ -1,4 +1,4 @@
-package me.choi.bytecodmanufacture;
+package me.choi.bytecodemanufacture;
 
 public class Moja {
 
