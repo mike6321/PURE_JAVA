@@ -8,12 +8,12 @@ import java.lang.annotation.*;
 @Inherited
 public @interface AnotherAnnotation {
 
-    //String name() default "choi";
-//    String name();
-    //int number() default 123;
-//    int number();
+    String name() default "choi";
 
-    String value() default "choi";
+    int number() default 123;
+
+
+//    String value() default "choi";
 
 
 }

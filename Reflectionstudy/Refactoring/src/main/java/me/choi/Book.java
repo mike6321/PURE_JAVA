@@ -1,15 +1,19 @@
 package me.choi;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.lang.annotation.Annotation;
 import java.lang.annotation.Inherited;
 
 //@MyAnnotation(name = "choi",number = 010)
-@MyAnnotation("choi")
 
+//@MyAnnotation(name = "choi", number = 29)
+@MyAnnotation("choi")
 public class Book {
 
+    
     private static String B = "BOOK";
 
-    @AnotherAnnotation
     private static final String C = "BOOK";
 
     private String a = "a";
@@ -23,13 +27,14 @@ public class Book {
     }
 
     public Book(String a, String d, String e) {
+
         this.a = a;
         this.d = d;
         this.e = e;
     }
 
     private void f() {
-        System.out.println("F");
+        System.out.println("f");
     }
 
     public void g() {
@@ -39,4 +44,5 @@ public class Book {
     public int h() {
         return 100;
     }
+
 }
