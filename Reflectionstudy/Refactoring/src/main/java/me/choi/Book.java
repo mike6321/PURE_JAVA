@@ -3,6 +3,8 @@ package me.choi;
 
 public class Book {
 
+    MyBook myBook;
+
     public static String A = "A";
 
     private  String B = "B";

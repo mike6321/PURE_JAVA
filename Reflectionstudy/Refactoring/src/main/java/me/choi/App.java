@@ -41,10 +41,24 @@ public class App
 
         Method method1 = bookClass.getDeclaredMethod("sum",int.class,int.class);
         int result = (int) method1.invoke(book,1,2);
-        System.out.println(result);
+        //System.out.println(result);
 
 
+        Arrays.stream(bookClass.getDeclaredFields()).forEach(field2 -> {
+            if (field2.getType().equals(MyBook.class)) {
+               field2.setAccessible(true);
 
+                Object fieldInstance = createInstance(field2.getType());
+
+                try {
+                    field2.set(book1,fieldInstance);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+        });
 
 
         //방법1
@@ -123,5 +137,12 @@ public class App
 //            System.out.println(myAnnotation.number());
 //        }
 //    });
+    }
+    public static <T> T createInstance(Class<T> classType) {
+        try {
+            return classType.getConstructor(null).newInstance();
+        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
