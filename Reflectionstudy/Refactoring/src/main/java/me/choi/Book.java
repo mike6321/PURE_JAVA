@@ -1,48 +1,28 @@
 package me.choi;
 
-import org.w3c.dom.ls.LSOutput;
 
-import java.lang.annotation.Annotation;
-import java.lang.annotation.Inherited;
-
-//@MyAnnotation(name = "choi",number = 010)
-
-//@MyAnnotation(name = "choi", number = 29)
-@MyAnnotation("choi")
 public class Book {
 
-    
-    private static String B = "BOOK";
+    public static String A = "A";
 
-    private static final String C = "BOOK";
+    private  String B = "B";
 
-    private String a = "a";
+    public Book() {
+    }
 
-    public String d = "d";
+    public Book(String b) {
+        B = b;
+    }
 
-    protected String e = "e";
-
-    public Book () {
+    public Book(int i) {
 
     }
 
-    public Book(String a, String d, String e) {
-
-        this.a = a;
-        this.d = d;
-        this.e = e;
+    public void c() {
+        System.out.println("C");
     }
 
-    private void f() {
-        System.out.println("f");
+    public int sum(int left, int right) {
+        return left+right;
     }
-
-    public void g() {
-        System.out.println("g");
-    }
-
-    public int h() {
-        return 100;
-    }
-
 }
