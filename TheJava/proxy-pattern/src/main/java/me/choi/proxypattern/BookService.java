@@ -1,6 +1,8 @@
 package me.choi.proxypattern;
 
-public interface BookService {
+public  interface BookService {
 
     void rent(Book book);
+
+    void returnBook(Book book);
 }
