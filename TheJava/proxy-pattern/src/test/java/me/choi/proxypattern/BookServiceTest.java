@@ -30,17 +30,17 @@ public class BookServiceTest {
                 }
             });
 
-@Test
-public void di() {
+    @Test
+    public void di() {
 
-    Book book = new Book();
-    book.setTitle("Toby Spring");
-    //bookService.rent(book);
+        Book book = new Book();
+        book.setTitle("Toby Spring");
+        //bookService.rent(book);
 
-    System.out.println();
+        System.out.println();
 
-    bookService.returnBook(book);
+        bookService.returnBook(book);
 
-}
+    }
 
 }
