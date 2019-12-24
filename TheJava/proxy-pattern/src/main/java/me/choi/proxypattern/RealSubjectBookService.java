@@ -1,14 +1,6 @@
 package me.choi.proxypattern;
 
-public class RealSubjectBookService implements BookService{
+public class RealSubjectBookService{
 
-    @Override
-    public void rent(Book book) {
-        System.out.println("rent :: "+ book.getTitle());
-    }
 
-    @Override
-    public void returnBook(Book book) {
-        System.out.println("return : "+book.getTitle());
-    }
 }
