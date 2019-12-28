@@ -1,4 +1,8 @@
 package me.choi;
 
-public class Moja {
+@Magic
+public interface Moja {
+
+    String pullOut();
+
 }
