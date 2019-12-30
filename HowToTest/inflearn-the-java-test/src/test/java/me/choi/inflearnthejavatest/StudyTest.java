@@ -11,16 +11,16 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class StudyTest {
 
-    @Test
+    @FastTest
     @DisplayName("주누의 개인공부 시간 fast")
-    @Tag("fast")
+    //@Tag("fast")
     void create_new_study() {
         //assumeTrue("LOCAL".equals(System.getenv("TEST_ENV")));
         Study study = new Study(10);
     }
-    @Test
+    @SlowTest
     @DisplayName("주누의 개인공부 시간 slow")
-    @Tag("slow")
+    //@Tag("slow")
     public void tesing_intelij() {
         System.out.println("test!");
     }
