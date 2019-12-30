@@ -3,6 +3,7 @@ package me.choi.inflearnthejavatest;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ArgumentConversionException;
+import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.converter.SimpleArgumentConverter;
 import org.junit.jupiter.params.provider.*;
 
@@ -18,7 +19,7 @@ class StudyTest {
 
     @FastTest
     @DisplayName("주누의 개인공부 시간 fast")
-    //@Tag("fast")
+        //@Tag("fast")
     void create_new_study() {
         //assumeTrue("LOCAL".equals(System.getenv("TEST_ENV")));
         Study study = new Study(10);
@@ -37,24 +38,30 @@ class StudyTest {
                 repetitionInfo.getTotalRepetitions());
     }
 
+
+
     @DisplayName("스터디 만들기 2")
     @ParameterizedTest(name = "{index} {displayName} message = {0}")
-    @ValueSource(ints = {10, 20, 40})
-    void ParameterizedTest(Study limit) {
-        System.out.println(limit);
+    @CsvSource({"10, '자바 스터디'", "20, 스프"})
+    void ParameterizedTest(Integer limit, String name) {
+        Study study = new Study(limit, name);
+        System.out.println(study);
     }
 
-static class StudyConverter extends SimpleArgumentConverter {
 
-    @Override
-    protected Object convert(Object source, Class<?> targetType) throws ArgumentConversionException {
-        assertEquals(Study.class, targetType, "Can only convert to Study");
-        return Integer.parseInt(source.toString());
+
+
+    static class StudyConverter extends SimpleArgumentConverter {
+
+        @Override
+        protected Object convert(Object source, Class<?> targetType) throws ArgumentConversionException {
+            assertEquals(Study.class, targetType, "Can only convert to Study");
+            return Integer.parseInt(source.toString());
+        }
     }
-}
 
     @Test
-    //@Disabled
+        //@Disabled
     void create2() {
         System.out.println("create2");
     }
