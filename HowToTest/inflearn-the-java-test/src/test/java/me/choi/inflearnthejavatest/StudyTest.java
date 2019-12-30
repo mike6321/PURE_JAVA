@@ -2,8 +2,11 @@ package me.choi.inflearnthejavatest;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.converter.ArgumentConversionException;
+import org.junit.jupiter.params.converter.SimpleArgumentConverter;
+import org.junit.jupiter.params.provider.*;
 
+import javax.crypto.spec.PSource;
 import java.time.Duration;
 import java.util.function.Supplier;
 
@@ -36,10 +39,19 @@ class StudyTest {
 
     @DisplayName("스터디 만들기 2")
     @ParameterizedTest(name = "{index} {displayName} message = {0}")
-    @ValueSource(strings = {"날씨가", "많이", "추워지고", "있습니다."})
-    void ParameterizedTest(String message) {
-        System.out.println(message);
+    @ValueSource(ints = {10, 20, 40})
+    void ParameterizedTest(Study limit) {
+        System.out.println(limit);
     }
+
+static class StudyConverter extends SimpleArgumentConverter {
+
+    @Override
+    protected Object convert(Object source, Class<?> targetType) throws ArgumentConversionException {
+        assertEquals(Study.class, targetType, "Can only convert to Study");
+        return Integer.parseInt(source.toString());
+    }
+}
 
     @Test
     //@Disabled
