@@ -1,8 +1,9 @@
 package me.choi.inflearnthejavatest;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 
-@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+@ExtendWith(FindSlowTestExtention.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class StudyTest {
 
@@ -11,7 +12,8 @@ class StudyTest {
     @Order(2)
     @FastTest
     @DisplayName("주누의 개인공부 시간 fast")
-    void create_new_study() {
+    void create_new_study() throws InterruptedException {
+        Thread.sleep(1005L);
         System.out.println(this);
         System.out.println(val++);
     }
