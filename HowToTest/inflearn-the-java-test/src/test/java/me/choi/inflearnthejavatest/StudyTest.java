@@ -2,12 +2,16 @@ package me.choi.inflearnthejavatest;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.extension.RegisterExtension;
 
-@ExtendWith(FindSlowTestExtention.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class StudyTest {
 
     int val = 1;
+
+    @RegisterExtension
+    static FindSlowTestExtention findSlowTestExtention = new FindSlowTestExtention(1000L);
+
 
     @Order(2)
     @FastTest
