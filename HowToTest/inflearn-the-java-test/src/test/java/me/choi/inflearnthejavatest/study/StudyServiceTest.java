@@ -11,10 +11,9 @@ import org.mockito.stubbing.OngoingStubbing;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class StudyServiceTest {
@@ -35,6 +34,17 @@ class StudyServiceTest {
 
         Optional<Member> findbyId = memberService.findById(1L);
         assertEquals("rownsdn912@gmail.com", findbyId.get().getEmail());
+
+        //when(memberService.findById(1L)).thenThrow(new RuntimeException());
+        lenient().when(memberService.findById(1L)).thenThrow(new RuntimeException());
+        doThrow(new RuntimeException()).when(memberService).validate(1L);
+
+        assertThrows(RuntimeException.class, ()->{
+            memberService.validate(1L);
+        });
+
+
+        memberService.validate(2L);
 
 
     }
