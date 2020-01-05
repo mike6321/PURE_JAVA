@@ -11,6 +11,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.lenient;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -22,13 +25,16 @@ class StudyServiceTest {
 
         Study study = new Study(10,"test");
         Member member = new Member();
+        member.setId(1L);
+        member.setEmail("rownsdn912@gmail.com");
 
         // TODO memberService 객체에 findById 메소드를 1L 값으로 호출하면 member 객체를 리턴하도록 stubbing
-        when(memberService.findById(1L)).thenReturn(Optional.of(member));
+        lenient().when(memberService.findById(1L)).thenReturn(Optional.of(member));
 
 
         // TODO studyRepository 객체에 save 메소드를 study 객체로 호출하면 study 객체를 그대로 리턴하도록 stubbing
-        when(studyRepository.save(study)).thenReturn(study);
+        lenient().when(studyRepository.save(study)).thenReturn(study);
+
 
 
     }
