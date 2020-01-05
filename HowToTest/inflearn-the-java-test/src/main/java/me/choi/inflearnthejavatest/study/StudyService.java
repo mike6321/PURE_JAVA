@@ -1,7 +1,8 @@
 package me.choi.inflearnthejavatest.study;
 
-import me.choi.inflearnthejavatest.Study;
+
 import me.choi.inflearnthejavatest.domain.Member;
+import me.choi.inflearnthejavatest.domain.Study;
 import me.choi.inflearnthejavatest.member.MemberService;
 
 import java.util.Optional;
