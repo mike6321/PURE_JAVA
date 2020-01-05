@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee3bee52-0ef2-48b1-b876-ee591c71e165" name="Default Changelist" comment="" />
+    <list default="true" id="ee3bee52-0ef2-48b1-b876-ee591c71e165" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/choi/lombokdemo/MemberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lombok-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lombok-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/choi/lombokdemo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/choi/lombokdemo/Member.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +18,7 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,8 +53,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -62,13 +70,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.choi.lombokdemo" />
       <recent name="me.choi" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MemberTest.getterSetter">
     <configuration name="MemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lombok-demo" />
       <extension name="coverage">
@@ -84,8 +93,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MemberTest.getterSetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lombok-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.choi.lombokdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.choi.lombokdemo" />
+      <option name="MAIN_CLASS_NAME" value="me.choi.lombokdemo.MemberTest" />
+      <option name="METHOD_NAME" value="getterSetter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MemberTest.getterSetter" />
         <item itemvalue="JUnit.MemberTest" />
       </list>
     </recent_temporary>
@@ -117,6 +143,7 @@
       <workItem from="1577787140494" duration="3000" />
       <workItem from="1578225965017" duration="13000" />
       <workItem from="1578226073361" duration="217000" />
+      <workItem from="1578232248689" duration="791000" />
     </task>
     <servers />
   </component>
@@ -131,37 +158,41 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2053" y="200" key="#com.intellij.ide.util.MemberChooser/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577507933256" />
-    <state width="1876" height="249" key="GridCell.Tab.0.bottom" timestamp="1577516509598">
-      <screen x="1280" y="23" width="1920" height="991" />
+    <state x="2086" y="446" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578232683257">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1876" height="249" key="GridCell.Tab.0.bottom/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577512411875" />
+    <state x="2086" y="446" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578232683257" />
+    <state width="1878" height="270" key="GridCell.Tab.0.bottom" timestamp="1578233090449">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="270" key="GridCell.Tab.0.bottom/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578233090449" />
     <state width="1876" height="249" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1577516509598" />
-    <state width="1876" height="249" key="GridCell.Tab.0.center" timestamp="1577516509597">
-      <screen x="1280" y="23" width="1920" height="991" />
+    <state width="1878" height="270" key="GridCell.Tab.0.center" timestamp="1578233090447">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1876" height="249" key="GridCell.Tab.0.center/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577512411873" />
+    <state width="1878" height="270" key="GridCell.Tab.0.center/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578233090447" />
     <state width="1876" height="249" key="GridCell.Tab.0.center/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1577516509597" />
-    <state width="1876" height="249" key="GridCell.Tab.0.left" timestamp="1577516509596">
-      <screen x="1280" y="23" width="1920" height="991" />
+    <state width="1878" height="270" key="GridCell.Tab.0.left" timestamp="1578233090446">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1876" height="249" key="GridCell.Tab.0.left/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577512411872" />
+    <state width="1878" height="270" key="GridCell.Tab.0.left/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578233090446" />
     <state width="1876" height="249" key="GridCell.Tab.0.left/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1577516509596" />
-    <state width="1876" height="249" key="GridCell.Tab.0.right" timestamp="1577516509597">
-      <screen x="1280" y="23" width="1920" height="991" />
+    <state width="1878" height="270" key="GridCell.Tab.0.right" timestamp="1578233090448">
+      <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1876" height="249" key="GridCell.Tab.0.right/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577512411874" />
+    <state width="1878" height="270" key="GridCell.Tab.0.right/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578233090448" />
     <state width="1876" height="249" key="GridCell.Tab.0.right/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1577516509597" />
     <state x="1728" y="99" key="SettingsEditor" timestamp="1578227040461">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1728" y="99" key="SettingsEditor/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578227040461" />
-    <state x="1916" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1577507759343">
+    <state x="1916" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578232249796">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1916" y="350" key="com.intellij.ide.util.TipDialog/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577507759343" />
-    <state x="2019" y="225" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577510675243">
+    <state x="1916" y="350" key="com.intellij.ide.util.TipDialog/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578232249796" />
+    <state x="2019" y="225" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578232836907">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="2019" y="225" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577510675243" />
+    <state x="2019" y="225" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578232836907" />
   </component>
 </project>
