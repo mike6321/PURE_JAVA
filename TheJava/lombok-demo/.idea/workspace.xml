@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee3bee52-0ef2-48b1-b876-ee591c71e165" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/choi/lombokdemo/Member.java" afterDir="false" />
-    </list>
+    <list default="true" id="ee3bee52-0ef2-48b1-b876-ee591c71e165" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
