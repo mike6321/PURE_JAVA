@@ -45,9 +45,10 @@ class StudyServiceTest {
         verify(memberService, never()).validate(any());
 
         InOrder inOrder = inOrder(memberService);
-        inOrder.verify(memberService).notify(member);
         inOrder.verify(memberService).notify(study);
-//        inOrder.verify(memberService).notify(member);
+
+        verifyNoMoreInteractions(memberService);
+
     }
 
 }
