@@ -1,19 +1,17 @@
-package me.choi.inflearnthejavatest.study;
+
 
 import me.choi.inflearnthejavatest.domain.Member;
 import me.choi.inflearnthejavatest.domain.Study;
 import me.choi.inflearnthejavatest.member.MemberService;
+import me.choi.inflearnthejavatest.study.StudyRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.mockito.stubbing.OngoingStubbing;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 class StudyServiceTest {
@@ -22,29 +20,16 @@ class StudyServiceTest {
     @Test
     void createStudyService(@Mock MemberService memberService, @Mock StudyRepository studyRepository) {
 
-        StudyService studyService = new StudyService(memberService,studyRepository);
-
+        Study study = new Study(10,"test");
         Member member = new Member();
-        member.setId(1L);
-        member.setEmail("rownsdn912@gmail.com");
-        /*
-         * memberId가 1일 때 위에 정의한 member 인스턴스를 리턴해준다.
-         * */
-        when(memberService.findById(any())).thenReturn(Optional.of(member))
-                                            .thenThrow(RuntimeException.class)
-                                                .thenReturn(Optional.empty());
+
+        // TODO memberService 객체에 findById 메소드를 1L 값으로 호출하면 member 객체를 리턴하도록 stubbing
+        when(memberService.findById(1L)).thenReturn(Optional.of(member));
 
 
-        Optional<Member> byId = memberService.findById(1L);
+        // TODO studyRepository 객체에 save 메소드를 study 객체로 호출하면 study 객체를 그대로 리턴하도록 stubbing
+        when(studyRepository.save(study)).thenReturn(study);
 
-        //1번째 호출
-        assertEquals("rownsdn912@gmail.com",byId.get().getEmail());
-        //2번째 호출
-        assertThrows(RuntimeException.class, () -> {
-           memberService.findById(2L);
-        });
-        //3번째 호출
-        assertEquals(Optional.empty(), memberService.findById(3L));
 
     }
 
