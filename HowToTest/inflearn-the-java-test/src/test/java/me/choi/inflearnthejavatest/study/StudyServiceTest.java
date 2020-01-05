@@ -30,22 +30,21 @@ class StudyServiceTest {
         /*
          * memberId가 1일 때 위에 정의한 member 인스턴스를 리턴해준다.
          * */
-        when(memberService.findById(any())).thenReturn(Optional.of(member));
+        when(memberService.findById(any())).thenReturn(Optional.of(member))
+                                            .thenThrow(RuntimeException.class)
+                                                .thenReturn(Optional.empty());
 
-        Optional<Member> findbyId = memberService.findById(1L);
-        assertEquals("rownsdn912@gmail.com", findbyId.get().getEmail());
 
-        //when(memberService.findById(1L)).thenThrow(new RuntimeException());
-        lenient().when(memberService.findById(1L)).thenThrow(new RuntimeException());
-        doThrow(new RuntimeException()).when(memberService).validate(1L);
+        Optional<Member> byId = memberService.findById(1L);
 
-        assertThrows(RuntimeException.class, ()->{
-            memberService.validate(1L);
+        //1번째 호출
+        assertEquals("rownsdn912@gmail.com",byId.get().getEmail());
+        //2번째 호출
+        assertThrows(RuntimeException.class, () -> {
+           memberService.findById(2L);
         });
-
-
-        memberService.validate(2L);
-
+        //3번째 호출
+        assertEquals(Optional.empty(), memberService.findById(3L));
 
     }
 
