@@ -13,6 +13,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -30,7 +31,7 @@ class StudyServiceTest {
         /*
          * memberId가 1일 때 위에 정의한 member 인스턴스를 리턴해준다.
          * */
-        when(memberService.findById(1L)).thenReturn(Optional.of(member));
+        when(memberService.findById(any())).thenReturn(Optional.of(member));
 
         Optional<Member> findbyId = memberService.findById(1L);
         assertEquals("rownsdn912@gmail.com", findbyId.get().getEmail());
