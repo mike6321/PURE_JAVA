@@ -15,7 +15,7 @@ class StudyTest {
 
     @Order(2)
     @FastTest
-    @DisplayName("주누의 개인공부 시간 fast")
+    @DisplayName("주누의 개::인공부 시간 fast")
     void create_new_study() throws InterruptedException {
         Thread.sleep(1005L);
         System.out.println(this);

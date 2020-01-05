@@ -1,5 +1,7 @@
 package me.choi.inflearnthejavatest;
 
+import me.choi.inflearnthejavatest.domain.Member;
+
 public class Study {
     private StudyStatus status;
 
@@ -38,5 +40,8 @@ public class Study {
     public int getLimit() {
 
         return limit;
+    }
+
+    public void setOwner(Member member) {
     }
 }
