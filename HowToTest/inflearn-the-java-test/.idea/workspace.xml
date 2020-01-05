@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5493fed8-b789-40b2-9cb2-c8f14d9e14d0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Vh3qWeJakjtKCDOgN2FGpz4T89" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.choi.inflearnthejavatest.study" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.choi.inflearnthejavatest" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="me.choi.inflearnthejavatest.member" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StudyServiceTest">
+    <configuration name="StudyServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HowToTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.choi.inflearnthejavatest.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.choi.inflearnthejavatest.study" />
+      <option name="MAIN_CLASS_NAME" value="me.choi.inflearnthejavatest.study.StudyServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudyServiceTest.createStudyService (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HowToTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.choi.inflearnthejavatest.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.choi.inflearnthejavatest.study" />
+      <option name="MAIN_CLASS_NAME" value="me.choi.inflearnthejavatest.study.StudyServiceTest" />
+      <option name="METHOD_NAME" value="createStudyService(me.choi.inflearnthejavatest.member.MemberService,me.choi.inflearnthejavatest.study.StudyRepository)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudyServiceTest.createStudyService (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HowToTest" />
+      <option name="PACKAGE_NAME" value="me.choi.inflearnthejavatest.study" />
+      <option name="MAIN_CLASS_NAME" value="StudyServiceTest" />
+      <option name="METHOD_NAME" value="createStudyService(me.choi.inflearnthejavatest.member.MemberService,me.choi.inflearnthejavatest.study.StudyRepository)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudyServiceTest.createStudyService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HowToTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.choi.inflearnthejavatest.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.choi.inflearnthejavatest.study" />
+      <option name="MAIN_CLASS_NAME" value="me.choi.inflearnthejavatest.study.StudyServiceTest" />
+      <option name="METHOD_NAME" value="createStudyService" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tags (fast )" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="HowToTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.choi.inflearnthejavatest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.choi.inflearnthejavatest" />
+      <option name="MAIN_CLASS_NAME" value="me.choi.inflearnthejavatest.StudyTest" />
+      <option name="METHOD_NAME" value="create_new_study" />
+      <option name="TEST_OBJECT" value="tags" />
+      <option name="PARAMETERS" value="" />
+      <tag value="fast" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="me.choi.inflearnthejavatest in inflearn-the-java-test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HowToTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.choi.inflearnthejavatest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.choi.inflearnthejavatest" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.Tags (fast )" />
+      <item itemvalue="JUnit.me.choi.inflearnthejavatest in inflearn-the-java-test" />
+      <item itemvalue="JUnit.StudyServiceTest.createStudyService" />
+      <item itemvalue="JUnit.StudyServiceTest.createStudyService (1)" />
+      <item itemvalue="JUnit.StudyServiceTest.createStudyService (2)" />
+      <item itemvalue="JUnit.StudyServiceTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StudyServiceTest" />
+        <item itemvalue="JUnit.StudyServiceTest.createStudyService (2)" />
+        <item itemvalue="JUnit.StudyServiceTest.createStudyService (1)" />
+        <item itemvalue="JUnit.StudyServiceTest.createStudyService" />
+        <item itemvalue="JUnit.me.choi.inflearnthejavatest in inflearn-the-java-test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5493fed8-b789-40b2-9cb2-c8f14d9e14d0" name="Default Changelist" comment="" />
+      <created>1577691691371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577691691371</updated>
+      <workItem from="1577691697568" duration="11401000" />
+      <workItem from="1577713443819" duration="50000" />
+      <workItem from="1577713497890" duration="3830000" />
+      <workItem from="1577786527241" duration="4000" />
+      <workItem from="1577787766585" duration="84000" />
+      <workItem from="1577788647982" duration="242000" />
+      <workItem from="1577878109753" duration="1153000" />
+      <workItem from="1577879374199" duration="5369000" />
+      <workItem from="1577962778391" duration="1332000" />
+      <workItem from="1578111318308" duration="367000" />
+      <workItem from="1578193301733" duration="619000" />
+      <workItem from="1578201611950" duration="14939000" />
+      <workItem from="1578225354332" duration="188000" />
+      <workItem from="1578225577765" duration="86000" />
+      <workItem from="1578226317208" duration="86000" />
+      <workItem from="1578227502758" duration="56000" />
+      <workItem from="1578227625517" duration="266000" />
+      <workItem from="1578227964951" duration="132000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1704" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577705556494">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1704" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577705556494" />
+    <state x="2053" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1577963021169">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2053" y="242" key="#com.intellij.ide.util.MemberChooser/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577963021169" />
+    <state x="2053" y="64" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.-141.1920.991@1280.-141.1920.991" timestamp="1577884389480" />
+    <state x="2053" y="228" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1577714868482" />
+    <state width="1876" height="415" key="GridCell.Tab.0.bottom" timestamp="1578225204064">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.bottom/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577709690230" />
+    <state width="1876" height="248" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.-141.1920.991@1280.-141.1920.991" timestamp="1577890882000" />
+    <state width="1876" height="415" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578225204064" />
+    <state width="1876" height="248" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1578219438699" />
+    <state width="1876" height="415" key="GridCell.Tab.0.center" timestamp="1578225204063">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.center/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577709690229" />
+    <state width="1876" height="248" key="GridCell.Tab.0.center/0.23.1280.777/1280.-141.1920.991@1280.-141.1920.991" timestamp="1577890881999" />
+    <state width="1876" height="415" key="GridCell.Tab.0.center/0.23.1280.777/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578225204063" />
+    <state width="1876" height="248" key="GridCell.Tab.0.center/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1578219438697" />
+    <state width="1876" height="415" key="GridCell.Tab.0.left" timestamp="1578225204062">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.left/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577709690228" />
+    <state width="1876" height="248" key="GridCell.Tab.0.left/0.23.1280.777/1280.-141.1920.991@1280.-141.1920.991" timestamp="1577890881998" />
+    <state width="1876" height="415" key="GridCell.Tab.0.left/0.23.1280.777/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578225204062" />
+    <state width="1876" height="248" key="GridCell.Tab.0.left/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1578219438696" />
+    <state width="1876" height="415" key="GridCell.Tab.0.right" timestamp="1578225204063">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.right/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577709690229" />
+    <state width="1876" height="248" key="GridCell.Tab.0.right/0.23.1280.777/1280.-141.1920.991@1280.-141.1920.991" timestamp="1577890882000" />
+    <state width="1876" height="415" key="GridCell.Tab.0.right/0.23.1280.777/1280.23.1920.1057@1280.23.1920.1057" timestamp="1578225204063" />
+    <state width="1876" height="248" key="GridCell.Tab.0.right/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1578219438698" />
+    <state x="1778" y="169" key="Maven.ArtifactSearchDialog" timestamp="1578203066053">
+      <screen x="1280" y="23" width="1920" height="991" />
+    </state>
+    <state x="1778" y="179" key="Maven.ArtifactSearchDialog/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577965766143" />
+    <state x="1778" y="169" key="Maven.ArtifactSearchDialog/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1578203066053" />
+    <state x="1749" y="11" key="SettingsEditor" timestamp="1577879142900">
+      <screen x="1280" y="-141" width="1920" height="991" />
+    </state>
+    <state x="1749" y="200" key="SettingsEditor/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577707008725" />
+    <state x="1749" y="11" key="SettingsEditor/0.23.1280.777/1280.-141.1920.991@1280.-141.1920.991" timestamp="1577879142900" />
+    <state x="1749" y="175" key="SettingsEditor/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1577715884008" />
+    <state x="1916" y="383" key="com.intellij.ide.util.TipDialog" timestamp="1577962779290">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1916" y="383" key="com.intellij.ide.util.TipDialog/0.23.1280.711/1280.23.1920.1057@1280.23.1920.1057" timestamp="1577962779290" />
+    <state x="1994" y="240" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578204005487">
+      <screen x="1280" y="23" width="1920" height="991" />
+    </state>
+    <state x="1994" y="240" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1280.777/1280.23.1920.991@1280.23.1920.991" timestamp="1578204005487" />
+    <state x="1978" y="103" key="extract.method.dialog" timestamp="1577882965453">
+      <screen x="1280" y="-141" width="1920" height="991" />
+    </state>
+    <state x="1978" y="103" key="extract.method.dialog/0.23.1280.777/1280.-141.1920.991@1280.-141.1920.991" timestamp="1577882965453" />
+    <state x="1905" y="77" width="670" height="676" key="search.everywhere.popup" timestamp="1577883237471">
+      <screen x="1280" y="-141" width="1920" height="991" />
+    </state>
+    <state x="1905" y="77" width="670" height="676" key="search.everywhere.popup/0.23.1280.777/1280.-141.1920.991@1280.-141.1920.991" timestamp="1577883237471" />
+  </component>
+</project>
