@@ -41,6 +41,7 @@ class StudyServiceTest {
         assertEquals(member, study.getOwner());
 
         verify(memberService, times(1)).notify(study);
+        verify(memberService, never()).validate(any());
     }
 
 }
