@@ -6,6 +6,7 @@ import me.choi.inflearnthejavatest.member.MemberService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -42,6 +43,11 @@ class StudyServiceTest {
 
         verify(memberService, times(1)).notify(study);
         verify(memberService, never()).validate(any());
+
+        InOrder inOrder = inOrder(memberService);
+        inOrder.verify(memberService).notify(member);
+        inOrder.verify(memberService).notify(study);
+//        inOrder.verify(memberService).notify(member);
     }
 
 }
