@@ -11,37 +11,61 @@ public class App
 {
     public static void main( String[] args ) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
-        Class<?> bookClass = Class.forName("me.choi.Book");
-        //bookClass.newInstance();
-        Constructor<?> constructor = bookClass.getConstructor(null);
-        Book book = (Book) constructor.newInstance();
+        //1.
+        //Class<?> bookClass = Class.forName("me.choi.Book");
+        //2.
+        Class<Book> bookClass = Book.class;
+
+//        Arrays.stream(bookClass.getDeclaredFields()).forEach(field -> {
+//            System.out.println(field);
+//        });
+
+//        Arrays.stream(bookClass.getFields()).forEach(field -> {
+//            System.out.println(field);
+//        });
+
+//        Constructor<Book> constructor = bookClass.getConstructor(null);
+//        Book book = constructor.newInstance();
+//        System.out.println(book);
+
+        Book book = new Book();
+
+        Field field = bookClass.getDeclaredField("B");
+        field.setAccessible(true);
+        field.set(book, "123");
 
 
-        Constructor<?> constructor1 = bookClass.getConstructor(String.class);
-        Book book1 = (Book) constructor1.newInstance("choijunwoo");
-
-        Field field = bookClass.getDeclaredField("A");
-        field.set(null, "choi");
-        //System.out.println(field.get(null));
-
-        //private  String B = "B";
-        Field field1 = bookClass.getDeclaredField("B");
-        field1.setAccessible(true);
-        field1.get(book);
-        //System.out.println(field1.get(book));
-
-        field1.set(book, "I am IronMan...");
-        //System.out.println(field1.get(book));
-
-
-        /*method manufacturing*/
-        Method method = bookClass.getDeclaredMethod("c");
-        method.invoke(book);
-//        Constructor<?> constructor2 = bookClass.getConstructor(String.class);
-
-        Method method1 = bookClass.getDeclaredMethod("sum",int.class,int.class);
-        int result = (int) method1.invoke(book,1,2);
-        System.out.println(result);
+//        Class<?> bookClass = Class.forName("me.choi.Book");
+//        //bookClass.newInstance();
+//        Constructor<?> constructor = bookClass.getConstructor(null);
+//        Book book = (Book) constructor.newInstance();
+//
+//
+//        Constructor<?> constructor1 = bookClass.getConstructor(String.class);
+//        Book book1 = (Book) constructor1.newInstance("choijunwoo");
+//
+//        Field field = bookClass.getDeclaredField("A");
+//        field.set(null, "choi");
+//        //System.out.println(field.get(null));
+//
+//        //private  String B = "B";
+//        Field field1 = bookClass.getDeclaredField("B");
+//        field1.setAccessible(true);
+//        field1.get(book);
+//        //System.out.println(field1.get(book));
+//
+//        field1.set(book, "I am IronMan...");
+//        //System.out.println(field1.get(book));
+//
+//
+//        /*method manufacturing*/
+//        Method method = bookClass.getDeclaredMethod("c");
+//        method.invoke(book);
+////        Constructor<?> constructor2 = bookClass.getConstructor(String.class);
+//
+//        Method method1 = bookClass.getDeclaredMethod("sum",int.class,int.class);
+//        int result = (int) method1.invoke(book,1,2);
+//        System.out.println(result);
 
 
 

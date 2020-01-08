@@ -1,6 +1,7 @@
 package me.choi;
 
 
+
 public class Book {
 
     public static String A = "A";
