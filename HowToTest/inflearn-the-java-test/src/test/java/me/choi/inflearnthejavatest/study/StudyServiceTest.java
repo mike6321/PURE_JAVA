@@ -9,6 +9,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Optional;
 
@@ -18,12 +20,14 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
-@ExtendWith(MockitoExtension.class)
+@ExtendWith(.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@SpringBootTest
 class StudyServiceTest {
 
     @Mock MemberService memberService;
-    @Mock StudyRepository studyRepository;
+    @Autowired
+    StudyRepository studyRepository;
 
     @Test
     void createStudyService() {
