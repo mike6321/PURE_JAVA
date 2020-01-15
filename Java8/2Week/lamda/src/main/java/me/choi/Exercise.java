@@ -8,23 +8,20 @@ import static java.util.Locale.filter;
 
 public class Exercise {
     public static void main(String[] args) {
-        Exercise exercise = new Exercise();
-        Apple apple = new Apple(60,"green");
+        List<Apple> appleList = Arrays.asList(new Apple(60, "green"), new Apple(100, "red"));
+        List<Apple> result = filterApple(appleList, new AppleGreenColorPredicate());
+        System.out.println(result.isEmpty());
 
-        boolean test = exercise.test(apple);
-        System.out.println(test);
     }
 
-    public static List<Apple> fiilterApples(List<Apple> inventory, String color, int weight, boolean flag) {
-
+    public static List<Apple> filterApple(List<Apple> inventory, ApplePredicate applePredicate) {
         List<Apple> appleList = new ArrayList<>();
-
         for(Apple apple : inventory) {
-            if(flag && apple.getColor().equals(color) || !flag && apple.getWeitght() > weight) {
+            if (applePredicate.test(apple)) {
                 appleList.add(apple);
             }
         }
-
         return appleList;
     }
+
 }
