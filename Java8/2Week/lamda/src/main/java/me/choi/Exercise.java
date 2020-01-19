@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.IntPredicate;
 import java.util.function.Predicate;
 
 public class Exercise {
@@ -50,8 +52,24 @@ public class Exercise {
         List<Integer> arrayIntegers = Arrays.asList(1, 2, 3, 4, 5);
         forEach(arrayIntegers, (Integer i) -> System.out.println(i));
 
+        /*Function의 사용*/
+        List<String> stringList = Arrays.asList("choi", "jun", "woo");
+        List<Integer> map = map(stringList, (String s) -> s.length());
+
+
+
+        System.out.println(map);
     }
 
+    public  static <T,R> List<R> map(List<T> list, Function<T,R> f) {
+
+        List<R> result = new ArrayList<>();
+        for(T t : list) {
+            result.add(f.apply(t));
+        }
+
+        return result;
+    }
 
     public static <T> void forEach(List<T> list, Consumer<T> c) {
         for(T t : list)
