@@ -6,9 +6,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
-
-import static java.util.Locale.filter;
 
 public class Exercise {
     public static void main(String[] args) throws IOException {
@@ -33,8 +32,8 @@ public class Exercise {
         Boolean result = appleProcess(((Apple apple2) -> apple2.getWeitght() >30), apple);
         System.out.println("result:: "+result);
 
-        String processFile = processFile((BufferedReader br) -> br.readLine() + br.readLine());
-        System.out.println(processFile);
+//        String processFile = processFile((BufferedReader br) -> br.readLine() + br.readLine());
+//        System.out.println(processFile);
 
         List<String> arrayStrings = Arrays.asList("choi", "", "jun", "", "woo");
 
@@ -47,8 +46,18 @@ public class Exercise {
         for(String s : nonEmpty) {
             System.out.println(s);
         }
+        /*Consumer의 사용*/
+        List<Integer> arrayIntegers = Arrays.asList(1, 2, 3, 4, 5);
+        forEach(arrayIntegers, (Integer i) -> System.out.println(i));
 
     }
+
+
+    public static <T> void forEach(List<T> list, Consumer<T> c) {
+        for(T t : list)
+            c.accept(t);
+    }
+
     public static <V> List<V> filter(List<V> list, Predicate<V> p) {
         List<V> result = new ArrayList<>();
         for(V s : list) {
