@@ -8,6 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Exercise {
     public static void main(String[] args) {
@@ -23,17 +24,18 @@ public class Exercise {
         System.out.println("flatmap");
         /*flatmap*/
         List<String> strList = Arrays.asList("Hello","World");
-        List<String[]> collect = strList.stream()
-                .map(s -> s.split(""))
-                .distinct()
-                .collect(Collectors.toList());
+//        List<Stream<String>> collect = strList.stream()
+//                                              .map(s -> s.split(""))
+//                                              .map(Arrays::stream)
+//                                              .distinct()
+//                                              .collect(Collectors.toList());
 
-        for (String[] str : collect) {
-            for(int i=0;i<str.length; i++) {
-                System.out.println(str[i]);
-            }
-        }
-
+        List<String> collect = strList.stream()
+                                        .map(s -> s.split(""))
+                                        .flatMap(Arrays::stream)
+                                        .distinct()
+                                        .collect(Collectors.toList());
+        System.out.println(collect);
 
 
         System.out.println("map");
