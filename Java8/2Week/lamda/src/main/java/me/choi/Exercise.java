@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 
 import static java.util.Locale.filter;
 
@@ -35,9 +36,29 @@ public class Exercise {
         String processFile = processFile((BufferedReader br) -> br.readLine() + br.readLine());
         System.out.println(processFile);
 
+        List<String> arrayStrings = Arrays.asList("choi", "", "jun", "", "woo");
 
+        System.out.println("Predicate의 사용");
+        /*Predicate의 사용*/
+        Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
+        List<String> nonEmpty = filter(arrayStrings, nonEmptyStringPredicate);
+        //List<String> nonEmpty = filter(arrayStrings, ((String s)->!s.isEmpty()));
+
+        for(String s : nonEmpty) {
+            System.out.println(s);
+        }
 
     }
+    public static <V> List<V> filter(List<V> list, Predicate<V> p) {
+        List<V> result = new ArrayList<>();
+        for(V s : list) {
+            if(p.test(s)) {
+                result.add(s);
+            }
+         }
+        return result;
+    }
+
     public static void process(Runnable runnable) {
         runnable.run()                                                                                                                                                                                                    ;
     }
