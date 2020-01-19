@@ -1,4 +1,4 @@
-package me.choi;
+package me.choi.lamda;
 
 import java.io.BufferedReader;
 import java.io.IOException;

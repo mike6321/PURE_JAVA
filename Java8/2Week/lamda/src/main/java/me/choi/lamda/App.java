@@ -1,4 +1,4 @@
-package me.choi;
+package me.choi.lamda;
 
 /**
  * Hello world!

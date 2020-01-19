@@ -1,4 +1,4 @@
-package me.choi;
+package me.choi.lamda;
 
 public class AppleHeavyWeightPredicate implements ApplePredicate{
     @Override
