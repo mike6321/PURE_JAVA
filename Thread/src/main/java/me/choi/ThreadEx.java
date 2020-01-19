@@ -3,7 +3,7 @@ public class ThreadEx {
 
     public static void main(String[] args) {
         ThreadEx1_1 th1 = new ThreadEx1_1();
-        th1.start();
+        th1.run();
     }
 }
 
