@@ -1,10 +1,18 @@
 package me.choi;
 
+import java.util.HashMap;
+
 public class DeamonThreadEx implements Runnable{
     static boolean autoSave = false;
 
     public static void main(String[] args) {
         Thread th = new Thread(new DeamonThreadEx());
+
+        HashMap <String,String> map = new HashMap<>();
+
+        map.put("choi", "jun");
+        map.put("choi2", "junwoo");
+
         //th.setDaemon(true);
         th.start();
 
