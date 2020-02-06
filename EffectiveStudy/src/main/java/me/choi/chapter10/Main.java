@@ -10,12 +10,16 @@ package me.choi.chapter10;
 public class Main {
     public static void main(String[] args) {
         Point point = new Point(1,2);
-        ColorPrint colorPrint = new ColorPrint(1,2,Color.RED);
+        ColorPrint colorPrint1 = new ColorPrint(1,2,Color.RED);
+        ColorPrint colorPrint2 = new ColorPrint(1,2,Color.BLUE);
 
-        boolean result = point.equals(colorPrint);
+        boolean result = point.equals(colorPrint1);
         System.out.println(result);
 
-        boolean result2 = colorPrint.equals(point);
+        boolean result2 = colorPrint1.equals(colorPrint2);
+        System.out.println(result2);
+
+        boolean result3 = point.equals(colorPrint2);
         System.out.println(result2);
     }
 }
