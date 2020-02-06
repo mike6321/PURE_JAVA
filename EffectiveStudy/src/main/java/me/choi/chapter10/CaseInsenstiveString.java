@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class CaseInsenstiveString {
+public final class CaseInsenstiveString {
     private final String s;
 
 
@@ -33,15 +33,21 @@ public class CaseInsenstiveString {
         Objects.requireNonNull(this.s = s);
     }
 
-
+    // TODO:  junwoochoi 06/02/2020 11:58 오후
+    // string과 연동한다는 허황된 꿈을 버려한다는 것이 결론이다.
     public boolean equals(Object obj) {
-        if (obj instanceof CaseInsenstiveString) {
-            return s.equalsIgnoreCase(
-                    ((CaseInsenstiveString) obj).s);
-        }
-        if (obj instanceof String) {
-            return s.equalsIgnoreCase((String) obj);
-        }
-        return false;
+
+        return obj instanceof CaseInsenstiveString &&
+                    ((CaseInsenstiveString) obj).s.equalsIgnoreCase(s);
+
+
+//        if (obj instanceof CaseInsenstiveString) {
+//            return s.equalsIgnoreCase(
+//                    ((CaseInsenstiveString) obj).s);
+//        }
+//        if (obj instanceof String) {
+//            return s.equalsIgnoreCase((String) obj);
+//        }
+//        return false;
     }
 }
