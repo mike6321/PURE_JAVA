@@ -19,7 +19,11 @@ public class Point {
     @Override
     public boolean equals(Object obj) {
 
+        if (! (obj instanceof Point)) {
+            return false;
+        }
+        Point point = (Point) obj;
 
-        return super.equals(obj);
+        return point.x == x && point.y == y;
     }
 }
