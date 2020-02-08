@@ -18,10 +18,11 @@ public class Point {
 
     @Override
     public boolean equals(Object obj) {
+        Class<? extends Point> aClass = getClass();
 
-        if (! (obj instanceof Point)) {
-            return false;
-        }
+        if (obj.getClass() == null || obj.getClass() != getClass())
+            return  false;
+
         Point point = (Point) obj;
 
         return point.x == x && point.y == y;
