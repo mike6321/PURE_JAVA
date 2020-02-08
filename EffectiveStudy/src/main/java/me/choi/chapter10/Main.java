@@ -13,13 +13,19 @@ public class Main {
         ColorPrint colorPrint1 = new ColorPrint(1,2,Color.RED);
         ColorPrint colorPrint2 = new ColorPrint(1,2,Color.BLUE);
 
+        // TODO: [main] junwoochoi 08/02/2020 7:29 오후
+        // point <=> colorPrint
         boolean result = point.equals(colorPrint1);
         System.out.println(result);
 
-        boolean result2 = colorPrint1.equals(colorPrint2);
-        System.out.println(result2);
+        // TODO: [main] junwoochoi 08/02/2020 7:30 오후
+        // colorPrint <=> point
+        boolean result4 = colorPrint1.equals(point);
+        System.out.println(result4);
 
-        boolean result3 = point.equals(colorPrint2);
+        // TODO: [main] junwoochoi 08/02/2020 7:30 오후
+        // colorPrint <=> colorPrint
+        boolean result2 = colorPrint1.equals(colorPrint2);
         System.out.println(result2);
     }
 }
