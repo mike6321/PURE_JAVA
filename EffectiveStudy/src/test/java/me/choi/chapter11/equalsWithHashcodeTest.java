@@ -1,5 +1,6 @@
 package me.choi.chapter11;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -21,10 +22,14 @@ public class equalsWithHashcodeTest {
     @Test
     public void hashCodeOverride()  {
         HashMap<ExtendedPhoneNumber, String> map = new HashMap<>();
-        map.put(new ExtendedPhoneNumber(707,867,5307), "junwoo");
+        map.put(new ExtendedPhoneNumber(707,867,5307), "제니");
 
         System.out.println("HashCode of  Instance 1 :: "+ new ExtendedPhoneNumber(707,867,5307).hashCode());
-        System.out.println("HashCode of  Instance 2 :: "+ new ExtendedPhoneNumber(707,867,5307).hashCode());
+        System.out.println("HashCode of  Instance 2 :: "+ new ExtendedPhoneNumber(707,867,5301).hashCode());
+
+        Assert.assertEquals(map.get(new ExtendedPhoneNumber(707,867,5301)),"제니");
+
+
     }
     
     public static class PhoneNumber {
@@ -33,6 +38,7 @@ public class equalsWithHashcodeTest {
         protected int thirdNumber;
 
         public PhoneNumber(int firsrtNumber, int secondeNumber, int thirdNumber) {
+
 
         }
 
@@ -47,9 +53,10 @@ public class equalsWithHashcodeTest {
             return this.firsrtNumber    == p.firsrtNumber   &&
                     this.secondeNumber == p.secondeNumber &&
                     this.thirdNumber   == p.thirdNumber;
+
         }
     }
-    
+
     public static class ExtendedPhoneNumber extends PhoneNumber {
         public ExtendedPhoneNumber(int firsrtNumber, int secondeNumber, int thirdNumber) {
             super(firsrtNumber, secondeNumber, thirdNumber);
