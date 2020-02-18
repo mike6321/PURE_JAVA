@@ -1,6 +1,7 @@
 package me.choi.demostudytesting;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,8 +12,8 @@ import static org.junit.jupiter.api.Assertions.*;
  * Date : 2020/02/18
  * Time : 8:16 오후
  */
+@ExtendWith(FindSlowTestExtention.class)
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class StudyTest {
 
@@ -27,16 +28,13 @@ class StudyTest {
     }
     @Test
     @Order(1)
-    void taggingTest2() {
+    @SlowTest
+    void taggingTest2() throws InterruptedException {
+        Thread.sleep(10001L);
         Study study = new Study(val++);
         System.out.println("taggingTest2");
         System.out.println(val);
     }
 
-    // TODO:  junwoochoi 2020/02/18 9:57 오후
-    // static이 필요없다...
-    @BeforeAll
-    public void BeforeAll() {
-        System.out.println("BeforeAll");
-    }
+
 }
