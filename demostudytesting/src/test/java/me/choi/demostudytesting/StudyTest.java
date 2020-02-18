@@ -24,5 +24,7 @@ class StudyTest {
                 () -> assertEquals(study.getStatus(), StudyStatus.DRAFT, "초기값은 DRAFT 여야한다."),
                 () -> assertTrue(study.getLimit() > 0, () -> "스터디 정원은 0 명보다 커야한다.")
         );
+
+        assertThrows(IllegalArgumentException.class, () -> new Study(-5));
     }
 }

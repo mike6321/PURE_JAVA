@@ -12,6 +12,7 @@ public class Study {
     private final int limit;
 
     public Study(int limit) {
+        if(limit < 0) throw new IllegalArgumentException();
         this.limit = limit;
     }
 
