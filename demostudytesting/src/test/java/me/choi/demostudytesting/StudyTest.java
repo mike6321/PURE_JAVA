@@ -12,19 +12,26 @@ import static org.junit.jupiter.api.Assertions.*;
  * Time : 8:16 오후
  */
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class StudyTest {
 
+    int val = 1;
+
     @Test
-    @DisplayName("Assertion Test")
-    public void study() {
-        Study study = new Study(-10);
+    void taggingTest() {
+        Study study = new Study(val++);
+        System.out.println(val);
+    }
+    @Test
+    void taggingTest2() {
+        Study study = new Study(val++);
+        System.out.println(val);
+    }
 
-        assertAll(
-                () -> assertNotNull(study),
-                () -> assertEquals(study.getStatus(), StudyStatus.DRAFT, "초기값은 DRAFT 여야한다."),
-                () -> assertTrue(study.getLimit() > 0, () -> "스터디 정원은 0 명보다 커야한다.")
-        );
-
-        assertThrows(IllegalArgumentException.class, () -> new Study(-5));
+    // TODO:  junwoochoi 2020/02/18 9:57 오후
+    // static이 필요없다...
+    @BeforeAll
+    public void BeforeAll() {
+        System.out.println("BeforeAll");
     }
 }
