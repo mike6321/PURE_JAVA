@@ -8,7 +8,16 @@ package me.choi.demostudytesting;
  * Time : 8:15 오후
  */
 public class Study {
-    private StudyStatus status = StudyStatus.DRAFT;
+    private StudyStatus status;
+    private final int limit;
+
+    public Study(int limit) {
+        this.limit = limit;
+    }
+
+    public int getLimit() {
+        return limit;
+    }
 
     public StudyStatus getStatus() {
         return this.status;
