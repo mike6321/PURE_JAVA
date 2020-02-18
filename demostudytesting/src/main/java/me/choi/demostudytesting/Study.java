@@ -8,4 +8,10 @@ package me.choi.demostudytesting;
  * Time : 8:15 오후
  */
 public class Study {
+    private StudyStatus status = StudyStatus.DRAFT;
+
+    public StudyStatus getStatus() {
+        return this.status;
+    }
+
 }
