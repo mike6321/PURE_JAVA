@@ -13,18 +13,23 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class StudyTest {
 
     int val = 1;
 
     @Test
+    @Order(2)
     void taggingTest() {
         Study study = new Study(val++);
+        System.out.println("taggingTest1");
         System.out.println(val);
     }
     @Test
+    @Order(1)
     void taggingTest2() {
         Study study = new Study(val++);
+        System.out.println("taggingTest2");
         System.out.println(val);
     }
 
