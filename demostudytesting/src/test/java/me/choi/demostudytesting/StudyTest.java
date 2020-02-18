@@ -17,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class StudyTest {
 
+
     int val = 1;
 
     @Test
@@ -35,6 +36,5 @@ class StudyTest {
         System.out.println("taggingTest2");
         System.out.println(val);
     }
-
 
 }
