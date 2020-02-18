@@ -11,9 +11,18 @@ import static org.junit.jupiter.api.Assertions.*;
  * Date : 2020/02/18
  * Time : 8:16 오후
  */
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class StudyTest {
 
+    // TODO: [테스트표기] junwoochoi 2020/02/18 8:24 오후
     @Test
+    public void naming_choi() {
+        System.out.println("DisplayNameGenerator");
+    }
+
+
+    @Test
+    @DisplayName("junwoo_init")
     public void init() {
         Study study = new Study();
         assertNotNull(study);
@@ -21,6 +30,7 @@ class StudyTest {
     }
 
     @Test
+    @DisplayName("junwoo_init2")
     public void init2() {
         Study study = new Study();
         assertNotNull(study);
