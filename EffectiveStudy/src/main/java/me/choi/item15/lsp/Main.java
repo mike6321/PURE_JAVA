@@ -19,6 +19,9 @@ public class Main {
         rectangle.setHeight(5);
         rectangle.setWidth(4);
 
+        System.out.println("height :: "+rectangle.getHeight());
+        System.out.println("width :: "+rectangle.getWidth());
+
         return rectangle.area() == 20;
     }
 }
