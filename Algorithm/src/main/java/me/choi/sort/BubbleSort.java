@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Date : 2020/02/22
  * Time : 9:43 오후
  */
-public class BubbleSort {
+public  class BubbleSort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -30,12 +30,15 @@ public class BubbleSort {
 
     }
 
-    static void bubbleSort(int[] array, int length) {
+    private static void bubbleSort(int[] array, int length) {
         for (int i=0;i<length-1;i++) {
+            int cnt = 0;
             for (int k=length-1 ; k>i; k--) {
                 if (array[k-1] > array[k])
                     swap(array, k);
+                    cnt ++ ;
             }
+            if (cnt == 0 ) break;
         }
     }
 
