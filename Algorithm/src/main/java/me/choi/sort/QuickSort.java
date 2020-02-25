@@ -23,24 +23,35 @@ public class QuickSort {
             array[i] = sc.nextInt();
         }
 
-        partition(array, nx);
+        partition(array, 0, nx-1);
+
+        for (int i=0 ; i<nx ; i++) {
+            System.out.printf("x["+i+"] = "+ array[i]+ " ");
+        }
     }
 
-    private static void partition(int[] array, int length) {
-        int pl = 0;
-        int pr = length-1;
-        int x = array[length/2];
+    private static void partition(int[] array, int left, int right) {
+        int pl = left;
+        int pr = right;
+        int x = array[(pl+pr)/2];
 
         do {
             while (array[pl] < x) pl++;
             while (array[pr] > x) pr--;
 
-            if (pl <= pr) {
+            if (pl <= pr)
                 swap(array, pl++, pr--);
-            }
+
         }while (pl <= pr);
 
-        System.out.println("피벗의 값은 "+x+ " 입니다...");
+        System.out.println("left :: "+left+ "    right :: "+right);
+        System.out.println("pl :: "+pl+ "    pr :: "+pr);
+        System.out.println();
+        if (left < pr)
+            partition(array, left, pr);
+        if (pl < right)
+            partition(array, pl, right);
+
     }
     static void swap(int[] array, int idx1, int idx2) {
         int temp = array[idx1];
