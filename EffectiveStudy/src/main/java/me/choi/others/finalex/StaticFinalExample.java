@@ -8,4 +8,15 @@ package me.choi.others.finalex;
  * Time : 12:53 오전
  */
 public class StaticFinalExample {
+    //private static final int var;
+    private final int var;
+
+    public StaticFinalExample(int var) {
+        this.var = var;
+    }
+}
+class main {
+    public static void main(String[] args) {
+        StaticFinalExample staticFinalExample = new StaticFinalExample(13);
+    }
 }
