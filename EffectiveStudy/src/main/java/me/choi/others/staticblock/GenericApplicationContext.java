@@ -1,4 +1,4 @@
-package me.choi.others.event;
+package me.choi.others.staticblock;
 
 /**
  * Project : EffectiveStudy
@@ -7,8 +7,12 @@ package me.choi.others.event;
  * Date : 2020/02/28
  * Time : 12:18 오전
  */
-public class GenericApplicationContext {
+public class GenericApplicationContext<T> {
     static {
         System.out.println("GenericApplicationContext...");
+    }
+
+    public GenericApplicationContext(Class<T> ... componentClass) {
+
     }
 }

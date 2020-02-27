@@ -1,4 +1,4 @@
-package me.choi.others.event;
+package me.choi.others.staticblock;
 
 /**
  * Project : EffectiveStudy
