@@ -10,7 +10,23 @@ package me.choi.spring_sendmessage;
 public class CallClass {
     private DefaultClass defaultClass;
 
-    public CallClass() {
-        this.defaultClass.shouldSkip();
+    public CallClass(DefaultClass defaultClass) {
+        this.defaultClass = new DefaultClass();
     }
+
+    public void SendMessage() {
+        this.defaultClass.shouldSkip();
+        System.out.println("complete send message");
+    }
+
+    public static void main(String[] args) {
+        DefaultClass defaultClass = null;
+
+        CallClass callClass = new CallClass(defaultClass);
+        callClass.SendMessage();
+    }
+    //    public CallClass() {
+//        this.defaultClass.shouldSkip();
+//    }
 }
+

@@ -5,15 +5,11 @@ package me.choi.spring_interface;
  * Created by InteliJ IDE
  * Developer : junwoochoi
  * Date : 2020/03/01
- * Time : 12:20 오전
+ * Time : 12:47 오전
  */
-class AnnotationBeanNameGenerator implements BeanNameGenerator{
-
-    public static final AnnotationBeanNameGenerator INSTANCE = new AnnotationBeanNameGenerator();
-
+public class DefaultBeanNameGenerator implements BeanNameGenerator{
     @Override
     public String generateBeanName(String definition, String registry) {
-
-        return "AnnotationBeanNameGenerator";
+        return "DefaultBeanNameGenerator";
     }
 }

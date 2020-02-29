@@ -9,9 +9,19 @@ package me.choi.spring_interface;
  */
 public class AnnotatedBeanDefinitionReader {
     private BeanNameGenerator beanNameGenerator = AnnotationBeanNameGenerator.INSTANCE;
+    private AnnotationBeanNameGenerator adg;
 
     public void doRegister() {
-        this.beanNameGenerator.generateBeanName("definition","registry");
+        String result = this.beanNameGenerator.generateBeanName("definition", "registry");
+        System.out.println(result);
+        /*NPE 발생*/
+        String result2 = this.adg.generateBeanName("definition", "registry");
+        System.out.println(result2);
+    }
+
+    public static void main(String[] args) {
+        AnnotatedBeanDefinitionReader adr = new AnnotatedBeanDefinitionReader();
+        adr.doRegister();
     }
 
 }
