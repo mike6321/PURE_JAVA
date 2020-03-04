@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SingletonSerialize.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.choi.item03.version04</a> &gt; <span class="el_source">SingletonSerialize.java</span></div><h1>SingletonSerialize.java</h1><pre class="source lang-java linenums">package me.choi.item03.version04;
+
+import me.choi.item03.version03.Elvis3;
+
+import java.io.*;
+
+<span class="nc" id="L7">public class SingletonSerialize {</span>
+
+    public static void main(String[] args) {
+<span class="nc" id="L10">        Elvis3 elvis3 = Elvis3.getInstance();</span>
+<span class="nc" id="L11">        serializing(elvis3);</span>
+
+<span class="nc" id="L13">        Elvis3 elvis31 = deserializing();</span>
+
+<span class="nc" id="L15">        System.out.printf(&quot;Foo1(%s): (%s, %s)\n&quot;, elvis3, elvis3.getName(), elvis3.getAge());</span>
+<span class="nc" id="L16">        System.out.printf(&quot;Foo2(%s): (%s, %s)\n&quot;, elvis31, elvis31.getName(), elvis31.getAge());</span>
+<span class="nc bnc" id="L17" title="All 2 branches missed.">        System.out.println(elvis3 == elvis31);</span>
+<span class="nc" id="L18">        System.out.println(elvis3.equals(elvis31));</span>
+
+<span class="nc" id="L20">    }</span>
+
+    public static void serializing(Elvis3 elvis3) {
+<span class="nc" id="L23">        try (FileOutputStream fos = new FileOutputStream(&quot;test&quot;);</span>
+<span class="nc" id="L24">             BufferedOutputStream bos = new BufferedOutputStream(fos);</span>
+<span class="nc" id="L25">             ObjectOutputStream out = new ObjectOutputStream(bos)) {</span>
+<span class="nc" id="L26">            out.writeObject(elvis3);</span>
+<span class="nc" id="L27">        } catch(Exception e) {</span>
+<span class="nc" id="L28">            e.printStackTrace();</span>
+<span class="nc" id="L29">        }</span>
+<span class="nc" id="L30">    }</span>
+
+
+    public static Elvis3 deserializing() {
+<span class="nc" id="L34">        try (FileInputStream fis = new FileInputStream(&quot;test&quot;);</span>
+<span class="nc" id="L35">             BufferedInputStream bis = new BufferedInputStream(fis);</span>
+<span class="nc" id="L36">             var in = new ObjectInputStream(bis)) {</span>
+
+<span class="nc" id="L38">            Elvis3 elvis3 = (Elvis3) in.readObject();</span>
+
+<span class="nc" id="L40">            return elvis3;</span>
+<span class="nc" id="L41">        } catch (Exception e) {</span>
+<span class="nc" id="L42">            e.printStackTrace();</span>
+        }
+
+<span class="nc" id="L45">        return null;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

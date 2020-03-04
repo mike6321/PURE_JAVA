@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PhoneNumber.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.choi.item11</a> &gt; <span class="el_source">PhoneNumber.java</span></div><h1>PhoneNumber.java</h1><pre class="source lang-java linenums">package me.choi.item11;
+
+/**
+ * Project : EffectiveStudy
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 09/02/2020
+ * Time : 10:39 오후
+ */
+
+public final class PhoneNumber {
+    private final short areaCode, prefix, lineNum;
+
+<span class="nc" id="L14">    public PhoneNumber(int areaCode, int prefix, int lineNum) {</span>
+<span class="nc" id="L15">        this.areaCode = rangeCheck(areaCode, 999, &quot;지역코드&quot;);</span>
+<span class="nc" id="L16">        this.prefix   = rangeCheck(prefix,   999, &quot;프리픽스&quot;);</span>
+<span class="nc" id="L17">        this.lineNum  = rangeCheck(lineNum, 9999, &quot;가입자 번호&quot;);</span>
+<span class="nc" id="L18">    }</span>
+
+    private static short rangeCheck(int val, int max, String arg) {
+<span class="nc bnc" id="L21" title="All 4 branches missed.">        if (val &lt; 0 || val &gt; max)</span>
+<span class="nc" id="L22">            throw new IllegalArgumentException(arg + &quot;: &quot; + val);</span>
+<span class="nc" id="L23">        return (short) val;</span>
+    }
+
+    @Override public boolean equals(Object o) {
+<span class="nc bnc" id="L27" title="All 2 branches missed.">        if (o == this)</span>
+<span class="nc" id="L28">            return true;</span>
+<span class="nc bnc" id="L29" title="All 2 branches missed.">        if (!(o instanceof PhoneNumber))</span>
+<span class="nc" id="L30">            return false;</span>
+<span class="nc" id="L31">        PhoneNumber pn = (PhoneNumber)o;</span>
+<span class="nc bnc" id="L32" title="All 6 branches missed.">        return pn.lineNum == lineNum &amp;&amp; pn.prefix == prefix</span>
+                &amp;&amp; pn.areaCode == areaCode;
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

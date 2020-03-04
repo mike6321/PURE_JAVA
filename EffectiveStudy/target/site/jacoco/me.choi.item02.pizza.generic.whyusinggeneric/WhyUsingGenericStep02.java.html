@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WhyUsingGenericStep02.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.choi.item02.pizza.generic.whyusinggeneric</a> &gt; <span class="el_source">WhyUsingGenericStep02.java</span></div><h1>WhyUsingGenericStep02.java</h1><pre class="source lang-java linenums">package me.choi.item02.pizza.generic.whyusinggeneric;
+
+<span class="nc" id="L3">public class WhyUsingGenericStep02 {</span>
+
+    /* 2가지 방식의 클래스 선언
+    *  Object 클래스로 선언 한것은 객체를 호출할떄마다
+    * 그게맞는 타입으로 타입 전환이 필요하다.
+    * */
+    public class Shop{
+
+<span class="nc" id="L11">        public Shop() {}</span>
+        private Object obj;
+
+        public Object getObj() {
+<span class="nc" id="L15">            return obj;</span>
+        }
+
+        public void setObj(Object obj) {
+<span class="nc" id="L19">            this.obj = obj;</span>
+<span class="nc" id="L20">        }</span>
+    }
+
+    /*
+    * 제네릭 타입을 사용하면
+    * 오브젝트 타입과 달리 타입캐스팅이 일어나지 않고
+    * 지연스럽게 호출하는 타입으로 변환한다.
+    * */
+<span class="nc" id="L28">    public class Shop2&lt;T&gt;{</span>
+        private T t;
+
+        public T getT() {
+<span class="nc" id="L32">            return t;</span>
+        }
+
+        public void setT(T t) {
+<span class="nc" id="L36">            this.t = t;</span>
+<span class="nc" id="L37">        }</span>
+    }
+}
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

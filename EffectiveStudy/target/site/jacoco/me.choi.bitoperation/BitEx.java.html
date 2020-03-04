@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BitEx.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.choi.bitoperation</a> &gt; <span class="el_source">BitEx.java</span></div><h1>BitEx.java</h1><pre class="source lang-java linenums">package me.choi.bitoperation;
+
+/**
+ * Project : EffectiveStudy
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 08/02/2020
+ * Time : 6:12 오후
+ */
+
+<span class="nc" id="L11">public class BitEx {</span>
+    public static void main(String[] args) {
+
+<span class="nc" id="L14">        System.out.println(getBit(3, 3));</span>
+<span class="nc" id="L15">        System.out.println(setBit(5,3));</span>
+<span class="nc" id="L16">        System.out.println(clearBits(5,3));</span>
+
+<span class="nc" id="L18">    }</span>
+
+    // TODO: [] junwoochoi 08/02/2020 6:37 오후
+    // 3의 3번째 index값이 1이면 true 0이면 false
+    //[0] 0 1 1
+    public static boolean getBit (int i, int index) {
+<span class="nc" id="L24">        int shift = 1 &lt;&lt; index;</span>
+
+<span class="nc bnc" id="L26" title="All 2 branches missed.">        return (i &amp; shift) != 0 ;</span>
+    }
+    // TODO: [] junwoochoi 08/02/2020 6:37 오후
+    // 특정 index의 값을 1로 변환해서 출력
+    public static int setBit (int i, int index) {
+<span class="nc" id="L31">        int shift = 1 &lt;&lt; index;</span>
+
+<span class="nc" id="L33">        return (i | shift);</span>
+    }
+
+    // TODO: [] junwoochoi 08/02/2020 6:36 오후
+    // 특정 index를 0으로 세팅하는 함수 구현
+    // 5 , 3   0101
+    public static int clearBits(int num, int index) {
+<span class="nc" id="L40">        int shift = ~(1 &lt;&lt; index);</span>
+<span class="nc" id="L41">        return num &amp; shift;</span>
+    }
+    
+    // TODO: [] junwoochoi 08/02/2020 6:51 오후
+    // 특정 index를 기준으로 왼쪽의 비트를 모두 0으로 초기화하는 연산
+    public static int clearLeftBits (int num, int index) {
+<span class="nc" id="L47">        int shift = (1 &lt;&lt; index) -1 ;</span>
+<span class="nc" id="L48">        return num &amp; shift;</span>
+    }
+    
+    // TODO: [] junwoochoi 08/02/2020 6:54 오후
+    // 특정 index를 기준으로 오른쪽의 비트를 모두 0으로 초기화하는 연산
+    public static int clearRightBits (int num, int index) {
+<span class="nc" id="L54">        int shift = (-1 &lt;&lt; index +1);</span>
+<span class="nc" id="L55">        return num &amp; shift;</span>
+    }
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

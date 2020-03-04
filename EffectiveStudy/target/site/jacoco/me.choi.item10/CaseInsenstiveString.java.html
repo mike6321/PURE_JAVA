@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CaseInsenstiveString.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.choi.item10</a> &gt; <span class="el_source">CaseInsenstiveString.java</span></div><h1>CaseInsenstiveString.java</h1><pre class="source lang-java linenums">package me.choi.item10;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+public final class CaseInsenstiveString {
+    private final String s;
+
+
+    public static void main(String[] args) {
+
+        // TODO: [main] junwoochoi 06/02/2020 11:04 오후
+        // 대칭성 위배 - String , List (1)
+<span class="nc" id="L15">       CaseInsenstiveString cs = new CaseInsenstiveString(&quot;choi&quot;);</span>
+<span class="nc" id="L16">        boolean result = cs.equals(&quot;cHoi&quot;);</span>
+<span class="nc" id="L17">        System.out.println(result);</span>
+
+<span class="nc" id="L19">        String s = new String(&quot;cHoi&quot;);</span>
+<span class="nc" id="L20">        boolean result2 = s.equals(cs);</span>
+<span class="nc" id="L21">        System.out.println(result2);</span>
+
+<span class="nc" id="L23">        List&lt;CaseInsenstiveString&gt; list = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L24">        list.add(cs);</span>
+
+<span class="nc" id="L26">        boolean result3 = list.contains(s);</span>
+<span class="nc" id="L27">        System.out.println(result3);</span>
+
+
+<span class="nc" id="L30">    }</span>
+
+<span class="nc" id="L32">    public CaseInsenstiveString(String s) {</span>
+<span class="nc" id="L33">        Objects.requireNonNull(this.s = s);</span>
+<span class="nc" id="L34">    }</span>
+
+    // TODO:  junwoochoi 06/02/2020 11:58 오후
+    // string과 연동한다는 허황된 꿈을 버려한다는 것이 결론이다.
+    public boolean equals(Object obj) {
+
+<span class="nc bnc" id="L40" title="All 2 branches missed.">        return obj instanceof CaseInsenstiveString &amp;&amp;</span>
+<span class="nc bnc" id="L41" title="All 2 branches missed.">                    ((CaseInsenstiveString) obj).s.equalsIgnoreCase(s);</span>
+
+
+//        if (obj instanceof CaseInsenstiveString) {
+//            return s.equalsIgnoreCase(
+//                    ((CaseInsenstiveString) obj).s);
+//        }
+//        if (obj instanceof String) {
+//            return s.equalsIgnoreCase((String) obj);
+//        }
+//        return false;
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

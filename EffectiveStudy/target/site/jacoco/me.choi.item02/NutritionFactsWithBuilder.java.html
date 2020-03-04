@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>NutritionFactsWithBuilder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.choi.item02</a> &gt; <span class="el_source">NutritionFactsWithBuilder.java</span></div><h1>NutritionFactsWithBuilder.java</h1><pre class="source lang-java linenums">package me.choi.item02;
+
+public class NutritionFactsWithBuilder {
+    private  final int servingSize;
+    private final  int servings;
+    private final int calories;
+    private final int fat;
+    private final int sodium;
+    private final int carbohydrate;
+
+
+    public static class Builder{
+        //필수 매개변수
+        private final int servingSize;
+        private final int servings;
+
+        //선택적 매개변수
+<span class="nc" id="L18">        private  int calories = 0;</span>
+<span class="nc" id="L19">        private  int fat = 0;</span>
+<span class="nc" id="L20">        private  int sodium = 0;</span>
+<span class="nc" id="L21">        private  int carbohydrate = 0;</span>
+
+<span class="nc" id="L23">        public Builder(int servingSize, int servings) {</span>
+<span class="nc" id="L24">            this.servingSize = servingSize;</span>
+<span class="nc" id="L25">            this.servings = servings;</span>
+<span class="nc" id="L26">        }</span>
+
+        public Builder calories(int val) {
+<span class="nc" id="L29">            System.out.println(this);</span>
+<span class="nc" id="L30">            System.out.println(&quot;what it is?&quot;);</span>
+<span class="nc" id="L31">            return this;</span>
+        }
+        public Builder fat(int val) {
+<span class="nc" id="L34">            fat = val;</span>
+<span class="nc" id="L35">            return this;</span>
+        }
+        public Builder sodium(int val) {
+<span class="nc" id="L38">            sodium = val;</span>
+<span class="nc" id="L39">            return this;</span>
+        }
+
+        public Builder carbohydrate(int val) {
+<span class="nc" id="L43">            carbohydrate = val;</span>
+<span class="nc" id="L44">            return this;</span>
+        }
+
+        public NutritionFactsWithBuilder build() {
+<span class="nc" id="L48">            return new NutritionFactsWithBuilder(this);</span>
+        }
+    }
+
+<span class="nc" id="L52">    public NutritionFactsWithBuilder(Builder builder) {</span>
+<span class="nc" id="L53">        this.servingSize = builder.servingSize;</span>
+<span class="nc" id="L54">        this.servings = builder.servings;</span>
+<span class="nc" id="L55">        this.calories = builder.calories;</span>
+<span class="nc" id="L56">        this.fat = builder.fat;</span>
+<span class="nc" id="L57">        this.sodium = builder.sodium;</span>
+<span class="nc" id="L58">        this.carbohydrate = builder.carbohydrate;</span>
+<span class="nc" id="L59">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

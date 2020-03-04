@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Company.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.choi.others.statickeyword</a> &gt; <span class="el_source">Company.java</span></div><h1>Company.java</h1><pre class="source lang-java linenums">package me.choi.others.statickeyword;
+
+/**
+ * Project : EffectiveStudy
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 2020/03/04
+ * Time : 8:43 오후
+ */
+class Company {
+
+    static String companyName;
+<span class="fc" id="L13">    static int cnt = 0;</span>
+
+    private final String name;
+    private final int id;
+
+<span class="fc" id="L18">    public Company(String name, int id) {</span>
+<span class="fc" id="L19">        this.name = name;</span>
+<span class="fc" id="L20">        this.id = id;</span>
+
+<span class="fc" id="L22">        cnt++;</span>
+<span class="fc" id="L23">    }</span>
+
+
+    public static void main(String[] args) {
+<span class="nc" id="L27">        Company company0 = new Company(&quot;choi&quot;,01234);</span>
+<span class="nc" id="L28">        Company company1 = new Company(&quot;kim&quot;,01235);</span>
+
+<span class="nc" id="L30">        System.out.println(&quot;생성 횟 수 : &quot;+Company.cnt);</span>
+
+<span class="nc" id="L32">        Company.companyName = &quot;카카오&quot;;</span>
+<span class="nc" id="L33">        Company.companyName = &quot;라인&quot;;</span>
+<span class="nc" id="L34">        Company.companyName = &quot;네이버&quot;;</span>
+
+<span class="nc" id="L36">        System.out.println(Company.companyName);</span>
+
+
+<span class="nc" id="L39">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>equalsWithHashcode.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.choi.item11</a> &gt; <span class="el_source">equalsWithHashcode.java</span></div><h1>equalsWithHashcode.java</h1><pre class="source lang-java linenums">package me.choi.item11;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+/**
+ * Project : EffectiveStudy
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 09/02/2020
+ * Time : 10:32 오후
+ */
+<span class="nc" id="L14">public class equalsWithHashcode {</span>
+
+    public static void main(String[] args) {
+<span class="nc" id="L17">        Map&lt;Integer, String&gt; m = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L18">        m.put(new PhoneNumber(707,867,5309).hashCode(),&quot;junwoo&quot;);</span>
+
+<span class="nc" id="L20">        Iterator iterator = m.entrySet().iterator();</span>
+<span class="nc bnc" id="L21" title="All 2 branches missed.">        while (iterator.hasNext()) {</span>
+<span class="nc" id="L22">            Map.Entry entry = (Map.Entry) iterator.next();</span>
+
+<span class="nc" id="L24">            System.out.println(&quot;key :: &quot;+ entry.getKey());</span>
+<span class="nc" id="L25">        }</span>
+
+<span class="nc" id="L27">        String result = m.get(new PhoneNumber(707, 867, 5309));</span>
+<span class="nc" id="L28">        System.out.println(result);</span>
+
+<span class="nc" id="L30">        String result2 = m.get(1927950199);</span>
+<span class="nc" id="L31">        System.out.println(result2);</span>
+<span class="nc" id="L32">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
