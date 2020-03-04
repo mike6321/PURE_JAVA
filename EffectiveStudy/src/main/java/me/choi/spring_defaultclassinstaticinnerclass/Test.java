@@ -8,4 +8,7 @@ package me.choi.spring_defaultclassinstaticinnerclass;
  * Time : 4:19 오후
  */
 public class Test {
+    public static void main(String[] args) {
+        ConditionEvaluator conditionEvaluator = new ConditionEvaluator("registry", "envir");
+    }
 }
