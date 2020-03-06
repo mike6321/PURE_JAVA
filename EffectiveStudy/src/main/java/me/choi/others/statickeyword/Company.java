@@ -35,6 +35,5 @@ class Company {
 
         System.out.println(Company.companyName);
 
-
     }
 }
