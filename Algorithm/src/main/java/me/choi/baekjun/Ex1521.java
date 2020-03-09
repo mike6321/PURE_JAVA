@@ -9,11 +9,12 @@ import java.util.Scanner;
  * Date : 2020/03/09
  * Time : 9:08 오후
  */
-public class Ex1521 {
+class Ex1521 {
 
     public static void main(String[] args) {
 
-        int[] array = new int[8];
+        final int[] array = new int[8];
+
         Scanner sc = new Scanner(System.in);
         String result = "mixed";
 
