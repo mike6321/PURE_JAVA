@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Date : 2020/03/09
  * Time : 9:08 오후
  */
-class Ex1521 {
+class B1521 {
 
     public static void main(String[] args) {
 

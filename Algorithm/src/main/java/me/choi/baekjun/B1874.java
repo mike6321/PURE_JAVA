@@ -10,7 +10,7 @@ import java.util.Stack;
  * Date : 2020/03/10
  * Time : 8:06 오후
  */
-public class Ex1874 {
+public class B1874 {
 
     public static void main(String[] args) {
 

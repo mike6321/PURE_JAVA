@@ -11,7 +11,7 @@ import java.util.Scanner;
  * Date : 2020/03/09
  * Time : 9:57 오후
  */
-public class Ex2798 {
+public class B2798 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         final int N = scanner.nextInt();
