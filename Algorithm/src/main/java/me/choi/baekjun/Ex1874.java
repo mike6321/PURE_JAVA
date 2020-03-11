@@ -1,7 +1,5 @@
 package me.choi.baekjun;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -13,78 +11,47 @@ import java.util.Stack;
  * Time : 8:06 오후
  */
 public class Ex1874 {
-    private final static char[] pushPop = {'+', '-'};
-    private static StringBuffer sb = new StringBuffer();
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        final int n = scanner.nextInt();
 
-        List<Integer> list = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        final int n = sc.nextInt();
+        int[] array = new int[n];
         Stack<Integer> stack = new Stack<>();
+        StringBuffer result = new StringBuffer();
 
-        for (int i=0 ; i<n ; i++) {
-            list.add(scanner.nextInt()) ;
-        }
+        for (int i=0 ; i<n ; i++)
+            array[i] = sc.nextInt();
 
-        int start = 0;
-        int end = list.size();
+        int cnt = 1;
+        boolean yesorNo = true;
 
-        for (int i=start ; i<end ; i++) {
+        for (int i=1 ; i<=n ; i++) {
 
-            for (int k=0 ; k<stack.size() ; k++) {
-                System.out.print(stack.get(k));
+            while (cnt <= array[i-1]) {
+                stack.push(cnt);
+                result.append('+');
+                cnt++;
             }
-            System.out.println();
 
-            // stack 초기 세팅
-            if (stack.isEmpty()) {
-                push(0, list.get(0), stack);
-            }
-            // stack의 맨처음 값이 현재 리스트의 값과 같을때
-            if (stack.peek() == list.get(start)) {
-                start = stack.peek()-1;
-
+            if (stack.peek() == array[i-1]) {
                 stack.pop();
-                sb.append(pushPop[1]);
-            } else if (stack.peek() < list.get(start)) {
-                push(start, list.get(i), stack);
-
-                for ( int m=0 ; m< stack.size(); m++) {
-                    if (stack.peek() == list.get(start)) {
-                        start = stack.peek();
-
-                        stack.pop();
-                        sb.append(pushPop[1]);
-                        break;
-                    }
-                    stack.pop();
-                    sb.append(pushPop[1]);
-                }
+                result.append('-');
+            }else {
+                yesorNo = false;
+                break;
             }
 
-
-//            if (stack.peek() > list.get(start)) {
-//
-//            }
-
         }
 
-        result(sb);
-    }
-
-    private static void push (int start, int end, Stack<Integer> stack)  {
-        for (int i=start+1 ; i<=end ; i++) {
-            stack.push(i);
-            sb.append(pushPop[0]);
+        if (yesorNo) {
+            for (int i = 0; i < result.length(); i++)
+                System.out.println(result.charAt(i));
+        }else {
+            System.out.println("NO");
         }
+
+
+
     }
-
-    private static void result(StringBuffer sb) {
-        for (int i=0 ; i<sb.length() ; i++)
-            System.out.print(sb.charAt(i));
-            System.out.println();
-    }
-
-
 }
