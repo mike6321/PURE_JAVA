@@ -36,7 +36,7 @@ jwdeveloper.tistory.com
 
 객체 생성 시 private final 변수는 초기화가 가능하다.
 
-```
+```java
 public class StaticFinalExample {
     private final int var;
 
@@ -50,7 +50,7 @@ private static 은 메모리에 올라가므로 초기화를 반드시 해주어
 
 그러므로 아래 코드는 초기화를 하지 않았기 때문에 컴파일 오류가 발생한다.
 
-```
+```java
 public class StaticFinalExample {
     private static final int var;
 
