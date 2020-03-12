@@ -12,19 +12,7 @@
 
 즉 **절대 해당 값을 바꾸지 않겠다는 표현과 유사**하다.
 
-[https://jwdeveloper.tistory.com/163](https://jwdeveloper.tistory.com/163)
 
-[
-
-(JAVA) The final keyword in Java
-
-상속은 개발자에게 코드를 재사용할 수 있는 환경을 제공하지만 개발자는 특정한 상황에서 상속의 범위를 제한할 필요가 있다. final 키워드는 바로 이러한 기능을 제공한다. Final Class final을 선언한 클래스..
-
-jwdeveloper.tistory.com
-
-
-
-](https://jwdeveloper.tistory.com/163)
 
 > **private static final**을 선언한 변수를 사용하면 재할당하지 못하며,메모리에 한 번 올라가면 같은 값을 클래스 내부의 전체 필드, 메서드에서 공유한다.
 
