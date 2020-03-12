@@ -1,4 +1,4 @@
-[##_Image|kage@AcTix/btqCafs724G/exAB05Xlc54l5ERoPg5a10/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="178" height="108"|||_##]
+
 
 > 문득 이런 생각이 들었다.  
 > 상수를 선언할 때 우리는 거의 명시적으로 private static final을 선언한다.  
