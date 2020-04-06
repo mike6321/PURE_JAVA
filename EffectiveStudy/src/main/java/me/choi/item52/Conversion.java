@@ -8,20 +8,19 @@ package me.choi.item52;
  * Time : 12:48 오전
  */
 class Conversion {
-    public void method(int i) {
-        System.out.println("Primitive type int :: "+ i);
-    }
-    public void method(Integer i) {
+
+    public void method(Object i) {
+
+        Byte b = (Byte) i;
         System.out.println("Reference type Integer :: "+ i);
     }
-    public void method(long i) {
-        System.out.println("Primitive type long :: "+ i);
-    }
+
 }
 class Test {
     public static void main(String[] args) {
         Conversion conversion = new Conversion();
 
-        conversion.method(new Long(100));
+        byte val = 5;
+        conversion.method(val);
     }
 }
