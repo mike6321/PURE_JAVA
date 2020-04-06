@@ -8,4 +8,12 @@ package me.choi.others.stringpoolintern;
  * Time : 12:43 오전
  */
 public class StringIntern {
+
+    String str = "junwoo";
+
+    public static void main(String[] args) {
+        for (int i=0 ; i<1000000 ; i++) {
+            String str =  "junwoo";
+        }
+    }
 }
