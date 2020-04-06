@@ -20,7 +20,7 @@ public class CollectionClassifier {
     }
 
     public static String classify(Collection<?> c) {
-        return "집합";
+        return "그외";
     }
 
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class CollectionClassifier {
         };
 
 
-        for (Collection collection : collections) {
+        for (Collection<?> collection : collections) {
             System.out.println(classify(collection));
         }
     }
