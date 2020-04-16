@@ -15,5 +15,8 @@ public class Main {
         Rectangle rectangle = new Rectangle();
         rectangle.draw();
         rectangle.rectangle();
+
+        Shape shape1 = new Circle();
+        shape1.draw();
     }
 }
