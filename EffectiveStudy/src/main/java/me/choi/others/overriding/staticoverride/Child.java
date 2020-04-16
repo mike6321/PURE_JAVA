@@ -9,7 +9,6 @@ package me.choi.others.overriding.staticoverride;
  */
 public class Child extends Parent{
 
-    @Override
     public void House() {
         System.out.println("(자식) 집 입니다...");
     }
