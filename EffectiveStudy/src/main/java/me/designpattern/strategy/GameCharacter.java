@@ -1,4 +1,4 @@
-package me.designpattern.strategypattern;
+package me.designpattern.strategy;
 
 public class GameCharacter {
     private Weapon weapon;

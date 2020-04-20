@@ -1,4 +1,4 @@
-package me.designpattern.strategypattern.example;
+package me.designpattern.strategy.example;
 
 /**
  * Project : croissant
@@ -7,9 +7,9 @@ package me.designpattern.strategypattern.example;
  * Date : 2020/04/20
  * Time : 1:09 오전
  */
-public class Knife implements Weapon{
+public class Sword implements Weapon{
     @Override
     public void attack() {
-        System.out.println("Knife Attack");
+        System.out.println("Sword Attack");
     }
 }

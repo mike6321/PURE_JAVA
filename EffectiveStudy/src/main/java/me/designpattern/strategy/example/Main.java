@@ -1,4 +1,4 @@
-package me.designpattern.strategypattern.example;
+package me.designpattern.strategy.example;
 
 /**
  * Project : croissant

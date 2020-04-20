@@ -1,4 +1,4 @@
-package me.designpattern.strategypattern;
+package me.designpattern.strategy;
 
 public class Sword implements Weapon{
     @Override

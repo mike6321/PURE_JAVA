@@ -1,4 +1,4 @@
-package me.designpattern.strategypattern.interface_delegation;
+package me.designpattern.strategy.interface_delegation;
 
 public class Main {
     public static void main(String[] args) {
