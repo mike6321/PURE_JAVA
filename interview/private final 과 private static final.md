@@ -36,6 +36,8 @@ public class StaticFinalExample {
 
 private static 은 메모리에 올라가므로 초기화를 반드시 해주어야 한다.
 
+
+
 그러므로 아래 코드는 초기화를 하지 않았기 때문에 컴파일 오류가 발생한다.
 
 ```java
