@@ -12,6 +12,9 @@ public class DefaultGameConnectionHelper extends AbstractGameConnectHelper{
     protected String doSecurity(String string) {
         System.out.println("강화된 알고리즘을 이용한 디코드...");
 
+
+
+
         return string;
     }
 

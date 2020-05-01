@@ -12,7 +12,6 @@ public abstract class ItemCreator {
     public Item create() {
         Item item;
 
-
         //Step01
         requestItemInfo();
         //Step02
@@ -29,7 +28,5 @@ public abstract class ItemCreator {
     abstract protected void createItemLog();
     //아이템을 생성하는 알고리즘
     abstract protected Item createItem();
-
-
 
 }

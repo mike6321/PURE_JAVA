@@ -23,7 +23,6 @@ public abstract class AbstractGameConnectHelper {
         authorization.put(1, "유료 회원");
         authorization.put(2, "무료 회원");
         authorization.put(3, "권한 없음");
-
         authorization.put(4, "Shut Down");
 
         AUTHORIZATION = Collections.unmodifiableMap(authorization);
