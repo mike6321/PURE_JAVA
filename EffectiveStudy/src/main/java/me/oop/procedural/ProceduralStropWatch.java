@@ -8,17 +8,20 @@ package me.oop.procedural;
  * Time : 9:07 오후
  */
 public class ProceduralStropWatch {
-    public long startTime;
-    public long stopTime;
+    private long startTime;
+    private long stopTime;
 
-    public long startNanoTime;
-    public long stopNanoTime;
 
-    public long getElapsedTime() {
+    public void start() {
+        this.startTime = System.nanoTime();
+    }
+    public void stop() {
+        this.stopTime = System.nanoTime();
+    }
+
+    public long ElapsedTime() {
         return stopTime - startTime;
     }
 
-    public long getElapsedNamoTime() {
-        return stopNanoTime - startNanoTime;
-    }
+
 }
