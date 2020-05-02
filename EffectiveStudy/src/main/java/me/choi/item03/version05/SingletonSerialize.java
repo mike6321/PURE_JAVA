@@ -7,6 +7,12 @@ import java.io.*;
 public class SingletonSerialize {
     public static void main(String[] args) {
         Elvis4 elvis4 = Elvis4.getInstance();
+        System.out.println("*************************");
+        System.out.println(elvis4);
+        System.out.println("*************************");
+
+
+
         serializing(elvis4);
         Elvis4 elvis41 = deserializing();
 

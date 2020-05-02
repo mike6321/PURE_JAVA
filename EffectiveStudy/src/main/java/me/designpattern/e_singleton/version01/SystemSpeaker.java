@@ -1,4 +1,4 @@
-package me.designpattern.e_singleton;
+package me.designpattern.e_singleton.version01;
 
 /**
  * Project : EffectiveStudy
@@ -9,11 +9,9 @@ package me.designpattern.e_singleton;
  */
 public class SystemSpeaker {
     static private SystemSpeaker instance;
-
+    private int volume;
 
     private SystemSpeaker() {
-
-
 
     }
 
@@ -22,5 +20,13 @@ public class SystemSpeaker {
             instance = new SystemSpeaker();
         }
         return instance;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
     }
 }
