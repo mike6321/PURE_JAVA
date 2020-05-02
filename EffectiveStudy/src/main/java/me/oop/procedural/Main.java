@@ -19,5 +19,15 @@ public class Main {
         System.out.println(proceduralStropWatch.getElapsedTime());
 
 
+        ProceduralStropWatch proceduralNaNoStropWatch = new ProceduralStropWatch();
+        proceduralNaNoStropWatch.startNanoTime = System.nanoTime();
+        Thread.sleep(1000);
+
+        proceduralNaNoStropWatch.stopNanoTime = System.nanoTime();
+
+
+        System.out.println(proceduralStropWatch.getElapsedNamoTime());
+
+
     }
 }

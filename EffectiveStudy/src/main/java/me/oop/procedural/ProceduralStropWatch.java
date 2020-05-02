@@ -11,7 +11,14 @@ public class ProceduralStropWatch {
     public long startTime;
     public long stopTime;
 
+    public long startNanoTime;
+    public long stopNanoTime;
+
     public long getElapsedTime() {
         return stopTime - startTime;
+    }
+
+    public long getElapsedNamoTime() {
+        return stopNanoTime - startNanoTime;
     }
 }
