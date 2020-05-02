@@ -8,7 +8,7 @@ package me.designpattern.e_singleton.version01;
  * Time : 10:58 오후
  */
 public class SystemSpeaker {
-    static private SystemSpeaker instance;
+    private static SystemSpeaker instance;
     private int volume;
 
     private SystemSpeaker() {
@@ -24,7 +24,7 @@ public class SystemSpeaker {
 
     public int getVolume() {
         return volume;
-    }
+   }
 
     public void setVolume(int volume) {
         this.volume = volume;
