@@ -1,0 +1,21 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ºÊ‹Î8Åµö¤.
+l
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ğ†Â‡ıÿÿÿÿ
+>
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Z	java:S106
+"9Replace this use of System.out or System.err by a logger.(öó¾ïøÿÿÿÿ8Åµö¤.
+t
+java:S1488)"^Immediately return this expression instead of assigning it to the temporary variable "elvis4".(ùñ­Æ
+l
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(˜â£ øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ğ†Â‡ıÿÿÿÿ
+>
+java:S1148-"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¿£•ñùÿÿÿÿ
+`
+java:S2259"EA "NullPointerException" could be thrown; "elvis41" is nullable here.(˜â£ øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(˜â£ øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ˆ÷Ù•
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(öó¾ïøÿÿÿÿ8½Óö¤.
