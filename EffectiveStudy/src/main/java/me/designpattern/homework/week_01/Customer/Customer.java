@@ -59,7 +59,8 @@ public class Customer {
     }
 
     public boolean pointCheck(String userId) {
-        return loginUser.get(userId).point == 0;
+
+        return loginUser.get(userId).point != 0;
     }
 
 }

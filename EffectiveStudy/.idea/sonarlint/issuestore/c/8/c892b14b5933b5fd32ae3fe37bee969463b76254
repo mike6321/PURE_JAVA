@@ -1,2 +1,12 @@
 
+F
+java:S1068")Remove this unused "stock" private field.(¨‡ÛÅ8ŞÌ­.
+3
+java:S1700"Rename field "product"(¦ƒÓ 8ŞÌ­.
+G
+java:S1068"*Remove this unused "giftNo" private field.(ÀÑˆÿ8ŞÌ­.
+F
+java:S1068")Remove this unused "prdCd" private field.(Å»××8ŞÌ­.
+G
+java:S1068"*Remove this unused "prdPrc" private field.(Ã·¥Ñ8ŞÌ­.
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰øİ–8Ï…Š³.
