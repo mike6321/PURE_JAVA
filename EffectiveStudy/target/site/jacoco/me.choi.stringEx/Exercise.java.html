@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Exercise.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.choi.stringEx</a> &gt; <span class="el_source">Exercise.java</span></div><h1>Exercise.java</h1><pre class="source lang-java linenums">package me.choi.stringEx;
+
+import java.util.ArrayList;
+import java.util.List;
+
+<span class="nc" id="L6">public class Exercise {</span>
+
+<span class="nc" id="L8">    int[] array = new int[10];</span>
+
+    public static void main(String[] args) {
+
+<span class="nc" id="L12">        int[] array = new int[10];</span>
+
+        //값을 할당
+<span class="nc" id="L15">        array[0] = 3;</span>
+<span class="nc" id="L16">        array[9] = 12;</span>
+
+
+<span class="nc" id="L19">        int cnt = 0;</span>
+<span class="nc bnc" id="L20" title="All 2 branches missed.">        while (cnt &lt; 10) {</span>
+
+<span class="nc bnc" id="L22" title="All 2 branches missed.">            if (array[cnt] == 12) {</span>
+<span class="nc" id="L23">                System.out.println(&quot;값을 출력!!!&quot;);</span>
+            }
+
+<span class="nc" id="L26">            cnt++;</span>
+        }
+
+
+
+//        for (int i = 0; i &lt; array.length; i++) {
+//            if (array[i] == 12) {
+//                System.out.println(i);
+//
+//            } else if (array[i] == 3) {
+//                System.out.println(i);
+//
+//            }
+//
+////            } else {
+////                System.out.println(i);
+////            }
+//        }
+
+
+<span class="nc" id="L46">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

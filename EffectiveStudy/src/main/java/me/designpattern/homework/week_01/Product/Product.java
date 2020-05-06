@@ -1,5 +1,8 @@
 package me.designpattern.homework.week_01.Product;
 
+import me.designpattern.homework.week_01.ShopMain;
+import org.apache.log4j.Logger;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -12,6 +15,7 @@ import java.util.Objects;
  * Time : 11:55 오후
  */
 public class Product {
+    private static final Logger LOGGER = Logger.getLogger(Product.class);
     public static final Map<Integer, Product> product;
 
     static {
@@ -43,10 +47,12 @@ public class Product {
 
     public static void ProductInfo() {
         for (Integer key : Product.product.keySet()) {
-            System.out.println("상품코드 : "   +product.get(key).prdCd
-                              +", 상품가격 : "   +product.get(key).prdPrc
-                              +", 사은품코드 : "  +product.get(key).giftNo
-                              +", 재고 : "      +product.get(key).stock);
+
+            LOGGER.info("상품코드 : "   +product.get(key).prdCd
+                    +", 상품가격 : "   +product.get(key).prdPrc
+                    +", 사은품코드 : "  +product.get(key).giftNo
+                    +", 재고 : "      +product.get(key).stock);
+
         }
     }
 

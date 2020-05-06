@@ -1,5 +1,8 @@
 package me.designpattern.homework.week_01.Payment;
 
+import me.designpattern.homework.week_01.Product.Product;
+import org.apache.log4j.Logger;
+
 /**
  * Project : EffectiveStudy
  * Created by InteliJ IDE
@@ -8,8 +11,10 @@ package me.designpattern.homework.week_01.Payment;
  * Time : 9:50 오후
  */
 public class Kakaopay implements StrategyPayment{
+    private static final Logger LOGGER = Logger.getLogger(Kakaopay.class);
+
     @Override
     public void Payment() {
-        System.out.println("카카오페이 결제");
+        LOGGER.info("카카오페이 결제");
     }
 }

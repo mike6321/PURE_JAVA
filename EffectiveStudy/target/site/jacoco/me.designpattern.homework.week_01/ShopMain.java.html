@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ShopMain.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.designpattern.homework.week_01</a> &gt; <span class="el_source">ShopMain.java</span></div><h1>ShopMain.java</h1><pre class="source lang-java linenums">package me.designpattern.homework.week_01;
+
+import me.designpattern.homework.week_01.Customer.Customer;
+import me.designpattern.homework.week_01.Login.LoginCheck;
+import me.designpattern.homework.week_01.Order.EmployeeCustomerOrderCheck;
+import me.designpattern.homework.week_01.Order.OrderCheck;
+import me.designpattern.homework.week_01.Payment.Kakaopay;
+import me.designpattern.homework.week_01.Payment.Payment;
+import me.designpattern.homework.week_01.Product.Product;
+import org.apache.log4j.Logger;
+
+
+/**
+ * Project : EffectiveStudy
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 2020/05/02
+ * Time : 11:57 오후
+ */
+<span class="nc" id="L20">public class ShopMain {</span>
+
+<span class="nc" id="L22">    private static final Logger LOGGER = Logger.getLogger(ShopMain.class);</span>
+    public static String sessionId;
+
+    public static void main(String[] args) {
+
+<span class="nc" id="L27">        String userId = &quot;mike6321&quot;;</span>
+<span class="nc" id="L28">        Customer customer = new Customer(userId);</span>
+<span class="nc" id="L29">        boolean checkCustomer = customer.checkCustomer(customer);</span>
+
+<span class="nc" id="L31">        LoginCheck.checkLogin(userId, checkCustomer);</span>
+<span class="nc" id="L32">        System.out.println(LoginCheck.loginState);</span>
+
+        // TODO: [주문가능한 상태인지를 체크 블랙컨슈머 / 일반고객 ] junwoochoi 2020/05/06 8:48 오후
+        // 팩토리 메서드 구현 예정
+<span class="nc" id="L36">        OrderCheck orderCheck = new EmployeeCustomerOrderCheck();</span>
+<span class="nc" id="L37">        orderCheck.checkOrder(userId);</span>
+
+
+        // TODO: [상품에 대한 재고 체크] junwoochoi 2020/05/06 9:08 오후
+<span class="nc" id="L41">        LOGGER.info(&quot;****************************상품을 선택하세요****************************&quot;);</span>
+<span class="nc" id="L42">        Product.ProductInfo();</span>
+<span class="nc" id="L43">        LOGGER.info(&quot;****************************상품을 선택하세요****************************&quot;);</span>
+
+
+
+        // TODO: [상품의 재고 체크] junwoochoi 2020/05/06 9:25 오후
+<span class="nc" id="L48">        Product product = new Product(111111);</span>
+<span class="nc" id="L49">        checkStock(product);</span>
+<span class="nc" id="L50">        checkGiftStock(product);</span>
+
+
+        // TODO: [결제방식 선택] junwoochoi 2020/05/06 9:54 오후
+        // 전략패턴 사용
+<span class="nc" id="L55">        Payment payment = new Payment();</span>
+<span class="nc" id="L56">        payment.setPayment(new Kakaopay());</span>
+<span class="nc" id="L57">        payment.pay();</span>
+
+<span class="nc" id="L59">    }</span>
+
+
+    private static void checkGiftStock(Product product) {
+<span class="nc" id="L63">        boolean checkGiftProduct = product.checkGiftProduct(product);</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">        if (checkGiftProduct) {</span>
+<span class="nc" id="L65">            System.out.println(&quot;해당 사은품의 재고가 없습니다.&quot;);</span>
+        } else {
+<span class="nc" id="L67">            System.out.println(&quot;해당 사은품의 재고가 존재합니다.&quot;);</span>
+        }
+<span class="nc" id="L69">    }</span>
+
+
+    private static void checkStock(Product product) {
+<span class="nc" id="L73">        boolean checkStockProduct = product.checkStockProduct(product);</span>
+
+<span class="nc bnc" id="L75" title="All 2 branches missed.">        if (!checkStockProduct) {</span>
+<span class="nc" id="L76">            System.out.println(&quot;해당 상품의 재고가 존재하지 않습니다...&quot;);</span>
+        }else {
+<span class="nc" id="L78">            System.out.println(&quot;해당 상품의 재고가 존재합니다!&quot;);</span>
+        }
+<span class="nc" id="L80">    }</span>
+
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

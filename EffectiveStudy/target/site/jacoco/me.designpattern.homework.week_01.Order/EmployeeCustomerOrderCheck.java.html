@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EmployeeCustomerOrderCheck.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.designpattern.homework.week_01.Order</a> &gt; <span class="el_source">EmployeeCustomerOrderCheck.java</span></div><h1>EmployeeCustomerOrderCheck.java</h1><pre class="source lang-java linenums">package me.designpattern.homework.week_01.Order;
+
+import me.designpattern.homework.week_01.Customer.Customer;
+
+/**
+ * Project : EffectiveStudy
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 2020/05/03
+ * Time : 2:02 오전
+ */
+// TODO:  junwoochoi 2020/05/06 1:50 오전
+// 템플릿 메서드 패턴 구현 - 임직원 일 경우 주문 가능 상태 체크
+<span class="nc" id="L14">public class EmployeeCustomerOrderCheck extends OrderCheck{</span>
+
+    @Override
+    protected boolean authorizationCheck(String userId) {
+<span class="nc" id="L18">        Customer customer = new Customer(userId);</span>
+
+        // TODO: [일반 고객일 경우 보유 포인트 체크] junwoochoi 2020/05/06 1:52 오전
+        // 일반고객일 경우 블랙컨슈머 여부를 체크하며 블랙컨슈머이면 주문 불가
+<span class="nc" id="L22">        return customer.pointCheck(userId);</span>
+
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

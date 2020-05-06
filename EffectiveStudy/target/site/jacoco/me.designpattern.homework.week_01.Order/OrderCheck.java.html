@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OrderCheck.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.designpattern.homework.week_01.Order</a> &gt; <span class="el_source">OrderCheck.java</span></div><h1>OrderCheck.java</h1><pre class="source lang-java linenums">package me.designpattern.homework.week_01.Order;
+
+import me.designpattern.homework.week_01.Login.LoginCheck;
+import me.designpattern.homework.week_01.ShopMain;
+
+/**
+ * Project : EffectiveStudy
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 2020/05/03
+ * Time : 1:06 오전
+ */
+<span class="nc" id="L13">public abstract class OrderCheck {</span>
+
+    protected abstract boolean authorizationCheck(String userId);
+
+
+    public boolean checkOrder(String userId) {
+
+        // TODO: [주문서에 진입 시 로그인 상태인지 체크] junwoochoi 2020/05/06 1:49 오전
+        // 주문서에 진입 시 로그인 상태인지 체크한다. checkLoginStatus() : boolean
+        // Cookie 값에 로그인 한 정보가 없으면 진입불가
+<span class="nc bnc" id="L23" title="All 2 branches missed.">        if (!checkLoginStatus())</span>
+<span class="nc" id="L24">            throw new Error(&quot;로그인 정보가 없습니다.&quot;);</span>
+
+<span class="nc bnc" id="L26" title="All 2 branches missed.">        if (!authorizationCheck(ShopMain.sessionId)) {</span>
+<span class="nc" id="L27">            throw new Error(&quot;권한이 없습니다...&quot;);</span>
+        }
+
+<span class="nc" id="L30">        return true;</span>
+    }
+
+    private boolean checkLoginStatus() {
+<span class="nc" id="L34">        return LoginCheck.loginState;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

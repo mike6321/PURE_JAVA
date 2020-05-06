@@ -7,39 +7,45 @@ import java.io.*;
 <span class="nc" id="L7">public class SingletonSerialize {</span>
     public static void main(String[] args) {
 <span class="nc" id="L9">        Elvis4 elvis4 = Elvis4.getInstance();</span>
-<span class="nc" id="L10">        serializing(elvis4);</span>
-<span class="nc" id="L11">        Elvis4 elvis41 = deserializing();</span>
+<span class="nc" id="L10">        System.out.println(&quot;*************************&quot;);</span>
+<span class="nc" id="L11">        System.out.println(elvis4);</span>
+<span class="nc" id="L12">        System.out.println(&quot;*************************&quot;);</span>
 
-<span class="nc" id="L13">        System.out.printf(&quot;Foo1(%s): (%s, %s)\n&quot;, elvis4, elvis4.getName(), elvis4.getAge());</span>
-<span class="nc" id="L14">        System.out.printf(&quot;Foo2(%s): (%s, %s)\n&quot;, elvis41, elvis41.getName(), elvis41.getAge());</span>
-<span class="nc bnc" id="L15" title="All 2 branches missed.">        System.out.println(elvis4 == elvis41);</span>
-<span class="nc" id="L16">        System.out.println(elvis4.equals(elvis41));</span>
-<span class="nc" id="L17">    }</span>
+
+
+<span class="nc" id="L16">        serializing(elvis4);</span>
+<span class="nc" id="L17">        Elvis4 elvis41 = deserializing();</span>
+
+<span class="nc" id="L19">        System.out.printf(&quot;Foo1(%s): (%s, %s)\n&quot;, elvis4, elvis4.getName(), elvis4.getAge());</span>
+<span class="nc" id="L20">        System.out.printf(&quot;Foo2(%s): (%s, %s)\n&quot;, elvis41, elvis41.getName(), elvis41.getAge());</span>
+<span class="nc bnc" id="L21" title="All 2 branches missed.">        System.out.println(elvis4 == elvis41);</span>
+<span class="nc" id="L22">        System.out.println(elvis4.equals(elvis41));</span>
+<span class="nc" id="L23">    }</span>
 
     public static void serializing(Elvis4 elvis4) {
-<span class="nc" id="L20">        try (FileOutputStream fos = new FileOutputStream(&quot;test&quot;);</span>
-<span class="nc" id="L21">             BufferedOutputStream bos = new BufferedOutputStream(fos);</span>
-<span class="nc" id="L22">             ObjectOutputStream out = new ObjectOutputStream(bos)) {</span>
-<span class="nc" id="L23">            out.writeObject(elvis4);</span>
-<span class="nc" id="L24">        } catch(Exception e) {</span>
-<span class="nc" id="L25">            e.printStackTrace();</span>
-<span class="nc" id="L26">        }</span>
-<span class="nc" id="L27">    }</span>
+<span class="nc" id="L26">        try (FileOutputStream fos = new FileOutputStream(&quot;test&quot;);</span>
+<span class="nc" id="L27">             BufferedOutputStream bos = new BufferedOutputStream(fos);</span>
+<span class="nc" id="L28">             ObjectOutputStream out = new ObjectOutputStream(bos)) {</span>
+<span class="nc" id="L29">            out.writeObject(elvis4);</span>
+<span class="nc" id="L30">        } catch(Exception e) {</span>
+<span class="nc" id="L31">            e.printStackTrace();</span>
+<span class="nc" id="L32">        }</span>
+<span class="nc" id="L33">    }</span>
 
 
     public static Elvis4 deserializing() {
-<span class="nc" id="L31">        try (FileInputStream fis = new FileInputStream(&quot;test&quot;);</span>
-<span class="nc" id="L32">             BufferedInputStream bis = new BufferedInputStream(fis);</span>
-<span class="nc" id="L33">             var in = new ObjectInputStream(bis)) {</span>
+<span class="nc" id="L37">        try (FileInputStream fis = new FileInputStream(&quot;test&quot;);</span>
+<span class="nc" id="L38">             BufferedInputStream bis = new BufferedInputStream(fis);</span>
+<span class="nc" id="L39">             var in = new ObjectInputStream(bis)) {</span>
 
-<span class="nc" id="L35">            Elvis4 elvis4 = (Elvis4) in.readObject();</span>
+<span class="nc" id="L41">            Elvis4 elvis4 = (Elvis4) in.readObject();</span>
 
-<span class="nc" id="L37">            return elvis4;</span>
-<span class="nc" id="L38">        } catch (Exception e) {</span>
-<span class="nc" id="L39">            e.printStackTrace();</span>
+<span class="nc" id="L43">            return elvis4;</span>
+<span class="nc" id="L44">        } catch (Exception e) {</span>
+<span class="nc" id="L45">            e.printStackTrace();</span>
         }
 
-<span class="nc" id="L42">        return null;</span>
+<span class="nc" id="L48">        return null;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

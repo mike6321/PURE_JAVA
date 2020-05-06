@@ -7,6 +7,8 @@ import me.designpattern.homework.week_01.Order.OrderCheck;
 import me.designpattern.homework.week_01.Payment.Kakaopay;
 import me.designpattern.homework.week_01.Payment.Payment;
 import me.designpattern.homework.week_01.Product.Product;
+import org.apache.log4j.Logger;
+
 
 /**
  * Project : EffectiveStudy
@@ -17,6 +19,7 @@ import me.designpattern.homework.week_01.Product.Product;
  */
 public class ShopMain {
 
+    private static final Logger LOGGER = Logger.getLogger(ShopMain.class);
     public static String sessionId;
 
     public static void main(String[] args) {
@@ -35,9 +38,10 @@ public class ShopMain {
 
 
         // TODO: [상품에 대한 재고 체크] junwoochoi 2020/05/06 9:08 오후
-        System.out.println("****************************상품을 선택하세요****************************");
+        LOGGER.info("****************************상품을 선택하세요****************************");
         Product.ProductInfo();
-        System.out.println("****************************상품을 선택하세요****************************");
+        LOGGER.info("****************************상품을 선택하세요****************************");
+
 
 
         // TODO: [상품의 재고 체크] junwoochoi 2020/05/06 9:25 오후
@@ -58,9 +62,9 @@ public class ShopMain {
     private static void checkGiftStock(Product product) {
         boolean checkGiftProduct = product.checkGiftProduct(product);
         if (checkGiftProduct) {
-            System.out.println("해당 사은품의 재고가 없습니다.");
+            LOGGER.info("해당 사은품의 재고가 없습니다.");
         } else {
-            System.out.println("해당 사은품의 재고가 존재합니다.");
+            LOGGER.info("해당 사은품의 재고가 존재합니다.");
         }
     }
 
@@ -69,9 +73,9 @@ public class ShopMain {
         boolean checkStockProduct = product.checkStockProduct(product);
 
         if (!checkStockProduct) {
-            System.out.println("해당 상품의 재고가 존재하지 않습니다...");
+            LOGGER.info("해당 상품의 재고가 존재하지 않습니다...");
         }else {
-            System.out.println("해당 상품의 재고가 존재합니다!");
+            LOGGER.info("해당 상품의 재고가 존재합니다!");
         }
     }
 

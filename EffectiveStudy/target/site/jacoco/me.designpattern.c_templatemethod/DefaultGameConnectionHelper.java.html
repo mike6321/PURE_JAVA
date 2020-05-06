@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DefaultGameConnectionHelper.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.designpattern.c_templatemethod</a> &gt; <span class="el_source">DefaultGameConnectionHelper.java</span></div><h1>DefaultGameConnectionHelper.java</h1><pre class="source lang-java linenums">package me.designpattern.c_templatemethod;
+
+/**
+ * Project : croissant
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 2020/04/20
+ * Time : 8:51 오후
+ */
+<span class="nc" id="L10">public class DefaultGameConnectionHelper extends AbstractGameConnectHelper{</span>
+    @Override
+    protected String doSecurity(String string) {
+<span class="nc" id="L13">        System.out.println(&quot;강화된 알고리즘을 이용한 디코드...&quot;);</span>
+
+
+
+
+<span class="nc" id="L18">        return string;</span>
+    }
+
+    @Override
+    protected boolean authentication(String id, String password) {
+<span class="nc" id="L23">        System.out.println(&quot;아이디/암호 확인 과정...&quot;);</span>
+
+<span class="nc" id="L25">        return true;</span>
+    }
+
+    @Override
+    protected int authorization(String userName) {
+<span class="nc" id="L30">        System.out.println(&quot;권한 확인...&quot;);</span>
+        // TODO: [authorization] junwoochoi 2020/04/20 9:04 오후
+        // 서버에서 유저 이름 혹은 유저의 나이를 알 수 있다.
+        // 나이를 확인하고 시간을 확인하여 성인이 아니라면 셧 다운
+<span class="nc" id="L34">        return 4;</span>
+    }
+
+    @Override
+    protected String connection(String info) {
+<span class="nc" id="L39">        System.out.println(&quot;마지막 접속 단계...!&quot;);</span>
+
+<span class="nc" id="L41">        return info;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

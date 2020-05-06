@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AbstractGameConnectHelper.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.designpattern.c_templatemethod</a> &gt; <span class="el_source">AbstractGameConnectHelper.java</span></div><h1>AbstractGameConnectHelper.java</h1><pre class="source lang-java linenums">package me.designpattern.c_templatemethod;
+
+
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Project : croissant
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 2020/04/20
+ * Time : 8:23 오후
+ */
+<span class="nc" id="L16">public abstract class AbstractGameConnectHelper {</span>
+
+    private static final Map&lt;Integer, String&gt; AUTHORIZATION;
+
+    static {
+<span class="nc" id="L21">        final Map&lt;Integer, String&gt; authorization = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L22">        authorization.put(0, &quot;게임 매니저&quot;);</span>
+<span class="nc" id="L23">        authorization.put(1, &quot;유료 회원&quot;);</span>
+<span class="nc" id="L24">        authorization.put(2, &quot;무료 회원&quot;);</span>
+<span class="nc" id="L25">        authorization.put(3, &quot;권한 없음&quot;);</span>
+<span class="nc" id="L26">        authorization.put(4, &quot;Shut Down&quot;);</span>
+
+<span class="nc" id="L28">        AUTHORIZATION = Collections.unmodifiableMap(authorization);</span>
+<span class="nc" id="L29">    }</span>
+
+    /*보안 과정*/
+    protected abstract String doSecurity(String string);
+    /*인증 과정*/
+    protected abstract boolean authentication(String id, String password);
+    /*권한 과정*/
+    protected abstract int authorization(String userName);
+    /*접속 과정*/
+    protected abstract String connection(String info);
+
+
+    // 템플릿 메서드
+    public String requestConnection(String encodedInfo) {
+<span class="nc" id="L43">        String decodedeInfo = doSecurity(encodedInfo);</span>
+<span class="nc" id="L44">        String id = &quot;mike6321&quot;;</span>
+<span class="nc" id="L45">        String password = &quot;junwoo&quot;;</span>
+
+<span class="nc bnc" id="L47" title="All 2 branches missed.">        if (!authentication(id, password)) {</span>
+<span class="nc" id="L48">            throw new Error(&quot;아이디 암호 불 일 치&quot;);</span>
+        }
+
+<span class="nc" id="L51">        String userName = &quot;userName&quot;;</span>
+<span class="nc" id="L52">        int authorization = authorization(userName);</span>
+<span class="nc" id="L53">        System.out.println(AUTHORIZATION.get(authorization));</span>
+
+<span class="nc bnc" id="L55" title="All 2 branches missed.">        if (authorization == 4)</span>
+<span class="nc" id="L56">            throw new Error(&quot;셧다운!!!&quot;);</span>
+
+
+<span class="nc" id="L59">        return connection(decodedeInfo);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

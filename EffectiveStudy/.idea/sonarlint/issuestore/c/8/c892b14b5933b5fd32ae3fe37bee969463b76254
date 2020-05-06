@@ -1,12 +1,12 @@
 
-F
-java:S1068")Remove this unused "prdCd" private field.(Å»××8ŞÌ­.
-G
-java:S1068"*Remove this unused "giftNo" private field.(ÀÑˆÿ8ŞÌ­.
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰øİ–8Ï…Š³.
+U	java:S106."9Replace this use of System.out or System.err by a logger.(Â°£8ãü¢Ï.
 3
-java:S1700"Rename field "product"(¦ƒÓ 8ŞÌ­.
-G
-java:S1068"*Remove this unused "prdPrc" private field.(Ã·¥Ñ8ŞÌ­.
-F
-java:S1068")Remove this unused "stock" private field.(¨‡ÛÅ8ŞÌ­.
+java:S1700"Rename field "product"(Ø¢ñ 8ŞÌ­.
+T
+java:S11355"2Complete the task associated to this TODO comment.(¬úÙÑÿÿÿÿÿ8—ÇäÏ.
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰øİ–8Ï…Š³.
+o	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÖ•Õşÿÿÿÿ8ãü¢Ï.
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8¾®Ğ.
+D
+java:S2386""Make member "product" "protected".(§‰µáúÿÿÿÿ8ãÏ•Ï.

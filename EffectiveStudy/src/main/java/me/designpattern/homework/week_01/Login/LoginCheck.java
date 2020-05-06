@@ -1,6 +1,8 @@
 package me.designpattern.homework.week_01.Login;
 
+import me.designpattern.homework.week_01.Product.Product;
 import me.designpattern.homework.week_01.ShopMain;
+import org.apache.log4j.Logger;
 
 /**
  * Project : EffectiveStudy
@@ -10,6 +12,7 @@ import me.designpattern.homework.week_01.ShopMain;
  * Time : 1:26 오전
  */
 public class LoginCheck {
+    private static final Logger LOGGER = Logger.getLogger(LoginCheck.class);
     public static boolean loginState = false;
 
 
@@ -21,10 +24,10 @@ public class LoginCheck {
     // TODO: [로그인 체킹] junwoochoi 2020/05/06 2:11 오전
     public static void checkLogin(String userId, boolean checkCustomer) {
         if (checkCustomer) {
-            System.out.println(userId + " 님  환영합니다!");
+            LOGGER.info(userId + " 님  환영합니다!");
             ShopMain.sessionId = userId;
         } else {
-            System.out.println("회원이 아니십니다!");
+            LOGGER.info("회원이 아니십니다!");
         }
     }
 }

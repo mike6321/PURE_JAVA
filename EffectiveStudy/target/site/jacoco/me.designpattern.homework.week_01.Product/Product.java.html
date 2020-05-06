@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Product.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EffectiveStudy</a> &gt; <a href="index.source.html" class="el_package">me.designpattern.homework.week_01.Product</a> &gt; <span class="el_source">Product.java</span></div><h1>Product.java</h1><pre class="source lang-java linenums">package me.designpattern.homework.week_01.Product;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+
+/**
+ * Project : EffectiveStudy
+ * Created by InteliJ IDE
+ * Developer : junwoochoi
+ * Date : 2020/05/02
+ * Time : 11:55 오후
+ */
+public class Product {
+    public static final Map&lt;Integer, Product&gt; product;
+
+    static {
+<span class="nc" id="L18">        product = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L19">        product.put(111111, new Product(111111, 20000L, 12345L, 10));</span>
+<span class="nc" id="L20">        product.put(222222, new Product(222222,10000L, 0L, 40));</span>
+<span class="nc" id="L21">        product.put(333333, new Product(333333, 10000L, 0L, 0));</span>
+<span class="nc" id="L22">    }</span>
+
+
+    private  Integer prdCd;
+    private  Long prdPrc;
+    private  Long giftNo;
+    private  Integer stock;
+
+<span class="nc" id="L30">    public Product() {}</span>
+
+<span class="nc" id="L32">    public Product(Integer prdCd) {</span>
+<span class="nc" id="L33">        this.prdCd = prdCd;</span>
+<span class="nc" id="L34">    }</span>
+
+<span class="nc" id="L36">    public Product(Integer prdCd, Long prdPrc, Long giftNo, Integer stock) {</span>
+<span class="nc" id="L37">        this.prdCd = prdCd;</span>
+<span class="nc" id="L38">        this.prdPrc = prdPrc;</span>
+<span class="nc" id="L39">        this.giftNo = giftNo;</span>
+<span class="nc" id="L40">        this.stock = stock;</span>
+<span class="nc" id="L41">    }</span>
+
+
+    public static void ProductInfo() {
+<span class="nc bnc" id="L45" title="All 2 branches missed.">        for (Integer key : Product.product.keySet()) {</span>
+<span class="nc" id="L46">            System.out.println(&quot;상품코드 : &quot;   +product.get(key).prdCd</span>
+<span class="nc" id="L47">                              +&quot;, 상품가격 : &quot;   +product.get(key).prdPrc</span>
+<span class="nc" id="L48">                              +&quot;, 사은품코드 : &quot;  +product.get(key).giftNo</span>
+<span class="nc" id="L49">                              +&quot;, 재고 : &quot;      +product.get(key).stock);</span>
+<span class="nc" id="L50">        }</span>
+<span class="nc" id="L51">    }</span>
+
+    // TODO: [상품의 재고 체크] junwoochoi 2020/05/06 9:32 오후
+    public boolean checkStockProduct(Product productEntity) {
+
+<span class="nc bnc" id="L56" title="All 2 branches missed.">        return product.get(productEntity.prdCd).stock != 0;</span>
+    }
+
+    public boolean checkGiftProduct(Product productEntity) {
+
+<span class="nc bnc" id="L61" title="All 2 branches missed.">        return product.get(productEntity.prdCd).giftNo == 0;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
