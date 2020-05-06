@@ -1,6 +1,6 @@
 package me.designpattern.homework.week_01.Customer;
 
-import me.designpattern.homework.week_01.LoginCheck;
+import me.designpattern.homework.week_01.Login.LoginCheck;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,6 +31,11 @@ public class Customer {
     private long point;
     private boolean blackConsumerFlag;
 
+
+    public Customer(String userId) {
+        this.userId = userId;
+    }
+
     public Customer(String userId, String userName, int gubun, long point, boolean blackConsumerFlag) {
         this.userId = userId;
         this.userName = userName;
@@ -39,27 +44,26 @@ public class Customer {
         this.blackConsumerFlag = blackConsumerFlag;
     }
 
-    public Customer(String userId) {
-        this.userId = userId;
-    }
 
     public boolean checkCustomer(Customer customer) {
-        if (loginUser.get(customer.userId) != null) {
-            LoginCheck loginCheck = new LoginCheck();
-            loginCheck.isTrueLogin();
 
-            return true;
-        }else {
-            return false;
+        boolean result = false;
+
+        if (loginUser.get(customer.userId) != null) {
+            LoginCheck.isTrueLogin();
+
+            result = true;
         }
+
+        return result;
     }
 
     public boolean blackConSumerCheck(String userId) {
         return loginUser.get(userId).blackConsumerFlag;
     }
 
-    public boolean pointCheck(String userId) {
 
+    public boolean pointCheck(String userId) {
         return loginUser.get(userId).point != 0;
     }
 

@@ -2,6 +2,7 @@ package me.designpattern.homework.week_01.Product;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * Project : EffectiveStudy
@@ -11,25 +12,53 @@ import java.util.Map;
  * Time : 11:55 오후
  */
 public class Product {
-    private static final Map<Integer, Product> product;
+    public static final Map<Integer, Product> product;
 
     static {
         product = new HashMap<>();
-        product.put(111111, new Product(111111, 20000, 12345, 10));
-        product.put(222222, new Product(222222,10000, 0, 40));
-        product.put(333333, new Product(333333, 10000, 0, 0));
+        product.put(111111, new Product(111111, 20000L, 12345L, 10));
+        product.put(222222, new Product(222222,10000L, 0L, 40));
+        product.put(333333, new Product(333333, 10000L, 0L, 0));
     }
 
 
-    private final long prdCd;
-    private final long prdPrc;
-    private final long giftNo;
-    private final int stock;
+    private  Integer prdCd;
+    private  Long prdPrc;
+    private  Long giftNo;
+    private  Integer stock;
 
-    public Product(long prdCd, long prdPrc, long giftNo, int stock) {
+    public Product() {}
+
+    public Product(Integer prdCd) {
+        this.prdCd = prdCd;
+    }
+
+    public Product(Integer prdCd, Long prdPrc, Long giftNo, Integer stock) {
         this.prdCd = prdCd;
         this.prdPrc = prdPrc;
         this.giftNo = giftNo;
         this.stock = stock;
     }
+
+
+    public static void ProductInfo() {
+        for (Integer key : Product.product.keySet()) {
+            System.out.println("상품코드 : "   +product.get(key).prdCd
+                              +", 상품가격 : "   +product.get(key).prdPrc
+                              +", 사은품코드 : "  +product.get(key).giftNo
+                              +", 재고 : "      +product.get(key).stock);
+        }
+    }
+
+    // TODO: [상품의 재고 체크] junwoochoi 2020/05/06 9:32 오후
+    public boolean checkStockProduct(Product productEntity) {
+
+        return product.get(productEntity.prdCd).stock != 0;
+    }
+
+    public boolean checkGiftProduct(Product productEntity) {
+
+        return product.get(productEntity.prdCd).giftNo == 0;
+    }
+
 }

@@ -1,6 +1,6 @@
-package me.designpattern.homework.week_01.order;
+package me.designpattern.homework.week_01.Order;
 
-import me.designpattern.homework.week_01.LoginCheck;
+import me.designpattern.homework.week_01.Login.LoginCheck;
 import me.designpattern.homework.week_01.ShopMain;
 
 /**
@@ -27,13 +27,10 @@ public abstract class OrderCheck {
             throw new Error("권한이 없습니다...");
         }
 
-
         return true;
-
     }
 
     private boolean checkLoginStatus() {
         return LoginCheck.loginState;
     }
-
 }
