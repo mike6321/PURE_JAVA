@@ -1,14 +1,14 @@
 
-W
-java:S1118":Add a private constructor to hide the implicit public one.(ÂÅòÇ8”¤çÎ.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(¿ûş€8•…ŞÎ.
-x
-java:S1104"VMake loginState a static final constant or non-public and provide accessors if needed.(ÚÌ®»üÿÿÿÿ8¢ææ±.
-R
-java:S1444"0Make this "public static loginState" field final(ÚÌ®»üÿÿÿÿ8”¤çÎ.
 O
-java:S1135"2Complete the task associated to this TODO comment.(Ò§•â8¤İÅ®.
+java:S1135"2Complete the task associated to this TODO comment.(Ûœ›–8•…ŞÎ.
 u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ù®®8›‰Ï.
+W
+java:S1118":Add a private constructor to hide the implicit public one.(ÂÅòÇ8”¤çÎ.
 O
-java:S1135"2Complete the task associated to this TODO comment.(Ûœ›–8•…ŞÎ.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ĞµèÚ8•…ŞÎ.
+java:S1135"2Complete the task associated to this TODO comment.(Ò§•â8¤İÅ®.
+R
+java:S1444"0Make this "public static loginState" field final(ÚÌ®»üÿÿÿÿ8”¤çÎ.
+x
+java:S1104"VMake loginState a static final constant or non-public and provide accessors if needed.(ÚÌ®»üÿÿÿÿ8¢ææ±.
+k
+java:S1128"NRemove this unused import 'me.designpattern.homework.week_01.Product.Product'.(Ó¼œ8ıÔ£Õ.

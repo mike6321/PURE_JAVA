@@ -1,14 +1,14 @@
 
+E
+java:S1874 "/Remove this use of "Integer"; it is deprecated.(òàø¨
+7
+java:S2129 "!Remove this "Integer" constructor(òàø¨
+Q	java:S125"<This block of commented-out lines of code should be removed.(ğÛÒ
 Z
 java:S3358"DExtract this nested ternary operation into an independent statement.(’åñÑ
+E
+java:S1874 "/Remove this use of "Integer"; it is deprecated.(òàø¨
 S	java:S106"9Replace this use of System.out or System.err by a logger.(›êŞÂúÿÿÿÿ
 7
 java:S2129 "!Remove this "Integer" constructor(òàø¨
-E
-java:S1874 "/Remove this use of "Integer"; it is deprecated.(òàø¨
-7
-java:S2129 "!Remove this "Integer" constructor(òàø¨
-E
-java:S1874 "/Remove this use of "Integer"; it is deprecated.(òàø¨
 N	java:S106!"9Replace this use of System.out or System.err by a logger.(àÓ¨¨
-Q	java:S125"<This block of commented-out lines of code should be removed.(ğÛÒ

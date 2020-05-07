@@ -1,3 +1,4 @@
 
+k
+java:S1128"NRemove this unused import 'me.designpattern.homework.week_01.Product.Product'.(Ó¼œ8ÓªšÕ.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹±µôûÿÿÿÿ
-U	java:S106"9Replace this use of System.out or System.err by a logger.(Ö¢†²8‚å§Ğ.
