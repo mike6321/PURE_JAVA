@@ -1,13 +1,13 @@
 
-L
-java:S1481"*Remove this unused "card3" local variable.(‘Æªäúÿÿÿÿ8ÂÇîõ.
-G
-java:S1481"*Remove this unused "card2" local variable.(ñıß‘8ÂÇîõ.
 O
 java:S1068"-Remove this unused "serialNum" private field.(ÉêÉşÿÿÿÿ8¨Åéõ.
+J
+java:S1068"(Remove this unused "year" private field.(ä½ÛÕıÿÿÿÿ8¨Åéõ.
+G
+java:S1481"*Remove this unused "card2" local variable.(ñıß‘8ÂÇîõ.
 L
 java:S1481"*Remove this unused "card1" local variable.(„„„¢şÿÿÿÿ8ÂÇîõ.
 F
 java:S1068")Remove this unused "month" private field.(­ıŸĞ8¨Åéõ.
-J
-java:S1068"(Remove this unused "year" private field.(ä½ÛÕıÿÿÿÿ8¨Åéõ.
+L
+java:S1481"*Remove this unused "card3" local variable.(‘Æªäúÿÿÿÿ8ÂÇîõ.
