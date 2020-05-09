@@ -22,4 +22,25 @@ public class AccountTest {
         assertEquals(5000, account.balance);
     }
 
+    @Test
+    public void withdraw() {
+        Account account = new Account();
+        account.deposit(3000);
+        account.withdraw(1000);
+
+
+        assertEquals(2000, account.balance);
+    }
+
+    @Test
+    public void EncapsulateBreak() {
+        Account account = new Account();
+        account.deposit(3000);
+        account.withdraw(1000);
+
+        account.balance = 5000;
+
+        assertEquals(2000, account.balance);
+    }
+
 }

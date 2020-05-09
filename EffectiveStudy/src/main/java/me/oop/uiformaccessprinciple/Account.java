@@ -1,5 +1,8 @@
 package me.oop.uiformaccessprinciple;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Project : EffectiveStudy
  * Created by InteliJ IDE
@@ -9,6 +12,18 @@ package me.oop.uiformaccessprinciple;
  */
 public class Account {
     public long balance;
+    private List<Long> withdraws = new ArrayList<>();
+    private List<Long> deposits = new ArrayList<>();
 
+
+    public void withdraw(long amount) {
+        withdraws.add(amount);
+        balance -= amount;
+    }
+
+    public void deposit(long amount) {
+        deposits.add(amount);
+        balance += amount;
+    }
 
 }
