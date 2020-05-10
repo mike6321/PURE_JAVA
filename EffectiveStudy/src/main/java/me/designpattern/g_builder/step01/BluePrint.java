@@ -1,4 +1,4 @@
-package me.designpattern.g_builder;
+package me.designpattern.g_builder.step01;
 
 /**
  * Project : EffectiveStudy

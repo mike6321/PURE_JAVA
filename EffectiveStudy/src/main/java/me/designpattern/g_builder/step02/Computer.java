@@ -1,11 +1,11 @@
-package me.designpattern.g_builder;
+package me.designpattern.g_builder.step02;
 
 /**
  * Project : EffectiveStudy
  *
  * @author : jwdeveloper
  * @comment :
- * Time : 8:25 오후
+ * Time : 9:43 오후
  */
 public class Computer {
     private String cpu;
