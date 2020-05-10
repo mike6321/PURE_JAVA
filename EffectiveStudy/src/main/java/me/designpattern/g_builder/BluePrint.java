@@ -8,10 +8,8 @@ package me.designpattern.g_builder;
  * Time : 9:03 오후
  */
 public abstract class BluePrint {
-    abstract public void setCpu();
-    abstract public void setRam();
-    abstract public void setStorate();
-
-    abstract public Computer getComputer();
-
+    abstract void setCpu();
+    abstract void setRam();
+    abstract void setStorate();
+    abstract Computer getComputer();
 }
