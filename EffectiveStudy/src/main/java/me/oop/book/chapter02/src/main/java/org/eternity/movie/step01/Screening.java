@@ -1,13 +1,14 @@
 package me.oop.book.chapter02.src.main.java.org.eternity.movie.step01;
 
-import org.eternity.money.Money;
+
+import me.oop.book.chapter02.src.main.java.org.eternity.money.Money;
 
 import java.time.LocalDateTime;
 
 public class Screening {
-    private Movie movie;
-    private int sequence;
-    private LocalDateTime whenScreened;
+    private final Movie movie;
+    private final int sequence;
+    private final LocalDateTime whenScreened;
 
     public Screening(Movie movie, int sequence, LocalDateTime whenScreened) {
         this.movie = movie;

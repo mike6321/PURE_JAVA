@@ -1,13 +1,13 @@
 
-D
-java:S2386""Make member "product" "protected".(§‰µáúÿÿÿÿ8ãÏ•Ï.
-d
-java:S1128"GRemove this unused import 'me.designpattern.homework.week_01.ShopMain'.(›³—©8”‘—Õ.
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰øİ–8Ï…Š³.
-o	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÖ•Õşÿÿÿÿ8ãü¢Ï.
-K
-java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8¾®Ğ.
 3
 java:S1700"Rename field "product"(Ø¢ñ 8ŞÌ­.
 T
 java:S1135;"2Complete the task associated to this TODO comment.(¬úÙÑÿÿÿÿÿ8—ÇäÏ.
+o	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÖ•Õşÿÿÿÿ8ãü¢Ï.
+d
+java:S1128"GRemove this unused import 'me.designpattern.homework.week_01.ShopMain'.(›³—©8”‘—Õ.
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰øİ–8Ï…Š³.
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8¾®Ğ.
+D
+java:S2386""Make member "product" "protected".(§‰µáúÿÿÿÿ8ãÏ•Ï.

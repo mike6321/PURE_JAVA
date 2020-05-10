@@ -1,6 +1,8 @@
 package me.oop.book.chapter02.src.main.java.org.eternity.movie.step01;
 
-import org.eternity.money.Money;
+
+
+import me.oop.book.chapter02.src.main.java.org.eternity.money.Money;
 
 import java.util.ArrayList;
 import java.util.Arrays;
