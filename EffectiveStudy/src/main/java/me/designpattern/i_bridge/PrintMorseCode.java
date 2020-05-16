@@ -9,6 +9,10 @@ package me.designpattern.i_bridge;
  */
 public class PrintMorseCode extends MorseCode{
 
+    public PrintMorseCode(MorseCodeFunction function) {
+        super(function);
+    }
+
     public PrintMorseCode j() {
         dot();
         dash();

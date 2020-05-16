@@ -9,14 +9,12 @@ package me.designpattern.i_bridge;
  */
 public class Main {
     public static void main(String[] args) {
-        PrintMorseCode code = new PrintMorseCode();
-//        code.j();
-//        code.u();
-//        code.n();
-//        code.w();
-//        code.o();
-//        code.o();
+        PrintMorseCode code = new PrintMorseCode(new DefaultMorseFunction());
+        code.j().u().n().w().o().o();
 
+        System.out.println();
+
+        code = new PrintMorseCode(new BeepMorseFunction());
         code.j().u().n().w().o().o();
     }
 }
