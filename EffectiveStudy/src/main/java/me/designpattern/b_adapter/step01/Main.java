@@ -1,4 +1,4 @@
-package me.designpattern.b_adapter;
+package me.designpattern.b_adapter.step01;
 
 /**
  * Project : EffectiveStudy

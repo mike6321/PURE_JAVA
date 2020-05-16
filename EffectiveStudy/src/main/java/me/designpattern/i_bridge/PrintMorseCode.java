@@ -3,8 +3,7 @@ package me.designpattern.i_bridge;
 /**
  * Project : EffectiveStudy
  *
- * @author : jwdeveloper
- * @comment :
+ * @author : jwdeveloper * @comment :
  * Time : 6:34 오후
  */
 public class PrintMorseCode extends MorseCode{
