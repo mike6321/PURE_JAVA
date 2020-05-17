@@ -1,0 +1,12 @@
+
+O
+java:S1481"-Remove this unused "property" local variable.(€Ë®âúÿÿÿÿ8Ð˜–ã¡.
+m
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(èŸÁ‡ÿÿÿÿÿ8÷™Þà¡.
+T	java:S106>"9Replace this use of System.out or System.err by a logger.(áÂ‹@8ØŠ…ã¡.
+U	java:S106'"9Replace this use of System.out or System.err by a logger.( ÖÌÐ8•çüâ¡.
+[
+java:S3516"9Refactor this method to not always return the same value.(¡…œöúÿÿÿÿ8£„–ã¡.
+\
+java:S1118":Add a private constructor to hide the implicit public one.(®¥´¹ûÿÿÿÿ8©¹íà¡.
+C	java:S131""Add a default case to this switch.(èŸÁ‡ÿÿÿÿÿ8Å¢Ýà¡.
