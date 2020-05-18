@@ -185,3 +185,11 @@ i
 9src/main/java/me/choi/others/callbyvalue/CallByValue.java,2/f/2fcd8c38dc926d492f9520530876227cb52b9650
 n
 >src/main/java/me/choi/others/callbyvalue/CallByReference2.java,c/1/c1328d55fea91a2fa20dd7d6775c6a1296b767e1
+]
+-src/main/java/me/choi/others/memory/Main.java,7/8/78076f0a7684d881e4bb90dff441aa7a586f876f
+^
+.src/main/java/me/choi/others/memory/Main2.java,b/6/b6756c61072d5a14254193a0eb8c128ce6e2d7d3
+^
+.src/main/java/me/choi/others/memory/Main3.java,8/e/8e8b1194ceafcfd1425bac9625e2fd9d95c7c384
+^
+.src/main/java/me/choi/others/memory/Main4.java,9/5/9583479e0e06e206f34a9a69d897387181914058
