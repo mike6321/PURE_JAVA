@@ -30,6 +30,8 @@ Hang up이나 slowdown 현상은 대부분이 Network, User Application, WEB/WAS
 4. `close()` 요청을 받은 서버 어플리케이션은 종료 프로세스를 진행하고 `FIN`을 클라이언트에 보내 `LAST_ACK` 상태로 바꾼다.
 5. `FIN`을 받은 클라이언트는 `ACK`를 서버에 다시 전송하고 `TIME_WAIT`으로 상태를 바꾼다. `TIME_WAIT`에서 일정 시간이 지나면 `CLOSED`된다. `ACK`를 받은 서버도 포트를 `CLOSED`로 닫는다.
 
+
+
 * 여기서 주의할 점은 항상 서버만이 CLOSE_WAIT 상태를 갖는 것이 아니라는 점이다.
 
 ------
