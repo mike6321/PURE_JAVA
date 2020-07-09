@@ -1,11 +1,11 @@
-package me.choi.proxypattern;
+package me.choi.proxypatterlecture;
 
 /**
  * Project : proxy-pattern
  *
  * @author : jwdeveloper
  * @comment :
- * Time : 8:03 오후
+ * Time : 9:25 오후
  */
 public class Book {
 
@@ -18,4 +18,5 @@ public class Book {
     public String getTitle() {
         return title;
     }
+
 }

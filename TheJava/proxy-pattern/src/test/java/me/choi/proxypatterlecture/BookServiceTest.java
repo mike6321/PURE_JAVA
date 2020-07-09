@@ -1,4 +1,4 @@
-package me.choi.proxypattern;
+package me.choi.proxypatterlecture;
 
 import org.junit.Test;
 
@@ -6,50 +6,60 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 /**
  * Project : proxy-pattern
  *
  * @author : jwdeveloper
  * @comment :
- * Time : 8:05 오후
+ * Time : 9:27 오후
  */
 public class BookServiceTest {
 
-    //BookService bookService = new BookRealSubject();
-    //BookService bookService = new BookProxy3(new BookRealSubject());
-    BookService bookService = (BookService) Proxy.newProxyInstance(BookService.class.getClassLoader(), new Class[]{BookService.class}, new InvocationHandler() {
+
+    BookService bookService = (BookService) Proxy.newProxyInstance(BookService.class.getClassLoader(), new Class[] {BookService.class}, new InvocationHandler() {
+
 
         BookService bookService = new BookRealSubject();
 
         @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
+
             if (method.getName() == "rent") {
-                System.out.println("###############################");
+                Log1();
                 Object invoke = method.invoke(bookService, args);
-                System.out.println("###############################");
+                Log2();
 
                 return invoke;
             }
-            System.out.println("****************************");
-            Object invoke = method.invoke(bookService, args);
-            System.out.println("****************************");
 
-            return invoke;
-
+            return method.invoke(bookService, args);
 
         }
 
 
     });
 
+
+
     @Test
-    public void di() {
+    public void test() {
+
         Book book = new Book("Effective Java");
 
-        System.out.println();
         bookService.rent(book);
         System.out.println();
         bookService.returnRent(book);
     }
+
+    private void Log1() {
+        System.out.println("#######################Log1#######################");
+    }
+
+    private void Log2() {
+        System.out.println("#######################Log2#######################");
+    }
+
 }
