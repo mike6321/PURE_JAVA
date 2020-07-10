@@ -155,5 +155,6 @@ n-1(15)            - 00000000000001111
 
 이제 결론적으로 14번째의 버킷에 해시 값에 해당하는 key value 가 들어 간것을 볼 수 있다.
 
+
 ![image](https://user-images.githubusercontent.com/33277588/73281442-58467800-4233-11ea-993b-f3de7774f4cd.png)
 
