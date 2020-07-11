@@ -8,6 +8,7 @@
 
 
 
+
 통상적으로 시스템이 느려지거나 멈추는 현상을 행업 이라고 합니다.
 \- Hang up이란 Server Instance는 실행되고 있으나, 아무런 응답이 없는 상황을 말합니다.
 \- 비슷한 의미로 Slowdown이 있는데 Server Instance의 response time이 아주 급격히 떨어지는 상태를 의미합니다.
