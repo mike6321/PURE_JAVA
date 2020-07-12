@@ -6,6 +6,7 @@ public class Code02 {
         func(n);
     }
 
+
     private static void func(int n) {
         if (n<=0) {
             return;
