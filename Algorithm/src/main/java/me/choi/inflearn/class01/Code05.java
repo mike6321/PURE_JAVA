@@ -1,4 +1,4 @@
-package me.choi.class01;
+package me.choi.inflearn.class01;
 
 public class Code05 {
     public static void main(String[] args) {

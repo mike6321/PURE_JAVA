@@ -17,8 +17,6 @@ public class B5397 {
         for (int i=0 ; i<L ; i++) {
             StringBuffer sb = new StringBuffer();
             sb.append(sc.next());
-
-
         }
 
     }

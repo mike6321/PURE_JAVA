@@ -1,4 +1,4 @@
-package me.choi.class01;
+package me.choi.inflearn.class01;
 
 /*
 * fibonacci
