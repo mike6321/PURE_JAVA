@@ -53,6 +53,7 @@ Eden 영역에 데이터가 꽉 차게 되면 Survivor 여역으로 해당 객�
 * Concurrent Mark Sweep Collector
 * Carbage First Collector 
 
+
 ------
 
 ### Serial Collector

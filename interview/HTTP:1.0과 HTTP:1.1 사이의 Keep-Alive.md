@@ -24,11 +24,6 @@ HTTP/1.0 초기에는 클라이언트와 서버 간의 요청의 **3-way handsha
 ![img](https://k.kakaocdn.net/dn/DjCWE/btqDzkM05A8/kB7WKP1nWA9YxxumsIJ440/img.png)
 
 
-
- 
-
- 
-
 예를 들어 10개의 오브젝트를 가진 웹 페이지가 존재한다면
 
 클라이언트와 서버 사이에 10번의 3-way handshake 과정을 통해 TCP 연결을 맺고 끊는 과정을 반복해야 한다.
