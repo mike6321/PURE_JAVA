@@ -33,3 +33,7 @@ g
 7src/main/java/me/choi/baekjunlecture/class01/B2739.java,d/2/d2254813de7875385360cb8530976b91633428e8
 g
 7src/main/java/me/choi/baekjunlecture/class01/B1924.java,c/a/cadbbe21d5531841a532d74802e530d3165e0ed8
+g
+7src/main/java/me/choi/baekjunlecture/class01/B8393.java,b/8/b841f0c4a7a56cfd92fd41e3b57c994a08b6f3fe
+h
+8src/main/java/me/choi/baekjunlecture/class01/B10818.java,c/6/c6206b15e877f8c08de4274dc3df0a6e8db58825
