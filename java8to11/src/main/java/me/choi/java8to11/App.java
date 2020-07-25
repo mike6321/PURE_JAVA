@@ -38,6 +38,8 @@ public class App {
             }
         });
 
+
+
         Arrays.sort(names, (o1, o2) -> 0);
 
         Arrays.sort(names, String::compareToIgnoreCase);;
