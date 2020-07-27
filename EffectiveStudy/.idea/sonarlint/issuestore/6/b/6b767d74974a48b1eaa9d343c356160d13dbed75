@@ -1,0 +1,16 @@
+
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(Ü¸›õ8ô»ûÛ¸.
+N
+java:S1135&"2Complete the task associated to this TODO comment.(ö¸Ü8åüÛ¸.
+T
+java:S1135*"2Complete the task associated to this TODO comment.(‘ãîçûÿÿÿÿ8Â…şÛ¸.
+U	java:S106,"9Replace this use of System.out or System.err by a logger.(Ü¸›õ8ô»ûÛ¸.
+T
+java:S1135."2Complete the task associated to this TODO comment.(£‡˜¾øÿÿÿÿ8Â…şÛ¸.
+T
+java:S11352"2Complete the task associated to this TODO comment.(‹Ú€ıÿÿÿÿ8ÉşÛ¸.
+m
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(–ªú¯8ú¸éÛ¸.
+U	java:S106("9Replace this use of System.out or System.err by a logger.(Ü¸›õ8–ÕúÛ¸.
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(Ü¸›õ8ô»ûÛ¸.
+X	java:S125"<This block of commented-out lines of code should be removed.(Ïª…™8ìíÙÜ¸.
