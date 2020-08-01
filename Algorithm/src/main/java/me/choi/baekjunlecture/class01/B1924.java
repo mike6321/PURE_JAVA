@@ -29,7 +29,7 @@ public class B1924 {
         int day = scanner.nextInt();
         int sum = 0;
 
-        for (int i=1 ;i<=12 ;i++) {
+        for (int i = 1; i <= 12; i++) {
             if (i == month)
                 break;
 

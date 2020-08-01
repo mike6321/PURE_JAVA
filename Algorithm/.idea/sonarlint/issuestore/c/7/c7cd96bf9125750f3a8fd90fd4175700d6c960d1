@@ -1,8 +1,8 @@
 
-Z	java:S106G"9Replace this use of System.out or System.err by a logger.(´ºÔÏÿÿÿÿÿ8¥”¬°¹.
 U	java:S106/"9Replace this use of System.out or System.err by a logger.(ÄÏşÉ8ËÌÕ¯¹.
-F
-java:S1125F")Remove the literal "false" boolean value.(ûÅŸ8¥”¬°¹.
+Z	java:S106G"9Replace this use of System.out or System.err by a logger.(´ºÔÏÿÿÿÿÿ8¥”¬°¹.
 o
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(Çµí‘8™·ü¯¹.
+F
+java:S1125F")Remove the literal "false" boolean value.(ûÅŸ8¥”¬°¹.
 r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§†¤¯úÿÿÿÿ8´¬¯¹.

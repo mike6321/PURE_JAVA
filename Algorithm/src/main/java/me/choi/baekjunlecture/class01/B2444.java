@@ -8,13 +8,13 @@ public class B2444 {
 
         int N = scanner.nextInt();
 
-        for (int i=1 ; i<=N ; i++) {
+        for (int i = 1; i <= N; i++) {
 
-            for (int j=1 ; j<=N-i ; j++) {
+            for (int j = 1; j <= N-i; j++) {
                 System.out.print(" ");
             }
 
-            for (int k=1 ; k<=2*i-1 ; k++) {
+            for (int k = 1; k <= 2*i-1; k++) {
                 System.out.print("*");
             }
 
@@ -22,13 +22,13 @@ public class B2444 {
 
         }
 
-        for (int i=N-1 ; i>0 ; i--) {
+        for (int i = N-1; i > 0; i--) {
 
-            for (int j=1 ; j<=N-i ; j++) {
+            for (int j = 1; j <= N-i; j++) {
                 System.out.print(" ");
             }
 
-            for (int k=1 ; k<=2*i-1 ; k++) {
+            for (int k = 1; k <= 2*i-1; k++) {
                 System.out.print("*");
             }
 

@@ -29,9 +29,9 @@ public class B1476 {
                 break;
             }
 
-            e+=1;
-            s+=1;
-            m+=1;
+            e += 1;
+            s += 1;
+            m += 1;
 
             if (e == 16) {
                 e = 1;

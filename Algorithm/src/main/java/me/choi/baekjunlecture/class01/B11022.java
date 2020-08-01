@@ -18,7 +18,7 @@ public class B11022 {
         Scanner scanner = new Scanner(System.in);
 
         T = scanner.nextInt();
-        for (int i = 0;i < T ;i++) {
+        for (int i = 0; i < T ; i++) {
             A = scanner.nextInt();
             B = scanner.nextInt();
 

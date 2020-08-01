@@ -45,4 +45,5 @@ public class B1697 {
 
         System.out.println(visited[M]-1);
     }
+
 }

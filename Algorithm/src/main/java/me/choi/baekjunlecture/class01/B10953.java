@@ -19,7 +19,7 @@ public class B10953 {
         Scanner scanner = new Scanner(System.in);
         T = scanner.nextInt();
 
-        for (int i = 0;i < T ;i++) {
+        for (int i = 0; i < T ; i++) {
             str = scanner.next();
 
             System.out.println((str.codePointAt(0)-48) + (str.codePointAt(2)-48));

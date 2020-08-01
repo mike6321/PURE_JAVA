@@ -31,11 +31,11 @@ public class B10818 {
         st = new StringTokenizer(line, " ");
         br.close();
 
-        for (int i=0 ; i<N ;i++) {
+        for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        for (int i=0 ; i<N ; i++) {
+        for (int i = 0; i < N; i++) {
             if (min > arr[i])
                 min = arr[i];
 

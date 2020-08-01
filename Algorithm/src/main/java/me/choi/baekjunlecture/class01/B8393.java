@@ -17,7 +17,7 @@ public class B8393 {
         Scanner scanner = new Scanner(System.in);
         n = scanner.nextInt();
 
-        for (int i = 1;i <= n ;i++) {
+        for (int i = 1; i <= n; i++) {
                 sum += i;
         }
 
