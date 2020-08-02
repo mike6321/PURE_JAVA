@@ -39,7 +39,6 @@ public class B1107 {
 
     private static int possible(int num) {
         int length = 0;
-
         if (num == 0) {
             return broken[num] ? 0:1;
         }
