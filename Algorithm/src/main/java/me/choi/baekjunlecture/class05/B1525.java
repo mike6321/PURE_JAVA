@@ -11,6 +11,9 @@ import java.util.*;
  */
 public class B1525 {
 
+    public B1525() {
+    }
+
     public static void main(String[] args) {
 
     }
