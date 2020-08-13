@@ -8,11 +8,12 @@ public class Code02 {
 
 
     private static void func(int n) {
-        if (n<=0) {
+        if (n <= 0) {
             return;
-        } else {
+        }
+        else {
             System.out.println("Hello Junwoo!");
-            func(n-1);
+            func(n - 1);
         }
     }
 }

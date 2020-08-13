@@ -7,10 +7,11 @@ public class Code03 {
     }
 
     private static int func(int i) {
-        if (i<=0) {
+        if (i == 0) {
             return 0;
-        } else {
-            return i+func(i-1);
+        }
+        else {
+            return i + func(i - 1);
         }
     }
 }

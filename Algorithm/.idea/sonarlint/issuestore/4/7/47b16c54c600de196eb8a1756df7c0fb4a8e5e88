@@ -2,9 +2,9 @@
 o
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Çµí‘8™¥·É».
 r	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²è²€şÿÿÿÿ8ëúÂÈ».
+r	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ï·úùÿÿÿÿ8ëúÂÈ».
+r	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ñÛÁıÿÿÿÿ8ëúÂÈ».
 T
 java:S1135F"2Complete the task associated to this TODO comment.(»İû¡ÿÿÿÿÿ8ï‘»É».
 r	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†æğ¼şÿÿÿÿ8ƒáœÉ».
-r	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ï·úùÿÿÿÿ8ëúÂÈ».
-r	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ñÛÁıÿÿÿÿ8ëúÂÈ».
 U	java:S106V"9Replace this use of System.out or System.err by a logger.(Ù©È±8²ô¤É».
