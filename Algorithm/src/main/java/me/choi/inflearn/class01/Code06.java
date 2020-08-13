@@ -19,4 +19,5 @@ public class Code06 {
             return fibonacci(i - 1) + fibonacci(i - 2);
         }
     }
+
 }

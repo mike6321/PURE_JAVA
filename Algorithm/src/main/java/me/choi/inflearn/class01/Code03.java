@@ -14,4 +14,5 @@ public class Code03 {
             return i + func(i - 1);
         }
     }
+
 }

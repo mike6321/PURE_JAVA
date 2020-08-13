@@ -18,4 +18,5 @@ public class Code04 {
             return i * factorial(i - 1);
         }
     }
+
 }

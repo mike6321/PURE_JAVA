@@ -16,8 +16,10 @@ public class Code07 {
         }
         if (m % n == 0) {
             return n;
-        } else {
-            return gcd(n, m%n);
+        }
+        else {
+            return gcd(n, m % n);
         }
     }
+
 }

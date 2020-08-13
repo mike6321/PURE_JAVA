@@ -10,5 +10,4 @@ public class Code01 {
         func();
     }
 
-
 }
