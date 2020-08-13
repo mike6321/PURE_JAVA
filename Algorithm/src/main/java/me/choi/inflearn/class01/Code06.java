@@ -12,10 +12,11 @@ public class Code06 {
 
     private static int fibonacci(int i) {
 
-        if (i<2) {
+        if (i < 2) {
             return i;
-        } else {
-            return fibonacci(i-1) + fibonacci(i-2);
+        }
+        else {
+            return fibonacci(i - 1) + fibonacci(i - 2);
         }
     }
 }

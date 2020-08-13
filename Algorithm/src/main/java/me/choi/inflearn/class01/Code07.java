@@ -9,12 +9,12 @@ public class Code07 {
     private static int gcd(int m, int n) {
 
         //swap
-        if (m<n) {
+        if (m < n) {
             int temp = m;
-            m=n;
-            n=temp;
+            m = n;
+            n = temp;
         }
-        if (m%n ==0) {
+        if (m % n == 0) {
             return n;
         } else {
             return gcd(n, m%n);
