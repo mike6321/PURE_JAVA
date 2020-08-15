@@ -10,6 +10,8 @@
 
 ------
 
+
+
 ![image](https://user-images.githubusercontent.com/33277588/80913237-1a9b4300-8d7e-11ea-8d38-464fb4f41ce0.png)
 
 크게 Young, Old, Perm 세 영역으로 나뉘고 Perm 영역은 JDK8 버전이후로는 사라지게 된다.
