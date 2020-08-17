@@ -1,0 +1,10 @@
+
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ªé
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÔéÜíşÿÿÿÿ
+\
+java:S3457"AFormat specifiers should be used instead of string concatenation.(¤Œ™Úúÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(æ’
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¤Œ™Úúÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(ÿŞÃÂıÿÿÿÿ
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(îš©µ

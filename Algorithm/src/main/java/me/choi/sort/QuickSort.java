@@ -44,9 +44,6 @@ public class QuickSort {
 
         }while (pl <= pr);
 
-        System.out.println("left :: "+left+ "    right :: "+right);
-        System.out.println("pl :: "+pl+ "    pr :: "+pr);
-        System.out.println();
         if (left < pr)
             partition(array, left, pr);
         if (pl < right)
