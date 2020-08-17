@@ -1,5 +1,6 @@
 package me.choi.book.greedy;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -12,7 +13,7 @@ import java.util.Scanner;
 
 /*
 5 8 3
-2 4 6 4 6
+2 4 5 4 6
 */
 public class Problem_3_1 {
     public static void main(String[] args) {
@@ -27,27 +28,13 @@ public class Problem_3_1 {
             arr[i] = scanner.nextInt();
         }
 
-        int MAX = Integer.MIN_VALUE;
+        Arrays.sort(arr);
 
-        int maxIndex = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (maxIndex < arr[i]) {
-                maxIndex = i;
-                MAX = arr[i];
-            }
-        }
+        int length = arr.length;
+        int max = arr[length - 1];
+        int secondMax = arr[length - 2];
 
-        int SECONDMAX = Integer.MIN_VALUE;
-
-        for (int i = 0; i < arr.length; i++) {
-            if (i != maxIndex && SECONDMAX <= arr[i]) {
-                SECONDMAX = arr[i];
-            }
-        }
-
-        int result = 0;
-
-        result = (((M / K) * K) * MAX) + (M % K) * SECONDMAX;
+        int result = (((M / K) * K) * max) + (M % K) * secondMax;
         System.out.println(result);
 
     }
