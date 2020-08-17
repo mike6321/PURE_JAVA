@@ -1,0 +1,5 @@
+
+I
+java:S1068"-Remove this unused "moveCount" private field.(‰ô”D8Î´ŸÐ».
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤§º¯8ƒ½ÍÐ».
+u	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(çÌ†J8µ·¼Ð».

@@ -1,0 +1,10 @@
+
+L
+java:S1444"*Make this "public static list" field final(Ñ†áüÿÿÿÿÿ8’şĞ¤.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(â¯ş¸8ôËÒ¤.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ò³¾í8µûÑ¤.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(–·Õø8ôËÒ¤.
+?
+java:S2386"Make this member "protected".(Ñ†áüÿÿÿÿÿ8ä§Ñ¤.
+r
+java:S1104"PMake list a static final constant or non-public and provide accessors if needed.(Ñ†áüÿÿÿÿÿ8’şĞ¤.

@@ -1,9 +1,9 @@
 
 U	java:S106"9Replace this use of System.out or System.err by a logger.(›¥­8“™Â†¹.
 b
+java:S1124
+"EReorder the modifiers to comply with the Java Language Specification.(ÆÉ…‘8áÂ½†¹.
+b
 java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ö‚Ã8“™Â†¹.
 g
 java:S1124"EReorder the modifiers to comply with the Java Language Specification.(“ÂŞ§ıÿÿÿÿ8ˆ¹Â†¹.
-b
-java:S1124
-"EReorder the modifiers to comply with the Java Language Specification.(ÆÉ…‘8áÂ½†¹.

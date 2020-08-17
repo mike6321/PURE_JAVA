@@ -1,0 +1,6 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¾ı£
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í÷œúÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ûÁßŠûÿÿÿÿ
+I
+java:S1172"3Remove this unused method parameter "defaultClass".(½Úóø

@@ -7,5 +7,5 @@ package me.choi.abstractinstance;
  * @comment :
  * Time : 12:10 오전
  */
-public class HpPotion {
+public class HpPotion implements Item{
 }
