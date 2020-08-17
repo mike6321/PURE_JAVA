@@ -58,3 +58,25 @@ public int seach(Object o); // 인자값으로 받은 데이터의 위치 반환
 
 컴퓨터 내부의 재귀함수 실행은 스택의 구현과 같다.
 
+~~~java
+public class FactorialEx {
+    public static void main(String[] args) {
+        int result = factorialRecursive(5);
+        System.out.println(result);
+    }
+
+    private static int factorialRecursive(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+
+        return n * factorialRecursive(n - 1);
+    }
+
+}
+~~~
+
+비재귀로 루프를 돌리는 것보다 코드가 훨씬 간결해진다.
+
+------
+
