@@ -35,3 +35,17 @@ o
 ?src/main/java/org/example/a_package/a_bridgepattern/Weapon.java,4/f/4f7cd986f46e11ee20c665d1ac08dfb3be73a75e
 v
 Fsrc/main/java/org/example/a_package/a_bridgepattern/WeaponHandler.java,8/2/827f13cbe1d57a2a4e6c0697a18d5a4f6746165e
+}
+Msrc/main/java/org/example/b_package/b_abstractfactorypattern/ItemFactory.java,4/4/44e3d0b6a93f3d5cf50b3ca1fd80041627c4ea2b
+{
+Ksrc/main/java/org/example/b_package/b_abstractfactorypattern/HpFactory.java,f/0/f06ca80090ec749972810c08ed60640fa001c2fb
+v
+Fsrc/main/java/org/example/b_package/b_factorymethodpattern/Client.java,d/7/d7032f63276775d6addd280b022d9ea06b6c8f1f
+€
+Psrc/main/java/org/example/b_package/b_factorymethodpattern/HpCreatorFactory.java,a/6/a6e809b39465b09f724cd40badd86237e13022be
+‚
+Rsrc/main/java/org/example/b_package/b_factorymethodpattern/ItemCreatorFactory.java,3/f/3f17e3bf4fcae56c3c9ed5780af7ecc16ee0d996
+‚
+Rsrc/main/java/org/example/b_package/b_factorymethodpattern/makingclassdiagram.ucls,1/3/139abcfb1f2fd5511b43d90c1d6fda0b5283357c
+t
+Dsrc/main/java/org/example/b_package/b_factorymethodpattern/Item.java,b/0/b0ab130f125eb8e6b7101138eec24a299cd70ea5
