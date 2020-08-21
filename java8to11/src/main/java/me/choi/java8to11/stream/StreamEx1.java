@@ -12,7 +12,7 @@ import java.util.stream.Stream;
  * @comment : Stream 연습
  * Time : 11:43 오후
  */
-public class StringExercise {
+public class StreamEx1 {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
         names.add("junwoo");
