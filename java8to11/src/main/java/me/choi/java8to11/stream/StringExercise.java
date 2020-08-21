@@ -22,6 +22,9 @@ public class StringExercise {
 
         Stream<String> stringStream = names.stream().map(String::toUpperCase);
 
+        /**
+         * 예시
+         * */
         // 출력이 되지 않는다.
         names.stream().map(s -> {
             System.out.println(s);
@@ -29,6 +32,9 @@ public class StringExercise {
             return s.toUpperCase();
         });
 
+        /**
+         * Collectors의 사용
+         * */
         List<String> collect = names.stream().map(s -> {
             System.out.println(s);
 
