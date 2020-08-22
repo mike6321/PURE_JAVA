@@ -14,7 +14,7 @@ import java.util.Optional;
  * @comment :
  * Time : 3:40 오후
  */
-public class OptionalEx {
+public class OptionalEx1 {
     private static List<OnlineClass> springClasses = new ArrayList<>();
 
     public static void main(String[] args) {
