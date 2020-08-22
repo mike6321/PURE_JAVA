@@ -1,4 +1,4 @@
-package me.choi.java8to11.stream;
+package me.choi.java8to11;
 
 import java.time.Duration;
 

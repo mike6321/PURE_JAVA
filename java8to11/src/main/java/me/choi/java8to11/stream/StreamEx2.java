@@ -1,5 +1,7 @@
 package me.choi.java8to11.stream;
 
+import me.choi.java8to11.OnlineClass;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
