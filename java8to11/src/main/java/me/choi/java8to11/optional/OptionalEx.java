@@ -5,6 +5,7 @@ import me.choi.java8to11.Progress;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Project : java8to11
@@ -32,13 +33,19 @@ public class OptionalEx {
          * 굉장히 위험한 코드
          * null check를 잊을 수 도 있기 때문
          */
-        Progress progress = spring_boot.getProgress();
-        if (progress == null) {
-            throw new IllegalStateException();
-        }
-        if (progress != null) {
-            System.out.println(progress.getStudyDuration());
-        }
+//        Optional<Progress> progress = spring_boot.getProgress();
+//        if (progress == null) {
+//            throw new IllegalStateException();
+//        }
+//        if (progress != null) {
+//            System.out.println(progress.getStudyDuration());
+//        }
+
+        /**
+         * Optional의 사용
+         */
+        Optional<Progress> progress = spring_boot.getProgress();
+        progress.ifPresent(p -> System.out.println(p.getStudyDuration()));
     }
 
     private static void init() {

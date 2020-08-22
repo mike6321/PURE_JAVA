@@ -1,5 +1,7 @@
 package me.choi.java8to11;
 
+import java.util.Optional;
+
 /**
  * Project : java8to11
  *
@@ -44,8 +46,8 @@ public class OnlineClass {
         this.closed = closed;
     }
 
-    public Progress getProgress() {
-        return progress;
+    public Optional<Progress> getProgress() {
+        return Optional.ofNullable(progress);
     }
 
     public void setProgress(Progress progress) {
