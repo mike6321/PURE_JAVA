@@ -29,10 +29,18 @@ public class Quiz {
              * 첫 번째 close가 비정상 종료 되었을때 다음 close를 타지 않는다.
              * */
             if (in != null) {
-                in.close();
+                try {
+                    in.close();
+                } catch (IOException e) {
+
+                }
             }
             if (out != null) {
-                out.close();
+                try {
+                    out.close();
+                } catch (IOException e) {
+
+                }
             }
         }
     }
