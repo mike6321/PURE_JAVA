@@ -30,6 +30,16 @@ public class Domparser {
                 Element element = (Element) node;
                 String id = element.getAttribute("id");
                 System.out.println(id);
+
+                NodeList childNodes = element.getChildNodes();
+                for (int j = 0; j < childNodes.getLength(); j++) {
+                    Node childNode = childNodes.item(j);
+                    if (childNode.getNodeType() == Node.ELEMENT_NODE) {
+                        Element childElemnets = (Element) childNode;
+                        String textContent = childElemnets.getTextContent();
+                        System.out.println(childNode.getNodeName() + " " +textContent);
+                    }
+                }
             }
         }
     }
