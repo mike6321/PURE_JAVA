@@ -1,2 +1,5 @@
 RuntimeException 계열의 Exception은 알아두는것이 좋다.
 
+예외를 계속 던지다보면 main 메서드로 갈텐대 main 메서드에서도 못찾으면 어떻게 되나?
+쓰레드를 종료시킨다.
+
