@@ -15,6 +15,8 @@ public class Quiz {
         // TODO: [try with resources 적용] junwoochoi 2021/01/19 2:53 오후
         /**
          * 훨씬 깔끔
+         * try with resources 는 finally 블록에 처리되는 close 과정을
+         * 해준다.
          * */
         try (InputStream in = new FileInputStream(src);
              OutputStream out = new FileOutputStream(dest)) {
