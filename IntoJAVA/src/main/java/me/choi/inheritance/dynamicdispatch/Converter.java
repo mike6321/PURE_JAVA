@@ -12,4 +12,11 @@ public class Converter {
         System.out.println(mother.getClass());
         mother.print();
     }
+
+    public Converter() {
+    }
+
+    public Mother Switching (Mother mother) {
+        return mother;
+    }
 }
