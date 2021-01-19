@@ -15,7 +15,7 @@ import java.io.IOException;
  * Project : IntoJAVA
  *
  * @author : jwdeveloper
- * @comment :
+ * @comment : xml을 전부 메모리에 적재하는 방식 - Dom 방식
  * Time : 6:26 오후
  */
 public class Domparser {
