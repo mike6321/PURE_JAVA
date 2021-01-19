@@ -1,0 +1,11 @@
+<members>
+    <member id = "1">
+        <username>준우</username>
+        <license>license</license>
+    </member>
+
+    <member id = "2">
+        <username>성아</username>
+        <license>license</license>
+    </member>
+</members>
