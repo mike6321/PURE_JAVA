@@ -1,4 +1,4 @@
-package me.choi.interfaceex;
+package me.choi.interfaceex.before;
 
 /**
  * Project : IntoJAVA
