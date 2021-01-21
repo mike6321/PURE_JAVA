@@ -1,8 +1,20 @@
-package me.choi.interfaceex;/**
+package me.choi.interfaceex;
+
+/**
  * Project : IntoJAVA
- * 
+ *
  * @author : jwdeveloper
- * @comment : 
+ * @comment :
  * Time : 2:34 오후
-*/public class HelloAdapter {
+ */
+public class HelloAdapter implements HelloInterface{
+    @Override
+    public void beforeHello() {
+
+    }
+
+    @Override
+    public void afterHello() {
+
+    }
 }
