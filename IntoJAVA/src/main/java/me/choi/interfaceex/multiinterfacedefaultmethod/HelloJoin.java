@@ -9,11 +9,12 @@ package me.choi.interfaceex.multiinterfacedefaultmethod;
  */
 public interface HelloJoin {
     default void beforeHello() {
-        System.out.println("[HelloJoin] : beforeHello");
+
+        System.out.println(HelloJoin.class + " : beforeHello");
     };
 
     default void afterHello() {
-        System.out.println("[HelloJoin] : afterHello");
+        System.out.println(HelloJoin.class + " : afterHello");
     };
 
     default void other() {

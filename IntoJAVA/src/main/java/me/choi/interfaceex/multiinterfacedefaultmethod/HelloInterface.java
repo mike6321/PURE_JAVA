@@ -12,10 +12,10 @@ package me.choi.interfaceex.multiinterfacedefaultmethod;
  */
 public interface HelloInterface {
     default void beforeHello() {
-        System.out.println("[HelloInterface] : beforeHello");
+        System.out.println(HelloInterface.class + " : beforeHello");
     };
 
     default void afterHello() {
-        System.out.println("[HelloInterface] : afterHello");
+        System.out.println(HelloInterface.class + " : beforeHello");
     };
 }
