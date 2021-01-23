@@ -9,19 +9,21 @@ package me.choi.multithreading;
  */
 public class ThreadCreation extends Thread{
 
-    @Override
-    public void run() {
-        System.out.println(Thread.currentThread().getName());
-    }
-
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName());
-        ThreadCreation threadCreation = new ThreadCreation();
-        threadCreation.start();
 
         new Thread(new Runnable() {
             @Override
             public void run() {
+                // TODO: [sleep] junwoochoi 2021/01/23 11:00 오후
+                /**
+                 * sleep에는 long 타입을 사용하자 대문자를 사용하자
+                 * */
+                try {
+                    Thread.sleep(1000L);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException();
+                }
                 System.out.println(Thread.currentThread().getName());
             }
         }).start();
