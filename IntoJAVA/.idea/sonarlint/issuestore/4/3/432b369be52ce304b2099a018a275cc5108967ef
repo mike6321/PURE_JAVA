@@ -1,0 +1,13 @@
+
+]
+java:S2134
+"@Don't extend "Thread", since the "run" method is not overridden.(ïĞ¾Ô8—·°üò.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(›Óğ°şÿÿÿÿ8¸ï²üò.
+c
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8¼Œ³üò.
+O
+java:S1135"2Complete the task associated to this TODO comment.(æ‹8Óæ°üò.
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8­…´üò.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(›Óğ°şÿÿÿÿ8«–°üò.
+E
+java:S1604"(Make this anonymous inner class a lambda(ÉãÃ®8ÃÎ¤üò.
