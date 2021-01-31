@@ -66,6 +66,8 @@ public class HashSetExample {
         int tableIndex = 31 & mapHash;
         System.out.println("tableIndex " + tableIndex);
 
+
+
     }
 }
 /**
