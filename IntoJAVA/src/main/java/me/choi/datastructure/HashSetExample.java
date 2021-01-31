@@ -1,6 +1,7 @@
 package me.choi.datastructure;
 
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Project : IntoJAVA
@@ -12,18 +13,27 @@ import java.util.HashSet;
 public class HashSetExample {
     public static void main(String[] args) {
         HashSet<Integer> hashSet = new HashSet<>();
-        for (int i = 1; hashSet.size() <= 16; i+=16) {
-            System.out.println(i);
+        for (int i = 1; hashSet.size() <= 64; i+=16) {
 
-//            if (i == 257) {
-//                hashSet.add(i);
-//                break;
-//            }
             hashSet.add(i);
+
+//            Integer targetNum =  i;
+//            int hash = targetNum.hashCode();
+//
+//            int mapHash = hash ^ (hash >>> 16);
+//
+//            int tableIndex = 16 & mapHash;
+//            System.out.println("tableIndex " + tableIndex);
+
         }
         System.out.println(hashSet);
 
 
+
+// 65 3
+
+// 129 1 -> tree
+// 145 8
 
 //        String x = Integer.toBinaryString(15);
 //        System.out.println(x);
@@ -46,12 +56,14 @@ public class HashSetExample {
          *
          * -50 -> -34 -> -18 -> -2 -> 1 -> 17 -> 33 -> 49
          * */
-        Integer targetNum = 49;
+        Integer targetNum =  145 + 16;
         int hash = targetNum.hashCode();
+        System.out.println(Integer.toBinaryString(145));
         int mapHash = hash ^ (hash >>> 16);
         System.out.println("mapHash " + mapHash);
 
-        int tableIndex = 15 & mapHash;
+//        int tableIndex = 15 & mapHash;
+        int tableIndex = 31 & mapHash;
         System.out.println("tableIndex " + tableIndex);
 
     }
