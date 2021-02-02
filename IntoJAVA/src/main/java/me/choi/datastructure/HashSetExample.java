@@ -14,21 +14,9 @@ public class HashSetExample {
     public static void main(String[] args) {
         HashSet<Integer> hashSet = new HashSet<>();
         for (int i = 1; hashSet.size() <= 64; i+=16) {
-
             hashSet.add(i);
-
-//            Integer targetNum =  i;
-//            int hash = targetNum.hashCode();
-//
-//            int mapHash = hash ^ (hash >>> 16);
-//
-//            int tableIndex = 16 & mapHash;
-//            System.out.println("tableIndex " + tableIndex);
-
         }
         System.out.println(hashSet);
-
-
 
 // 65 3
 
