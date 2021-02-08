@@ -28,6 +28,15 @@ public class TreeMapExample {
 
     }
 }
+//p.right = r.left;
+//if (r.left != null)
+//    r.left.parent = p;
+
+//setColor(parentOf(x), BLACK);
+//setColor(y, BLACK);
+//setColor(parentOf(parentOf(x)), RED);
+//x = parentOf(parentOf(x));
+
 
 //if (p.parent == null)
 //        root = r;
