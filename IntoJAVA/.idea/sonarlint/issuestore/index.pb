@@ -43,5 +43,5 @@ g
 7src/main/java/me/choi/datastructure/WhyHashSetSort.java,a/d/ad9ef776dbb9bead42b32d1584458c3ba5bf5a6d
 g
 7src/main/java/me/choi/datastructure/TreeMapExample.java,1/3/13eaa5c26b95585d269ca89153be5efa68b397de
-^
-.src/main/java/me/choi/datastructure/Query.java,9/8/98fbfacf6b0bd0b710095c7f8e26d7f50bf6e5ab
+m
+=src/main/java/me/choi/datastructure/LinkedHashMapExample.java,9/b/9ba978185d129aec66d22fd2afc011d485fb9fae
