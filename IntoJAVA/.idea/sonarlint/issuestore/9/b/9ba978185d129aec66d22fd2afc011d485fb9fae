@@ -1,2 +1,7 @@
 
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ÃÂ‡Ÿ8¤öĞé÷.
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(›íÜ8Á¹ğ‹ø.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÃÂ‡Ÿ8é±ò‹ø.
+J
+java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX8«éí‹ø.
+V
+java:S1128"4Remove this unused import 'java.util.LinkedHashSet'.(à€¼úÿÿÿÿ8åšú‹ø.

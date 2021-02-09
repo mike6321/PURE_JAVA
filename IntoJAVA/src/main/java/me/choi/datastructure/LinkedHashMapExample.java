@@ -1,6 +1,8 @@
 package me.choi.datastructure;
 
+import java.util.HashSet;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 
 /**
  * Project : IntoJAVA
@@ -19,5 +21,14 @@ public class LinkedHashMapExample {
         linkedHashMap.put(4, 1);
 
         System.out.println(linkedHashMap);
+
+
+
+        LinkedHashMap<Integer, Integer> linkedHashMap2 = new LinkedHashMap<>();
+        for (int i = 1; linkedHashMap2.size() <= 64; i+=16) {
+            linkedHashMap2.put(i, i);
+        }
+
+        System.out.println(linkedHashMap2);
     }
 }
