@@ -1,6 +1,7 @@
 
-X	java:S125"<This block of commented-out lines of code should be removed.(’Ù·¾8ç»ƒ‰ø.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(˜˜8Ÿ“¢è÷.
-X	java:S125#"<This block of commented-out lines of code should be removed.(Æú¼8¹ôˆø.
-]	java:S1255"<This block of commented-out lines of code should be removed.(­¢ÿÿÿÿÿ8««æ÷.
-]	java:S125)"<This block of commented-out lines of code should be removed.(•æ¶üÿÿÿÿ8…Èé÷.
+]	java:S125;"<This block of commented-out lines of code should be removed.(­¢ÿÿÿÿÿ8««æ÷.
+]	java:S125/"<This block of commented-out lines of code should be removed.(•æ¶üÿÿÿÿ8…Èé÷.
+]	java:S125"<This block of commented-out lines of code should be removed.(á‹Ì˜ÿÿÿÿÿ8³µôÕø.
+X	java:S125)"<This block of commented-out lines of code should be removed.(Æú¼8¹ôˆø.
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(˜˜8Ÿ“¢è÷.
+X	java:S125%"<This block of commented-out lines of code should be removed.(’Ù·¾8ç»ƒ‰ø.

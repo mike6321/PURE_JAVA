@@ -1,0 +1,12 @@
+
+m
+java:S1206"PThis class overrides "hashCode()" and should therefore also override "equals()".(ğÜşŠ8»à¥¸ø.
+D
+java:S1172"(Remove this unused method parameter "a".(ˆšÏw8ÆÄ¨¸ø.
+J
+java:S1172"(Remove this unused method parameter "b".(£×àŒùÿÿÿÿ8ÆÄ¨¸ø.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g8ÆÄ¨¸ø.
+J
+java:S1172"(Remove this unused method parameter "c".(íÔ·ıÿÿÿÿ8ÆÄ¨¸ø.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‘Ô¶Œúÿÿÿÿ8ÆÄ¨¸ø.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ô·ê8ÆÄ¨¸ø.

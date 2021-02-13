@@ -13,15 +13,21 @@ public class TreeMapExample {
     public static void main(String[] args) {
         TreeMap<Integer, Integer> treeMap = new TreeMap<>();
 
+//        treeMap.put(1, 1);
+//        treeMap.put(65, 1);
+//        treeMap.put(129, 1);
+//        treeMap.put(193, 1);
+//        treeMap.put(257, 1);
+//        treeMap.put(321, 1);
+//        treeMap.put(385, 1);
+//        treeMap.put(449, 1);
+//        treeMap.put(513, 1);
         treeMap.put(1, 1);
-        treeMap.put(65, 1);
-        treeMap.put(129, 1);
-        treeMap.put(193, 1);
-        treeMap.put(257, 1);
-        treeMap.put(321, 1);
-        treeMap.put(385, 1);
-        treeMap.put(449, 1);
-        treeMap.put(513, 1);
+        treeMap.put(17, 1);
+        treeMap.put(9, 1);
+        treeMap.put(0, 1);
+        treeMap.put(37, 1);
+        treeMap.put(5, 1);
 
 
         System.out.println(treeMap);
