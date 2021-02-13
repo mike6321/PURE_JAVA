@@ -1,4 +1,4 @@
-package me.choi.reflection;
+package me.choi.reflection.intro;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

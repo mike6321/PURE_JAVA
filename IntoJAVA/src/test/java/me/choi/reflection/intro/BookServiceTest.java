@@ -1,4 +1,4 @@
-package me.choi.reflection;
+package me.choi.reflection.intro;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
