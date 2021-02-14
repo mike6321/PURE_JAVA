@@ -1,5 +1,8 @@
 package me.choi.reflection;
 
+import me.choi.reflection.annotation.AnotherAnnotation;
+import me.choi.reflection.annotation.MyAnnotation;
+
 /**
  * Project : IntoJAVA
  *
@@ -7,8 +10,10 @@ package me.choi.reflection;
  * @comment :
  * Time : 2:11 오전
  */
+@MyAnnotation(31)
 public class Book implements MyInterface{
 
+    @AnotherAnnotation(17)
     private String a;
 
     private static String B = "BOOK";
