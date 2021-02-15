@@ -1,4 +1,4 @@
-package me.choi;
+package me.choi.etc;
 
 import java.lang.constant.Constable;
 import java.lang.constant.ConstantDesc;

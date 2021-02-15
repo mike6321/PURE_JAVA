@@ -1,4 +1,4 @@
-package me.choi;
+package me.choi.etc;
 
 public class IntoEquals {
 

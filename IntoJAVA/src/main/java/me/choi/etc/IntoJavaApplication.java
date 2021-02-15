@@ -1,4 +1,4 @@
-package me.choi;
+package me.choi.etc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

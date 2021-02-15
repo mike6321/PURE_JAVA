@@ -1,4 +1,4 @@
-package me.choi;
+package me.choi.etc;
 
 public class StringUTF16 {
     static final int HI_BYTE_SHIFT;
