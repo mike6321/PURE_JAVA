@@ -1,16 +1,54 @@
 
-I
-java:S1481",Remove this unused "aClass1" local variable.(İŒÿô8¢Ä°ãù.
-T
-java:S1135"2Complete the task associated to this TODO comment.(õÇüÿÿÿÿ8ÿ ²ãù.
-`
-java:S2133">Remove this object instantiation and use "Book.class" instead.(·ç…áşÿÿÿÿ8É×·ãù.
-O
-java:S1135"2Complete the task associated to this TODO comment.(êüÖ8¡Ñ®ãù.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(¥Î­Å8Û¦¶ãù.
-M
-java:S1481"+Remove this unused "aClass" local variable.(ıĞª½ıÿÿÿÿ8ïƒ®ãù.
 Q
 java:S1128"4Remove this unused import 'java.lang.reflect.Field'.(„‡Áú8Û¦¶ãù.
 O
-java:S1135"2Complete the task associated to this TODO comment.(şºë8ïƒ®ãù.
+java:S1135c"2Complete the task associated to this TODO comment.(¬®ù 8¡ß¬ÿù.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(×á–8§Ÿ°ÿù.
+[	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8“¶ÿù.
+T
+java:S1135S"2Complete the task associated to this TODO comment.(¨ÊŠåÿÿÿÿÿ8ìÒ›ÿù.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(¨Ò§¯üÿÿÿÿ8íä±ÿù.
+U	java:S106O"9Replace this use of System.out or System.err by a logger.(Áß‡Ü8áÍ–ÿù.
+N
+java:S3011{",This accessibility update should be removed.(Í”úÆùÿÿÿÿ8Éù®ÿù.
+M
+java:S1481"+Remove this unused "aClass" local variable.(ıĞª½ıÿÿÿÿ8ïƒ®ãù.
+Z	java:S1062"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¨ì‚ÿù.
+s
+java:S3457-"Q%n should be used in place of \n to produce the platform-specific line separator.(ŸĞ‚´úÿÿÿÿ8ÃÈ”ÿù.
+N
+java:S1602^",Remove useless curly braces around statement(Ú—õóıÿÿÿÿ8ˆÈ ÿù.
+Z	java:S106a"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Éù®ÿù.
+Z	java:S106_"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ8ˆÈ ÿù.
+O
+java:S1135"2Complete the task associated to this TODO comment.(êüÖ8¡Ñ®ãù.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¥Î­Å8Û¦¶ãù.
+N
+java:S1612^",Replace this lambda with a method reference.(Ú—õóıÿÿÿÿ8ˆÈ ÿù.
+T
+java:S1135"2Complete the task associated to this TODO comment.(õÇüÿÿÿÿ8ÿ ²ãù.
+O
+java:S1135"2Complete the task associated to this TODO comment.(şºë8ïƒ®ãù.
+N
+java:S3011C",This accessibility update should be removed.(íË©¶úÿÿÿÿ8±Ï€ÿù.
+N
+java:S3011N",This accessibility update should be removed.(¸Ò†’üÿÿÿÿ8üğ˜ÿù.
+V	java:S106€"9Replace this use of System.out or System.err by a logger.(¨š ƒ8íä±ÿù.
+T
+java:S1135 "2Complete the task associated to this TODO comment.(³Äß…ùÿÿÿÿ8×Ü‹ÿù.
+O
+java:S11354"2Complete the task associated to this TODO comment.(û´¢ä8¹ÃŒÿù.
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¿Ô•ÿù.
+N
+java:S3011,",This accessibility update should be removed.(Í”úÆùÿÿÿÿ8˜Šóşù.
+U	java:S106W"9Replace this use of System.out or System.err by a logger.(Ğé©Ó8Ğ©ÿù.
+U	java:S106~"9Replace this use of System.out or System.err by a logger.(‡¤Ÿ”8§Ÿ°ÿù.
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(¨ŠóËúÿÿÿÿ8ñûşù.
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(ŸĞ‚´úÿÿÿÿ8Ñ¶ßşù.
+T
+java:S1135H"2Complete the task associated to this TODO comment.(Ï¯Óøÿÿÿÿ8·Éšÿù.
+I
+java:S1481",Remove this unused "aClass1" local variable.(İŒÿô8¢Ä°ãù.
+Z	java:S106Q"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8˜¨œÿù.
+O
+java:S1135Y"2Complete the task associated to this TODO comment.(¹ß§Ş8ö¢ÿù.

@@ -1,20 +1,18 @@
 
-{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ώΤϋÿÿÿÿ8¦ο„γω.
-U	java:S106 "9Replace this use of System.out or System.err by a logger.(ΔθΗ¥8€³‡γω.
-U	java:S106$"9Replace this use of System.out or System.err by a logger.(—‘8€³‡γω.
-B
-java:S1068"%Remove this unused "B" private field.(–€ίς8¦ο„γω.
-i
-java:S3008"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–€ίς8¦ο„γω.
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(—‘8€³‡γω.
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ώΤϋÿÿÿÿ8¦ο„γω.
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(ΔθΗ¥8€³‡γω.
+j
+java:S1104"MMake d a static final constant or non-public and provide accessors if needed.(”±Έ®8¦ο„γω.
 V
-java:S3400("9Remove this method and declare a constant for this value.(½Ρÿί8“γω.
-G
-java:S1068"%Remove this unused "c" private field.(ώΤϋÿÿÿÿ8¦ο„γω.
-j
-java:S1104"MMake e a static final constant or non-public and provide accessors if needed.(Υ¦Α8¦ο„γω.
+java:S3400-"9Remove this method and declare a constant for this value.(½Ρÿί8“γω.
 C
-java:S1144"&Remove this unused private "f" method.(δΈ΅8€³‡γω.
+java:S1144$"&Remove this unused private "f" method.(δΈ΅8€³‡γω.
+B
+java:S1068"%Remove this unused "B" private field.(–€ίς8¦ο„γω.
 j
-java:S1104"MMake d a static final constant or non-public and provide accessors if needed.(”±Έ®8¦ο„γω.
+java:S1104"MMake e a static final constant or non-public and provide accessors if needed.(Υ¦Α8¦ο„γω.
+i
+java:S3008"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–€ίς8¦ο„γω.
 G
-java:S1068"%Remove this unused "a" private field.(΄¥ε†ωÿÿÿÿ8¦ο„γω.
+java:S1068"%Remove this unused "c" private field.(ώΤϋÿÿÿÿ8¦ο„γω.
