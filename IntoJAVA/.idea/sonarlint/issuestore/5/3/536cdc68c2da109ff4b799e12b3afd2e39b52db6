@@ -1,0 +1,4 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(š£¥®
+o
+java:S1210F"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(Ä×¶É
