@@ -1,27 +1,45 @@
 
-U	java:S1069"9Replace this use of System.out or System.err by a logger.(¤ˆŒ8ŸÑ®£ú.
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Ã‚ĞÈú.
+H
+java:S1612V",Replace this lambda with a method reference.(Ã¿÷8¬–ÄÈú.
+Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ8’ÅÈú.
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(ÛöÊÙøÿÿÿÿ8òàÍÈú.
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Å ĞÈú.
+U	java:S106H"9Replace this use of System.out or System.err by a logger.( ô¡š8‡ÏÈú.
+U	java:S106?"9Replace this use of System.out or System.err by a logger.(ğêÎ8‚˜ÎÈú.
+U	java:S106O"9Replace this use of System.out or System.err by a logger.(¤“ƒ¶8‡ÏÈú.
+N
+java:S11354"2Complete the task associated to this TODO comment.(ˆèÒ8ŸÎ‚£ú.
+U	java:S106>"9Replace this use of System.out or System.err by a logger.(üÓûâ8€™ËÈú.
 O
-java:S1135#"2Complete the task associated to this TODO comment.(…ïœ†8ŸÎ‚£ú.
-Z	java:S106R"9Replace this use of System.out or System.err by a logger.(ñÙÇæûÿÿÿÿ8ŸÎ‚£ú.
-U	java:S106."9Replace this use of System.out or System.err by a logger.(—†¨ş8¾…”£ú.
+java:S1135C"2Complete the task associated to this TODO comment.(Óû¿Ä8ŸÎ‚£ú.
+Z	java:S106G"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8©Ç‘Èú.
+U	java:S106K"9Replace this use of System.out or System.err by a logger.(¤“ƒ¶8Í‰×Èú.
+N
+java:S1135,"2Complete the task associated to this TODO comment.(¦ÑÇu8ŸÎ‚£ú.
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(şûÎ”8¥ııÇú.
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(üÓûâ8Â³Èú.
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ãĞÈú.
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ãĞÈú.
+U	java:S1063"9Replace this use of System.out or System.err by a logger.(ù¸Ÿ§8»ÒÕÈú.
+U	java:S106R"9Replace this use of System.out or System.err by a logger.(¨ÊÒ°8·ü×Èú.
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(ğêÎ8ÖÅÖÈú.
+U	java:S106B"9Replace this use of System.out or System.err by a logger.( ô¡š8‡ÏÈú.
+T	java:S106N"9Replace this use of System.out or System.err by a logger.(Äş!8Ë¨­Èú.
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(üÓûâ8´ìŒÈú.
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(ù¸Ÿ§8»ÒÕÈú.
 O
-java:S1135="2Complete the task associated to this TODO comment.(…ïœ†8ŸÎ‚£ú.
-Z	java:S106<"9Replace this use of System.out or System.err by a logger.(šÃÀîøÿÿÿÿ8ì± £ú.
-O
-java:S1135M"2Complete the task associated to this TODO comment.(…ïœ†8ŸÎ‚£ú.
-U	java:S106""9Replace this use of System.out or System.err by a logger.(ÏÍ¡·8ŸÎ‚£ú.
-O
-java:S1135P"2Complete the task associated to this TODO comment.(…ïœ†8ŸÎ‚£ú.
-O
-java:S1135H"2Complete the task associated to this TODO comment.(…ïœ†8ŸÎ‚£ú.
-U	java:S106G"9Replace this use of System.out or System.err by a logger.(Ø¨¾³8œ™×£ú.
-Z	java:S106O"9Replace this use of System.out or System.err by a logger.(ÂÇûÿÿÿÿ8ŸÎ‚£ú.
-O
-java:S1135S"2Complete the task associated to this TODO comment.(…ïœ†8ŸÎ‚£ú.
-X	java:S125$"<This block of commented-out lines of code should be removed.(ŠÏ—¢8ı¦£ú.
-X	java:S1252"<This block of commented-out lines of code should be removed.(³¡Ù‚8è‰©£ú.
-U	java:S106L"9Replace this use of System.out or System.err by a logger.(¾ıáÆ8µ¿»£ú.
+java:S1135<"2Complete the task associated to this TODO comment.(¹ÁÖÔ8ŸÎ‚£ú.
 T
-java:S1135/"2Complete the task associated to this TODO comment.(á¹ÓÎşÿÿÿÿ8ŸÎ‚£ú.
-U	java:S106,"9Replace this use of System.out or System.err by a logger.(üÓûâ8¯£›£ú.
-X	java:S125@"<This block of commented-out lines of code should be removed.(‘Üã«8Ÿî¼£ú.
+java:S1135$"2Complete the task associated to this TODO comment.(ËÎÂ™ÿÿÿÿÿ8ŸÎ‚£ú.
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(ÛöÊÙøÿÿÿÿ8çˆÌÈú.
+Z	java:S106P"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ãĞÈú.
+O
+java:S1135T"2Complete the task associated to this TODO comment.(èĞÎ¬8ŸÎ‚£ú.
+U	java:S106["9Replace this use of System.out or System.err by a logger.(¨ÊÒ°8·ü×Èú.
+Z	java:S106S"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÄÿĞÈú.
+O
+java:S1135L"2Complete the task associated to this TODO comment.(¥ŸàŞ8ŸÎ‚£ú.
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÛïÏÈú.
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(¿Ùç8éªÕÈú.
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(¿Ùç8ëŒÕÈú.

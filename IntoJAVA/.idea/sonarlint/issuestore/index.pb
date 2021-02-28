@@ -131,3 +131,7 @@ Z
 -src/main/java/me/choi/stream/OnlineClass.java,5/7/57561dbf6e9c80957c530f494b8ee213c77c6a3e
 `
 0src/main/java/me/choi/stream/StringExample2.java,2/5/25e32b5c57bb65be129b89b04d0d68f4b232ec9c
+o
+?src/main/java/me/choi/inheritance/visitorpattern/SaxParser.java,7/6/76233c6807d0cba77813d615211ce68f5bfd7028
+o
+?src/main/java/me/choi/inheritance/visitorpattern/Domparser.java,c/3/c34aabc9b5a2973c0a27cdbc162e857d72e36334
