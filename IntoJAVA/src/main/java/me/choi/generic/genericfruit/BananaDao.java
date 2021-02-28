@@ -9,7 +9,4 @@ package me.choi.generic.genericfruit;
  */
 public class BananaDao extends GenericDao<Banana, Integer>{
 
-    public BananaDao() {
-        super(Banana.class);
-    }
 }

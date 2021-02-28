@@ -26,5 +26,8 @@ public class Store {
         all.forEach(System.out::println);
 
         System.out.println(appleDao.getEntityClass());
+
+        BananaDao bananaDao = new BananaDao();
+        System.out.println(bananaDao.getEntityClass());
     }
 }

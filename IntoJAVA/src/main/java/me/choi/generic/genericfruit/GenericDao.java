@@ -1,5 +1,6 @@
 package me.choi.generic.genericfruit;
 
+import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,8 +17,8 @@ public class GenericDao<E extends Entity<K>, K> {
 
     public Class<E> entityClass;
 
-    public GenericDao(Class<E> entityClass) {
-        this.entityClass = entityClass;
+    public GenericDao() {
+        this.entityClass = (Class<E>)((ParameterizedType)this.getClass().getGenericSuperclass()).getActualTypeArguments()[0];
     }
 
     public Class<E> getEntityClass() {
