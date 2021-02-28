@@ -5,8 +5,9 @@ package me.choi.generic.generic2;
  *
  * @author : jwdeveloper
  * @comment :
- * Time : 9:15 오후
+ * Time : 9:38 오후
  */
-public class AppleDao extends GenericDao<Apple, Integer>{
+public interface Entity<K> {
 
+    K getId();
 }
