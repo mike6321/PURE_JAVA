@@ -1,4 +1,4 @@
-package me.choi.generic;
+package me.choi.generic.genericwarmingup;
 
 /**
  * Project : IntoJAVA
@@ -7,5 +7,5 @@ package me.choi.generic;
  * @comment :
  * Time : 8:40 오후
  */
-public class Game {
+public interface RankGame {
 }

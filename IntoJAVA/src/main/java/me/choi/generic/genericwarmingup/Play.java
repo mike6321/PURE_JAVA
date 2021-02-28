@@ -1,4 +1,4 @@
-package me.choi.generic;
+package me.choi.generic.genericwarmingup;
 
 /**
  * Project : IntoJAVA

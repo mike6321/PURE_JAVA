@@ -1,4 +1,4 @@
-package me.choi.generic.generic2;
+package me.choi.generic.genericfruit;
 
 /**
  * Project : IntoJAVA
