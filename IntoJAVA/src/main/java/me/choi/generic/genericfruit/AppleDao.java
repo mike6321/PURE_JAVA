@@ -9,4 +9,7 @@ package me.choi.generic.genericfruit;
  */
 public class AppleDao extends GenericDao<Apple, Integer>{
 
+    public AppleDao() {
+        super(Apple.class);
+    }
 }

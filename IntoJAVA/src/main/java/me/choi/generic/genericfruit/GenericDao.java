@@ -14,6 +14,16 @@ import java.util.Map;
  */
 public class GenericDao<E extends Entity<K>, K> {
 
+    public Class<E> entityClass;
+
+    public GenericDao(Class<E> entityClass) {
+        this.entityClass = entityClass;
+    }
+
+    public Class<E> getEntityClass() {
+        return entityClass;
+    }
+
     private Map<K, E> dataSource = new HashMap<>();
 
     public void save(E entity) {

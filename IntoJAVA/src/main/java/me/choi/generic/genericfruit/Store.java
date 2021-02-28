@@ -16,7 +16,7 @@ public class Store {
         /**
          * 이렇게 하면 Banana, Apple이 필요 없어진다.
          * */
-        GenericDao<Apple, Integer> appleDao = new GenericDao<>();
+        AppleDao appleDao = new AppleDao();
 
         appleDao.save(Apple.of(1));
         appleDao.save(Apple.of(2));
@@ -24,5 +24,7 @@ public class Store {
 
         List<Apple> all = appleDao.findAll();
         all.forEach(System.out::println);
+
+        System.out.println(appleDao.getEntityClass());
     }
 }
