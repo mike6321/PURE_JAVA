@@ -1,13 +1,13 @@
 
-N
-java:S2755"3Disable access to external entities in XML parsing.(ΒÿΥ‹ÿÿÿÿÿ
-G
-java:S1128"1Remove this unused import 'org.w3c.dom.Document'.(Α§²“
+S	java:S106."9Replace this use of System.out or System.err by a logger.( η£ύÿÿÿÿ
 i
 java:S1450"SRemove the "text" field and declare it as a local variable in the relevant methods.(²ϋΑ
-N	java:S106""9Replace this use of System.out or System.err by a logger.(­Ν»™
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(Ταυ±ώÿÿÿÿ
-S	java:S106,"9Replace this use of System.out or System.err by a logger.(ΐΰ¶ιÿÿÿÿÿ
-S	java:S106."9Replace this use of System.out or System.err by a logger.( η£ύÿÿÿÿ
 >
 java:S1068"(Remove this unused "text" private field.(²ϋΑ
+G
+java:S1128"1Remove this unused import 'org.w3c.dom.Document'.(Α§²“
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(ΐΰ¶ιÿÿÿÿÿ
+N
+java:S2755"3Disable access to external entities in XML parsing.(ΒÿΥ‹ÿÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(Ταυ±ώÿÿÿÿ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(­Ν»™
