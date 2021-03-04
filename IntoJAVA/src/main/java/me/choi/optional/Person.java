@@ -15,13 +15,27 @@ public class Person {
     }
 
     public String getCarInsuranceName(Person person) {
-        return person.getCar().getInsurance().getName();
+        // TODO: NPE가 발생하지 않도록 코드수정 2021/03/04 10:20 오후
+        if (person != null) {
+            Car car = person.getCar();
+
+            if (car != null) {
+                Insurance insurance = car.getInsurance();
+
+                if (insurance != null) {
+                    return insurance.getName();
+                }
+            }
+        }
+        return "UnKnown";
+        //return person.getCar().getInsurance().getName();
     }
 
     public static void main(String[] args) {
         // TODO: NPE 발생 2021/03/04 10:16 오후
         Person person = new Person();
-        person.getCarInsuranceName(new Person());
+        String carInsuranceName = person.getCarInsuranceName(new Person());
+        System.out.println(carInsuranceName);
     }
 }
 
