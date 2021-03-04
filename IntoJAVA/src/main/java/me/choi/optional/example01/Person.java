@@ -1,4 +1,4 @@
-package me.choi.optional;
+package me.choi.optional.example01;
 
 /**
  * Project : IntoJAVA
