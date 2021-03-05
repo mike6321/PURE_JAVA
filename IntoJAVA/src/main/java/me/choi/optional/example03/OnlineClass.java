@@ -1,5 +1,7 @@
 package me.choi.optional.example03;
 
+import java.util.Optional;
+
 /**
  * Project : IntoJAVA
  *
@@ -35,8 +37,8 @@ public class OnlineClass {
         return closed;
     }
 
-    public Progress getProgress() {
-        return progress;
+    public Optional<Progress> getProgress() {
+        return Optional.ofNullable(progress);
     }
 
     public void setId(Integer id) {
@@ -51,7 +53,20 @@ public class OnlineClass {
         this.closed = closed;
     }
 
-    public void setProgress(Progress progress) {
-        this.progress = progress;
+//    public void setProgress(Progress progress) {
+//        this.progress = progress;
+//    }
+
+
+    public void setProgress(Optional<Progress> progress) {
+//        this.progress = progress;
+        
+        // TODO: 파라미터로 Optional을 사용하면 적절할까? 2021/03/05 1:00 오후
+        /**
+         * 아래와 같이 작성할 수 있지만 클라이언트가 null을 세팅할 수 있다.
+         * 그렇다면 코드만 길어지고 NPE 발생
+         * spring_boot.setProgress(null);
+         * */
+        progress.ifPresent(opt -> this.progress = opt);
     }
 }
