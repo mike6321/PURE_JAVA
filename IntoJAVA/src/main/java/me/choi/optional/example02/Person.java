@@ -16,13 +16,21 @@ public class Person {
         return car;
     }
 
-//    public String getCarInsuranceName(Person person) {
-//        
-//    }
+    public String getCarInsuranceName(Optional<Person> person) {
+//        Optional<Person> optPerson = Optional.of(person);
+        // TODO: 컴파일되지 않음 2021/03/04 10:35 오후
+//        optPerson.map(Person::getCar).map(Car::getInsurance).map(Insurance::getName);
+
+        return person.flatMap(Person::getCar)
+                        .flatMap(Car::getInsurance)
+                        .map(Insurance::getName).orElse("UnKnown");
+    }
 
     public static void main(String[] args) {
+        Person p = new Person();
         // TODO: Optional 생성 2021/03/04 10:28 오후
-        Person person = new Person();
+        Optional<Person> person = Optional.of(p);
+        p.getCarInsuranceName(person);
     }
 }
 
