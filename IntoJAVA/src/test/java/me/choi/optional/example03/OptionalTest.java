@@ -34,7 +34,9 @@ public class OptionalTest {
 //        assertThat(spring_boot.getProgress()).isNull();
         assertThat(spring_boot.getProgress()).isNotNull();
 
-        spring_boot.setProgress(null);
+//        spring_boot.setProgress(null);
+
+
 
     }
 }

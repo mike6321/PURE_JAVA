@@ -53,12 +53,12 @@ public class OnlineClass {
         this.closed = closed;
     }
 
-//    public void setProgress(Progress progress) {
-//        this.progress = progress;
-//    }
+    public void setProgress(Progress progress) {
+        this.progress = progress;
+    }
 
 
-    public void setProgress(Optional<Progress> progress) {
+    public void setProgress2(Optional<Progress> progress) {
 //        this.progress = progress;
         
         // TODO: 파라미터로 Optional을 사용하면 적절할까? 2021/03/05 1:00 오후

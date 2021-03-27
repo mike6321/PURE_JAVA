@@ -165,3 +165,9 @@ d
 4src/main/java/me/choi/optional/example01/Person.java,c/5/c5a1f259e6da6adf366e458acacda88d296b6a78
 d
 4src/main/java/me/choi/optional/example02/Person.java,b/9/b92ed010aed1d7c56c3ec7211e0daee7734757be
+i
+9src/main/java/me/choi/optional/example03/OnlineClass.java,0/b/0bfe0205f08b41dcc749f4c129b62bbd94c269a9
+f
+6src/main/java/me/choi/optional/example03/Progress.java,0/d/0dfcdeb38a52e331c5344654699b98c91ac6af86
+j
+:src/test/java/me/choi/optional/example03/OptionalTest.java,8/1/814d2b47d90b5a76020c6bd5e96ca8db7fa9ced5
