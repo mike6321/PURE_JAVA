@@ -13,42 +13,34 @@ import java.util.stream.Stream;
  */
 public class Dispatch {
     interface Post {
-        void postOn(Sns sns);
+        void postOn(Facebook facebook);
+        void postOn(Twitter twitter);
     }
 
     static class Text implements Post {
+
         @Override
-        public void postOn(Sns sns) {
-
-            if (sns instanceof Facebook) {
-                System.out.println("Text - Facebook");
-            }
-            if (sns instanceof Twitter) {
-                System.out.println("Text - Twitter");
-            }
-            else {
-                throw new IllegalArgumentException();
-            }
-
-//            System.out.println("Text -> " + sns.getClass().getSimpleName());
+        public void postOn(Facebook facebook) {
+            System.out.println("Text - facebook");
         }
+
+        @Override
+        public void postOn(Twitter twitter) {
+            System.out.println("Text - twitter");
+        }
+
     }
 
     static class Picture implements Post {
+
         @Override
-        public void postOn(Sns sns) {
+        public void postOn(Facebook facebook) {
+            System.out.println("Picture - facebook");
+        }
 
-            if (sns instanceof Facebook) {
-                System.out.println("Picture - Facebook");
-            }
-            if (sns instanceof Twitter) {
-                System.out.println("Picture - Twitter");
-            }
-            else {
-                throw new IllegalArgumentException();
-            }
-
-//            System.out.println("Picture -> " + sns.getClass().getSimpleName());
+        @Override
+        public void postOn(Twitter twitter) {
+            System.out.println("Picture - twitter");
         }
     }
 
@@ -72,18 +64,8 @@ public class Dispatch {
         List<Post> posts = Arrays.asList(new Text(), new Picture());
         List<Sns> snsList = Arrays.asList(new Facebook(), new Twitter(), new Instagram());
 
-//        for (Post post : posts) {
-//            for (Sns sns : snsList) {
-//                post.postOn(sns);
-//            }
-//        }
 
-//        posts.stream()
-//             .forEach(f -> snsList.forEach(f::postOn));
-
-//        posts.forEach(p -> snsList.forEach(s -> p.postOn(s)));
-
-        posts.forEach(p -> snsList.forEach(p::postOn));
+        posts.forEach(p -> snsList.forEach(s -> p.postOn(s)));
 
     }
 

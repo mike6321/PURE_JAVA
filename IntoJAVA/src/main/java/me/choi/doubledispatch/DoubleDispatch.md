@@ -183,6 +183,62 @@ Problem
 
 
 
+### 명시적을 타입을 추상메서드로 생성하는 경우
+
+```java
+interface Post {
+    void postOn(Facebook facebook);
+    void postOn(Twitter twitter);
+}
+```
+
+```java
+static class Text implements Post {
+
+    @Override
+    public void postOn(Facebook facebook) {
+        System.out.println("Text - facebook");
+    }
+
+    @Override
+    public void postOn(Twitter twitter) {
+        System.out.println("Text - twitter");
+    }
+
+}
+
+static class Picture implements Post {
+
+    @Override
+    public void postOn(Facebook facebook) {
+        System.out.println("Picture - facebook");
+    }
+
+    @Override
+    public void postOn(Twitter twitter) {
+        System.out.println("Picture - twitter");
+    }
+}
+```
+
+이전과 달리 현재 코드는 추상클래스에서 이미 상세한 타입을 지정하였다. (Facebook, Twitter)
+
+이렇게 실행하면 아래와 같은 오류가 발생한다.
+
+![image](https://user-images.githubusercontent.com/33277588/113428937-aac08d00-9412-11eb-984c-0106ebcd3881.png)
+
+
+
+이유는 해당 람다식을 풀어서 보면 아래와 같다.
+
+```java
+posts.forEach(p -> snsList.forEach((Sns s) -> p.postOn(s)));
+```
+
+Sns를 Twitter, Facebook 타입으로 넣으니깐 어떤것을 넣아야할지 정신을 못차리는 것이다.
+
+
+
 
 
 ------
