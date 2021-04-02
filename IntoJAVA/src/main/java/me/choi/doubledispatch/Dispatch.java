@@ -81,7 +81,13 @@ public class Dispatch {
         List<Sns> snsList = Arrays.asList(new Facebook(), new Twitter(), new Instagram());
 
 
-        posts.forEach(p -> snsList.forEach(s -> p.postOn(s)));
+//        posts.forEach(p -> snsList.forEach(s -> p.postOn(s)));
+
+        for (int i = 0; i < posts.size(); i++) {
+            for (int j = 0; j < snsList.size(); j++) {
+                posts.get(i).postOn(snsList.get(j));
+            }
+        }
 
     }
 
