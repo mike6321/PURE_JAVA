@@ -1,8 +1,7 @@
 package me.choi.doubledispatch;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Project : IntoJAVA
@@ -13,52 +12,69 @@ import java.util.stream.Stream;
  */
 public class Dispatch {
     interface Post {
-        void postOn(Facebook facebook);
-        void postOn(Twitter twitter);
+        void postOn(Sns sns);
     }
 
     static class Text implements Post {
 
         @Override
-        public void postOn(Facebook facebook) {
-            System.out.println("Text - facebook");
+        public void postOn(Sns sns) {
+            sns.post(this);
         }
-
-        @Override
-        public void postOn(Twitter twitter) {
-            System.out.println("Text - twitter");
-        }
-
     }
 
     static class Picture implements Post {
 
         @Override
-        public void postOn(Facebook facebook) {
-            System.out.println("Picture - facebook");
-        }
-
-        @Override
-        public void postOn(Twitter twitter) {
-            System.out.println("Picture - twitter");
+        public void postOn(Sns sns) {
+            sns.post(this);
         }
     }
 
     interface Sns {
-
+        void post(Text post);
+        void post(Picture post);
     }
 
     static class Facebook implements Sns {
 
+        @Override
+        public void post(Text post) {
+            System.out.println("Text - Facebook");
+        }
+
+        @Override
+        public void post(Picture post) {
+            System.out.println("Picture - Facebook");
+        }
     }
 
     static class Twitter implements Sns {
 
-    }
-    // TODO: Sns 타입 추가 2021/04/03 12:03 오전
-    static class Instagram implements Sns{
+        @Override
+        public void post(Text post) {
+            System.out.println("Text - Twitter");
+        }
 
+        @Override
+        public void post(Picture post) {
+            System.out.println("Picture - Twitter");
+        }
     }
+
+    static class Instagram implements Sns {
+
+        @Override
+        public void post(Text post) {
+            System.out.println("Text - Instagram");
+        }
+
+        @Override
+        public void post(Picture post) {
+            System.out.println("Picture - Instagram");
+        }
+    }
+
 
     public static void main(String[] args) {
         List<Post> posts = Arrays.asList(new Text(), new Picture());
