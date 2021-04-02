@@ -13,9 +13,17 @@ public class Dispatch {
         void run() {
             System.out.println("run()");
         }
+        void run(int number) {
+            System.out.println("number = " + number);
+        }
+        void run(String msg) {
+            System.out.println("msg = " + msg);
+        }
     }
 
     public static void main(String[] args) {
         new Service().run();
+        new Service().run("Dispatch");
+        new Service().run("1");
     }
 }

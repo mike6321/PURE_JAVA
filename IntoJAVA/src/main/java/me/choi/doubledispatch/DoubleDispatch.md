@@ -25,7 +25,7 @@ Supplier의 변화가 Client에 영향을 주는 경우
 
 
 
-아래 코드는 컴파일시점에 Service에 run() 메서드가 호출될 것을 알고 있다. - Static Dispatching
+아래 코드는 컴파일시점에 Service에 run() 메서드가 호출될 것을 알고 있다. - Static Dispatch
 
 ```java
 public class Dispatch {
