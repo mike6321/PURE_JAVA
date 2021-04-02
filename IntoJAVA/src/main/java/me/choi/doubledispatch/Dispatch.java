@@ -1,5 +1,8 @@
 package me.choi.doubledispatch;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Project : IntoJAVA
  *
@@ -9,21 +12,29 @@ package me.choi.doubledispatch;
  */
 public class Dispatch {
 
-    static class Service {
+    static abstract class Service {
+        abstract void run();
+    }
+
+    static class MyService1 extends Service {
+        @Override
         void run() {
-            System.out.println("run()");
+            System.out.println("MyService1.run");
         }
-        void run(int number) {
-            System.out.println("number = " + number);
-        }
-        void run(String msg) {
-            System.out.println("msg = " + msg);
+    }
+
+    static class MyService2 extends Service {
+        @Override
+        void run() {
+            System.out.println("MyService2.run");
         }
     }
 
     public static void main(String[] args) {
-        new Service().run();
-        new Service().run("Dispatch");
-        new Service().run("1");
+        Service service = new MyService1();
+        service.run(); // receiver parameter
+
+        List<Service> services = Arrays.asList(new MyService1(), new MyService2());
+        services.forEach(Service::run);
     }
 }
