@@ -122,6 +122,69 @@ services.forEach(s -> s.run());
 
 
 
+## Double Dispatch
+
+![image](https://user-images.githubusercontent.com/33277588/113426454-72b74b00-940e-11eb-9df4-16edcf058c9e.png)
+
+
+
+위와같이
+Post를 구현하는 Text, Picture가 있고
+Snsf를 구현하는 Facebook, Twitter가 있다고 가정하자
+
+
+
+아래와 같이 2중 포문을 돌면서 각각의 리스트를 출력해준다.
+(이때 postOn 메서드의 파라미터 타입은 런타임 시점에 결정된다.)
+
+```java
+List<Post> posts = Arrays.asList(new Text(), new Picture());
+List<Sns> snsList = Arrays.asList(new Facebook(), new Twitter());
+
+posts.forEach(p -> snsList.forEach(p::postOn));
+```
+
+
+
+이를 각각의 비즈니스로직을 분리하여서 작성해보자
+
+```java
+static class Text implements Post {
+  @Override
+  public void postOn(Sns sns) {
+
+    if (sns instanceof Facebook) {
+      System.out.println("Text - Facebook");
+    }
+    if (sns instanceof Twitter) {
+      System.out.println("Text - Twitter");
+    }
+  }
+}
+
+static class Picture implements Post {
+  @Override
+  public void postOn(Sns sns) {
+
+    if (sns instanceof Facebook) {
+      System.out.println("Picture - Facebook");
+    }
+    if (sns instanceof Twitter) {
+      System.out.println("Picture - Twitter");
+    }
+  }
+}
+```
+
+Problem
+
+* 만약 Instagram을 추가한다면 Instagram에 해당하는 if문이 없으니 실행이 안된다.
+* 대상 구현클래스를 추가할때마다 if 문을 추가해야하기 때문에 if문 누락 시 장애가 발생할 수 있다.
+
+
+
+
+
 ------
 
 ## References
